@@ -1,197 +1,324 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>产品展示 - Wedding & Event Signs</title>
+    <title>Products | Event Decor & Signs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">🏪 Wedding Signs</div>
+            <div class="logo">🎉 Event Signs</div>
             <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="products.html" class="active">产品展示</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="cta-nav">Get Quote</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
 
     <section class="page-header">
-        <h1>产品展示</h1>
-        <p>定制您的独特风格</p>
+        <h1>Our Products</h1>
+        <p>Custom event decorations and signs</p>
     </section>
 
-    <section class="products-section">
+    <section class="products-page">
         <div class="container">
-            <div class="products-filter">
-                <button class="filter-btn active" data-filter="all">全部</button>
-                <button class="filter-btn" data-filter="wedding">婚礼定制</button>
-                <button class="filter-btn" data-filter="signs">标识标牌</button>
-                <button class="filter-btn" data-filter="vehicle">车贴车膜</button>
-                <button class="filter-btn" data-filter="banner">横幅喷绘</button>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="birthday">Birthday</button>
+                <button class="filter-btn" data-filter="baby">Baby Shower</button>
+                <button class="filter-btn" data-filter="gender">Gender Reveal</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="holiday">Holidays</button>
             </div>
 
             <div class="products-note">
-                <p>💡 <strong>提示：</strong>所有产品均为定制，下单前请联系我们确认尺寸、颜色、设计等细节。</p>
+                <p>💡 <strong>Note:</strong> All products are custom-made. Please contact us for a free quote before ordering.</p>
             </div>
 
             <div class="products-grid">
-                <!-- 婚礼定制 -->
+                <!-- WEDDING -->
                 <div class="product-card" data-category="wedding">
                     <div class="product-image">💒</div>
                     <div class="product-info">
-                        <h3>亚克力欢迎牌</h3>
-                        <p class="description">Acrylic Welcome Sign - 婚礼入口迎宾牌</p>
-                        <p class="price">起价 $89</p>
-                        <p class="product-features">✨ 透明/金色/银色可选 | 📏 多种尺寸 | 🎨 免费设计</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="wedding">
-                    <div class="product-image">💃</div>
-                    <div class="product-info">
-                        <h3>舞池地贴</h3>
-                        <p class="description">Wedding Dance Floor Decal - 婚礼舞池装饰</p>
-                        <p class="price">起价 $149</p>
-                        <p class="product-features">🛡️ 防滑耐磨 | 💧 防水防晒 | 📐 定制尺寸</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Acrylic Welcome Sign</h3>
+                        <p class="category-tag">Weddings</p>
+                        <p class="desc">Elegant welcome sign for ceremony entrance</p>
+                        <p class="price">From $89</p>
+                        <ul class="features">
+                            <li>Sizes: 18"x24", 24"x36", Custom</li>
+                            <li>Colors: Gold, Silver, Rose Gold, White, Black</li>
+                            <li>Free design included</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
                 <div class="product-card" data-category="wedding">
                     <div class="product-image">🪑</div>
                     <div class="product-info">
-                        <h3>亚克力桌号牌</h3>
-                        <p class="description">Acrylic Table Numbers - 婚礼桌号指示</p>
-                        <p class="price">起价 $4/个</p>
-                        <p class="product-features">🔳 多种形状 | 🎨 定制字体 | 📦 套装优惠</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Table Number Stands</h3>
+                        <p class="category-tag">Weddings</p>
+                        <p class="desc">Modern acrylic table number holders</p>
+                        <p class="price">From $4/piece</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
                 <div class="product-card" data-category="wedding">
-                    <div class="product-image">👰</div>
+                    <div class="product-image">🗓️</div>
                     <div class="product-info">
-                        <h3>定制横幅</h3>
-                        <p class="description">Just Married Banner - 婚车/背景横幅</p>
-                        <p class="price">起价 $39</p>
-                        <p class="product-features">🚗 适用于婚车 | 🏠 背景墙 | 💨 轻松悬挂</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Seating Chart Stand</h3>
+                        <p class="category-tag">Weddings</p>
+                        <p class="desc">Large acrylic seating chart display</p>
+                        <p class="price">From $149</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <!-- 标识标牌 -->
-                <div class="product-card" data-category="signs">
+                <div class="product-card" data-category="wedding">
+                    <div class="product-image">💃</div>
+                    <div class="product-info">
+                        <h3>Dance Floor Decal</h3>
+                        <p class="category-tag">Weddings</p>
+                        <p class="desc">Custom vinyl decal for dance floor</p>
+                        <p class="price">From $149</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wedding">
+                    <div class="product-image">👫</div>
+                    <div class="product-info">
+                        <h3>Mr & Mrs Signs</h3>
+                        <p class="category-tag">Weddings</p>
+                        <p class="desc">Celebrate your new titles</p>
+                        <p class="price">From $49</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- BIRTHDAY -->
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">🎂</div>
+                    <div class="product-info">
+                        <h3>Birthday Banner</h3>
+                        <p class="category-tag">Birthday</p>
+                        <p class="desc">Custom birthday banner with any age</p>
+                        <p class="price">From $49</p>
+                        <ul class="features">
+                            <li>Any age number included</li>
+                            <li>Colors: Rose Gold, Gold, Silver, Black</li>
+                            <li>Multiple sizes available</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">🎈</div>
+                    <div class="product-info">
+                        <h3>Happy Birthday Sign</h3>
+                        <p class="category-tag">Birthday</p>
+                        <p class="desc">Acrylic happy birthday display</p>
+                        <p class="price">From $39</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">📸</div>
+                    <div class="product-info">
+                        <h3>Photo Booth Props</h3>
+                        <p class="category-tag">Birthday</p>
+                        <p class="desc">Fun props for photo booth</p>
+                        <p class="price">From $29/set</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">👑</div>
+                    <div class="product-info">
+                        <h3>Age Sign</h3>
+                        <p class="category-tag">Birthday</p>
+                        <p class="desc">Big number sign for milestone birthdays</p>
+                        <p class="price">From $49</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- BABY SHOWER -->
+                <div class="product-card" data-category="baby">
+                    <div class="product-image">👶</div>
+                    <div class="product-info">
+                        <h3>Baby Welcome Sign</h3>
+                        <p class="category-tag">Baby Shower</p>
+                        <p class="desc">Welcome the little one in style</p>
+                        <p class="price">From $59</p>
+                        <ul class="features">
+                            <li>"Welcome Baby" or custom text</li>
+                            <li>Neutral colors available</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="baby">
+                    <div class="product-image">🍼</div>
+                    <div class="product-info">
+                        <h3>Wishes Cards Display</h3>
+                        <p class="category-tag">Baby Shower</p>
+                        <p class="desc">Board for guest wishes and advice</p>
+                        <p class="price">From $69</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="baby">
+                    <div class="product-image">🧸</div>
+                    <div class="product-info">
+                        <h3>Diaper Cake Topper</h3>
+                        <p class="category-tag">Baby Shower</p>
+                        <p class="desc">Custom topper for diaper cakes</p>
+                        <p class="price">From $29</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="baby">
+                    <div class="product-image">🎀</div>
+                    <div class="product-info">
+                        <h3>Little One Name Sign</h3>
+                        <p class="category-tag">Baby Shower</p>
+                        <p class="desc">Personalized name sign for nursery</p>
+                        <p class="price">From $49</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- GENDER REVEAL -->
+                <div class="product-card" data-category="gender">
+                    <div class="product-image">🎈</div>
+                    <div class="product-info">
+                        <h3>Gender Reveal Sign</h3>
+                        <p class="category-tag">Gender Reveal</p>
+                        <p class="desc">Special reveal sign for the big moment</p>
+                        <p class="price">From $79</p>
+                        <ul class="features">
+                            <li>Boy or Girl themed</li>
+                            <li>Confetti cannon compatible</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="gender">
+                    <div class="product-image">💙💗</div>
+                    <div class="product-info">
+                        <h3>Reveal Backdrop</h3>
+                        <p class="category-tag">Gender Reveal</p>
+                        <p class="desc">Photo backdrop for reveal moment</p>
+                        <p class="price">From $99</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- CORPORATE -->
+                <div class="product-card" data-category="corporate">
                     <div class="product-image">🏢</div>
                     <div class="product-info">
-                        <h3>亚克力标识</h3>
-                        <p class="description">Acrylic Signs - 办公室/商铺标识</p>
-                        <p class="price">起价 $59</p>
-                        <p class="product-features">💎 高端大气 | 🔧 多种安装方式 | 🎨 定制设计</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Welcome Sign</h3>
+                        <p class="category-tag">Corporate</p>
+                        <p class="desc">Company welcome sign for events</p>
+                        <p class="price">From $79</p>
+                        <ul class="features">
+                            <li>Custom company logo</li>
+                            <li>Any size available</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="signs">
-                    <div class="product-image">🔤</div>
+                <div class="product-card" data-category="corporate">
+                    <div class="product-image">📊</div>
                     <div class="product-info">
-                        <h3>Foam Letter 立体字</h3>
-                        <p class="description">3D Foam Letters - 活动装饰/展示</p>
-                        <p class="price">起价 $5/字</p>
-                        <p class="product-features">📏 任意尺寸 | 🎨 任意颜色 | 🏢 室内使用</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Promotion Display</h3>
+                        <p class="category-tag">Corporate</p>
+                        <p class="desc">Promotional signs and displays</p>
+                        <p class="price">From $69</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="signs">
-                    <div class="product-image">🪧</div>
-                    <div class="product-info">
-                        <h3>立牌支架</h3>
-                        <p class="description">Floor Standing Signs - 导向立牌</p>
-                        <p class="price">起价 $79</p>
-                        <p class="product-features">🎯 稳固底座 | 📐 A型/X型 | 🏢 室内外可用</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
-                    </div>
-                </div>
-
-                <!-- 车贴车膜 -->
-                <div class="product-card" data-category="vehicle">
-                    <div class="product-image">🚗</div>
-                    <div class="product-info">
-                        <h3>定制车贴</h3>
-                        <p class="description">Car Decals - 个性车贴/企业宣传</p>
-                        <p class="price">起价 $29</p>
-                        <p class="product-features">💧 防水防晒 | 🔧 易贴易撕 | 🚗 所有车型</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
-                    </div>
-                </div>
-
-                <div class="product-card" data-category="vehicle">
-                    <div class="product-image">🧲</div>
-                    <div class="product-info">
-                        <h3>磁性车贴</h3>
-                        <p class="description">Car Magnetic Signs - 可拆卸车标</p>
-                        <p class="price">起价 $49</p>
-                        <p class="product-features">🧲 强磁吸附 | 🔄 随时拆卸 | 💼 商业用途</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
-                    </div>
-                </div>
-
-                <!-- 横幅喷绘 -->
-                <div class="product-card" data-category="banner">
+                <div class="product-card" data-category="corporate">
                     <div class="product-image">🏳️</div>
                     <div class="product-info">
                         <h3>Vinyl Banner</h3>
-                        <p class="description">防水横幅 - 户外广告/活动宣传</p>
-                        <p class="price">起价 $49</p>
-                        <p class="product-features">💧 防水防晒 | 🔨 金属孔眼 | 🏢 室内外通用</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <p class="category-tag">Corporate</p>
+                        <p class="desc">Outdoor promotional banners</p>
+                        <p class="price">From $49</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="banner">
-                    <div class="product-image">🎪</div>
+                <!-- HOLIDAYS -->
+                <div class="product-card" data-category="holiday">
+                    <div class="product-image">🎄</div>
                     <div class="product-info">
-                        <h3>活动背景布</h3>
-                        <p class="description">Event Backdrop - 会议/展会背景</p>
-                        <p class="price">起价 $99</p>
-                        <p class="product-features">📐 大尺寸定制 | 🎨 高清印刷 | 🔧 轻松搭建</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Holiday Welcome Sign</h3>
+                        <p class="category-tag">Holidays</p>
+                        <p class="desc">Seasonal welcome decorations</p>
+                        <p class="price">From $59</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="banner">
-                    <div class="product-image">🖼️</div>
+                <div class="product-card" data-category="holiday">
+                    <div class="product-image">🥂</div>
                     <div class="product-info">
-                        <h3>X展架/易拉宝</h3>
-                        <p class="description">Rollup Banner - 便携展示</p>
-                        <p class="price">起价 $39</p>
-                        <p class="product-features">📦 便携收纳 | 🎨 双面印刷 | 🏢 展会必备</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>NYE Countdown Sign</h3>
+                        <p class="category-tag">Holidays</p>
+                        <p class="desc">New Year's Eve countdown board</p>
+                        <p class="price">From $69</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
 
-                <div class="product-card" data-category="banner">
-                    <div class="product-image">🏪</div>
+                <!-- ALL EVENTS -->
+                <div class="product-card" data-category="wedding birthday baby corporate">
+                    <div class="product-image">🥂</div>
                     <div class="product-info">
-                        <h3>店招横幅</h3>
-                        <p class="description">Store Front Banner - 店铺招牌</p>
-                        <p class="price">起价 $69</p>
-                        <p class="product-features">☀️ 防晒防水 | 💪 加厚材质 | 🔧 多种安装</p>
-                        <a href="contact.html" class="btn btn-primary">获取报价</a>
+                        <h3>Bar & Menu Signs</h3>
+                        <p class="category-tag">All Events</p>
+                        <p class="desc">Custom bar and menu displays</p>
+                        <p class="price">From $49</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="wedding birthday corporate">
+                    <div class="product-image">💕</div>
+                    <div class="product-info">
+                        <h3>Hashtag Sign</h3>
+                        <p class="category-tag">All Events</p>
+                        <p class="desc">Social media hashtag sign</p>
+                        <p class="price">From $39</p>
+                        <a href="contact.html" class="btn btn-primary">Get Quote</a>
                     </div>
                 </div>
             </div>
 
-            <div class="custom-order">
-                <h3>找不到想要的产品？</h3>
-                <p>我们支持<strong>全方位定制</strong>，请联系告诉我们您的需求</p>
-                <a href="contact.html" class="btn btn-outline">咨询定制</a>
+            <div class="custom-request">
+                <h3>Don't See What You're Looking For?</h3>
+                <p>We accept <strong>custom orders</strong>. Contact us with your ideas!</p>
+                <a href="contact.html" class="btn btn-outline">Request Custom Quote</a>
             </div>
         </div>
     </section>
@@ -200,25 +327,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于我们</h4>
-                    <p>专业定制婚礼和活动用品，用心做好每一件产品。</p>
+                    <h4>Event Signs</h4>
+                    <p>Custom event decorations and signs for every celebration.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="products.html">产品展示</a></li>
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>联系我们</h4>
+                    <h4>Contact</h4>
                     <p>📧 your@email.com</p>
-                    <p>📞 您的电话</p>
+                    <p>📱 Your Phone/WhatsApp</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Wedding Signs. All rights reserved.</p>
+                <p>&copy; 2026 Event Signs. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  # 首页内容
+  - name: "home"
+    label: "首页"
+    folder: "content/home"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - label: "标题"
+        name: "title"
+        widget: "string"
+      - label: "副标题"
+        name: "subtitle"
+        widget: "text"
+      - label: "按钮文字"
+        name: "button_text"
+        widget: "string"
+
+  # 产品管理
+  - name: "products"
+    label: "产品"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "产品名称"
+        name: "title"
+        widget: "string"
+      - label: "描述"
+        name: "description"
+        widget: "text"
+      - label: "价格"
+        name: "price"
+        widget: "string"
+      - label: "分类"
+        name: "category"
+        widget: "select"
+        options: ["bags", "electronics", "clothing", "home"]
+      - label: "图片"
+        name: "image"
+        widget: "image"
+        required: false
+
+  # 关于我们
+  - name: "about"
+    label: "关于我们"
+    folder: "content/about"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - label: "标题"
+        name: "title"
+        widget: "string"
+      - label: "内容"
+        name: "content"
+        widget: "markdown"
+
+  # 联系方式
+  - name: "contact"
+    label: "联系方式"
+    folder: "content/contact"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - label: "地址"
+        name: "address"
+        widget: "text"
+      - label: "电话"
+        name: "phone"
+        widget: "string"
+      - label: "邮箱"
+        name: "email"
+        widget: "string"

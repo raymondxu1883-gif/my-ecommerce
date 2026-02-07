@@ -1,158 +1,187 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - Wedding & Event Signs</title>
+    <title>Contact | Event Decor & Signs</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">🏪 Wedding Signs</div>
+            <div class="logo">🎉 Event Signs</div>
             <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="products.html">产品展示</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html" class="active">联系我们</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="cta-nav active">Get Quote</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
 
     <section class="page-header">
-        <h1>联系我们</h1>
-        <p>获取免费报价和设计方案</p>
+        <h1>Contact Us</h1>
+        <p>Get a free quote within 24 hours</p>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-page">
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>如何联系我们</h2>
-                    <p class="contact-intro">我们提供<strong>免费咨询和报价</strong>服务。请告诉我们您的需求，我们将尽快回复您。</p>
+                    <h2>Get In Touch</h2>
+                    <p class="intro">Ready to start your project? We'd love to hear from you! Fill out the form and we'll get back to you within 24 hours.</p>
                     
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <div>
-                            <h4>邮箱</h4>
-                            <p>your@email.com</p>
-                            <p class="contact-note">我们通常在24小时内回复</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>your@email.com</p>
+                                <p class="note">We reply within 24 hours</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <div>
-                            <h4>电话/微信</h4>
-                            <p>您的电话或微信号</p>
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>Phone / WhatsApp</h4>
+                                <p>Your Phone Number</p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <span class="contact-icon">💬</span>
-                        <div>
-                            <h4>在线沟通</h4>
-                            <p>直接发送消息即可</p>
+                        <div class="contact-method">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <h4>Instagram DM</h4>
+                                <p>@yourinstagram</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-hours">
-                        <h4>服务时间</h4>
-                        <p>周一至周日: 9:00 AM - 9:00 PM ( EST )</p>
-                        <p>紧急事务可随时发送邮件</p>
+                    <div class="hours">
+                        <h4>Business Hours</h4>
+                        <p>Mon - Sun: 9:00 AM - 9:00 PM (EST)</p>
+                        <p>Emergency inquiries welcome!</p>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <h2>发送询盘</h2>
-                    <form id="contactForm">
+                    <h2>Request a Quote</h2>
+                    <form id="quoteForm">
                         <div class="form-group">
-                            <label for="name">您的姓名 *</label>
-                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
                         </div>
-                        
+
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">电子邮箱 *</label>
-                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com">
                             </div>
                             <div class="form-group">
-                                <label for="phone">电话/微信</label>
-                                <input type="text" id="phone" name="phone" placeholder="方便我们联系您">
+                                <label for="phone">Phone / WhatsApp</label>
+                                <input type="text" id="phone" name="phone" placeholder="+1 (555) 000-0000">
                             </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="product">感兴趣的产品 *</label>
-                            <select id="product" name="product" required>
-                                <option value="">请选择产品类型</option>
-                                <option value="wedding-signs">婚礼欢迎牌/桌号牌</option>
-                                <option value="dance-floor">舞池地贴</option>
-                                <option value="acrylic-signs">亚克力标识</option>
-                                <option value="foam-letters">Foam 立体字</option>
-                                <option value="car-decals">车贴/磁性车贴</option>
-                                <option value="vinyl-banner">Vinyl 横幅</option>
-                                <option value="other">其他产品</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="quantity">数量</label>
-                                <input type="text" id="quantity" name="quantity" placeholder="如：50个">
-                            </div>
-                            <div class="form-group">
-                                <label for="size">尺寸需求</label>
-                                <input type="text" id="size" name="size" placeholder="如：18x24英寸">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">详细需求 *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="请详细描述您的需求，包括：&#10;- 产品用途&#10;- 设计风格偏好&#10;- 颜色要求&#10;- 材质要求&#10;- 其他特殊要求"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="reference">参考图片链接（可选）</label>
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select event type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday Party</option>
+                                <option value="baby-shower">Baby Shower</option>
+                                <option value="gender-reveal">Gender Reveal</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="holiday">Holiday Party</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventDate">Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Product Interest *</label>
+                            <select id="product" name="product" required>
+                                <option value="">Select product</option>
+                                <option value="welcome-sign">Welcome Sign</option>
+                                <option value="table-numbers">Table Numbers</option>
+                                <option value="banner">Banner</option>
+                                <option value="seating-chart">Seating Chart</option>
+                                <option value="photo-props">Photo Props</option>
+                                <option value="gender-reveal">Gender Reveal Item</option>
+                                <option value="bar-menu">Bar/Menu Sign</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">Quantity</label>
+                                <input type="text" id="quantity" name="quantity" placeholder="e.g., 20 table numbers">
+                            </div>
+                            <div class="form-group">
+                                <label for="size">Size Preference</label>
+                                <input type="text" id="size" name="size" placeholder="e.g., 18x24 inches">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="details">Project Details *</label>
+                            <textarea id="details" name="details" rows="5" required placeholder="Tell us about your event:&#10;- Event theme or color scheme&#10;- Venue type&#10;- Style preference (rustic, modern, elegant)&#10;- Any specific design ideas&#10;- Budget range"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reference">Reference Image URL (optional)</label>
                             <input type="url" id="reference" name="reference" placeholder="https://example.com/image.jpg">
                         </div>
-                        
+
                         <div class="form-group checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="newsletter" name="newsletter">
-                                <span>订阅我们的最新产品和优惠信息</span>
+                                <span>Subscribe to our newsletter for tips and special offers</span>
                             </label>
                         </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Quote Request</button>
                         
-                        <button type="submit" class="btn btn-primary btn-full">发送询盘</button>
-                        
-                        <p class="form-note">提交后我们会在24小时内回复您，请注意查收邮件。</p>
+                        <p class="form-note">We'll respond within 24 hours with a free quote and design proof.</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq">
         <div class="container">
-            <h2>常见问题</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h4>下单前需要沟通什么？</h4>
-                    <p>我们需要确认：产品尺寸、颜色、材质、字体、设计风格、数量以及您的预算范围。</p>
+                    <h4>How do I get a quote?</h4>
+                    <p>Fill out the form above with your project details. We'll get back to you within 24 hours with a free quote and design proof.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>如何付款？</h4>
-                    <p>我们支持 PayPal、银行转账等方式。确认设计方案后，我们会发送付款链接或账户信息。</p>
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept PayPal, credit cards (Visa, MasterCard, Amex), and bank transfers. Payment is due before production begins.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>制作周期是多长？</h4>
-                    <p>通常3-7个工作日，具体时间会根据订单复杂度和数量而定。</p>
+                    <h4>How long does production take?</h4>
+                    <p>Production typically takes 3-7 business days after design approval. Shipping adds 2-5 business days (US) or 7-14 days (international).</p>
                 </div>
                 <div class="faq-item">
-                    <h4>可以寄往北美以外地区吗？</h4>
-                    <p>可以！我们全球发货，运费根据目的地和重量计算。</p>
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes! We ship worldwide. International shipping costs are calculated based on location and will be included in your quote.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I see a proof before ordering?</h4>
+                    <p>Absolutely! We provide free digital proofs for all custom orders. We'll revise until you're 100% happy before production.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What if I'm not satisfied?</h4>
+                    <p>We offer a 100% satisfaction guarantee. If you're not happy with your order, we'll rework it for free or provide a full refund.</p>
                 </div>
             </div>
         </div>
@@ -162,25 +191,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于我们</h4>
-                    <p>专业定制婚礼和活动用品，用心做好每一件产品。</p>
+                    <h4>Event Signs</h4>
+                    <p>Custom event decorations and signs for every celebration.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="products.html">产品展示</a></li>
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>联系我们</h4>
+                    <h4>Contact</h4>
                     <p>📧 your@email.com</p>
-                    <p>📞 您的电话</p>
+                    <p>📱 Your Phone/WhatsApp</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Wedding Signs. All rights reserved.</p>
+                <p>&copy; 2026 Event Signs. All rights reserved.</p>
             </div>
         </div>
     </footer>

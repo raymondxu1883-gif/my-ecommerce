@@ -1,4 +1,4 @@
-// 移动端菜单切换
+// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -9,75 +9,79 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 产品筛选功能
+    // Product Filter
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.products-grid .product-card');
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // 更新按钮状态
-            filterBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
+    if (filterBtns.length > 0 && productCards.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
 
-            const filter = this.dataset.filter;
+                const filter = this.dataset.filter;
 
-            productCards.forEach(card => {
-                if (filter === 'all') {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeInUp 0.5s ease';
-                } else if (card.dataset.category === filter) {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeInUp 0.5s ease';
-                } else {
-                    card.style.display = 'none';
-                }
+                productCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease';
+                    } else if (card.dataset.category.includes(filter)) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             });
         });
-    });
+    }
 
-    // 联系表单处理
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+    // Gallery Filter
+    const galleryFilterBtns = document.querySelectorAll('.gallery-filter .filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (galleryFilterBtns.length > 0 && galleryItems.length > 0) {
+        galleryFilterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                galleryFilterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.dataset.filter;
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = 'block';
+                    } else if (item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    // Quote Form
+    const quoteForm = document.getElementById('quoteForm');
+    if (quoteForm) {
+        quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
-            // 获取表单数据
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-
-            // 显示成功消息
-            alert('感谢您的留言！我们会尽快回复您。');
+            alert('Thank you for your quote request! We will get back to you within 24 hours.');
             this.reset();
         });
     }
 
-    // 加入购物车按钮
-    const addToCartBtns = document.querySelectorAll('.product-card .btn-secondary');
-    addToCartBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const productName = this.closest('.product-card').querySelector('h3').textContent;
-            alert(`已将「${productName}」加入购物车！`);
+    // Contact Form
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            this.reset();
         });
-    });
+    }
 
-    // 平滑滚动
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href !== '#') {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
-        });
-    });
-
-    // 滚动动画
+    // Scroll Animation
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -92,15 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // 为产品卡片添加动画
-    document.querySelectorAll('.product-card, .feature-card').forEach(card => {
+    document.querySelectorAll('.product-card, .category-card, .gallery-item, .process-card, .why-card').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(30px)';
         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(card);
     });
 
-    // 导航栏滚动效果
+    // Header Scroll Effect
     let lastScroll = 0;
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
