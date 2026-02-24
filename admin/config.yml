@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: raymondxu1883-gif/my-ecommerce
   branch: main
   base_url: https://eventdecorsigns.com
 
@@ -9,8 +10,6 @@ public_folder: "/images/uploads"
 locale: "en"
 
 display_url: https://eventdecorsigns.com
-
-login_url: https://eventdecorsigns.com
 
 collections:
   - name: "products"
