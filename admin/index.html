@@ -5,47 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager - EventDecorSigns</title>
   <script src="https://unpkg.com/decap-cms@3.10.1/dist/decap-cms.js"></script>
-  <script>
-    CMS.init({
-      config: {
-        backend: {
-          name: 'git-gateway',
-          branch: 'main'
-        },
-        media_folder: 'images/uploads',
-        public_folder: '/images/uploads',
-        locale: 'en',
-        collections: [
-          {
-            name: 'products',
-            label: 'Products',
-            folder: 'content/products',
-            create: true,
-            slug: '{{title}}',
-            fields: [
-              {label: 'Title', name: 'title', widget: 'string'},
-              {label: 'Price', name: 'price', widget: 'string'},
-              {label: 'Description', name: 'description', widget: 'text'},
-              {label: 'Image', name: 'image', widget: 'image'},
-              {label: 'Featured', name: 'featured', widget: 'boolean'}
-            ]
-          },
-          {
-            name: 'posts',
-            label: 'Blog Posts',
-            folder: 'content/blog',
-            create: true,
-            slug: '{{title}}',
-            fields: [
-              {label: 'Title', name: 'title', widget: 'string'},
-              {label: 'Date', name: 'date', widget: 'datetime'},
-              {label: 'Body', name: 'body', widget: 'markdown'}
-            ]
-          }
-        ]
-      }
-    });
-  </script>
 </head>
 <body>
   <!-- CMS will render here -->

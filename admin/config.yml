@@ -1,69 +1,33 @@
-# Decap CMS Configuration for EventDecorSigns
-# https://decapcms.org/docs/
-
 backend:
   name: git-gateway
   branch: main
 
-# Media files
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-# Locale
 locale: "en"
 
-# Collections - Define content types
 collections:
-  # Products Collection
   - name: "products"
     label: "Products"
     folder: "content/products"
     create: true
-    slug: "{{title | slugify}}"
+    slug: "{{title}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Product Type", name: "product_type", widget: "select", options: ["Welcome Signs", "Table Numbers", "Seating Chart", "Dance Floor Decal", "Baby Shower", "Birthday", "Gender Reveal"]}
-      - {label: "Price", name: "price", widget: "string", required: true, default: "From $89"}
-      - {label: "Description", name: "description", widget: "text", required: true}
-      - {label: "Features", name: "features", widget: "list", required: false}
-      - {label: "Main Image", name: "image", widget: "image", required: true}
-      - {label: "Gallery Images", name: "gallery", widget: "image", required: false, multiple: true}
-      - {label: "Colors Available", name: "colors", widget: "list", required: false}
-      - {label: "Sizes Available", name: "sizes", widget: "list", required: false}
-      - {label: "Featured", name: "featured", widget: "boolean", default: false}
-      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Category", name: "category", widget: "select", options: ["Welcome Signs", "Table Numbers", "Dance Floor Decals", "Signs & Displays", "Stickers"]}
+      - {label: "Featured", name: "featured", widget: "boolean"}
 
-  # Blog Posts Collection
   - name: "posts"
     label: "Blog Posts"
     folder: "content/blog"
     create: true
-    slug: "{{title | slugify}}"
+    slug: "{{title}}"
     fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
-      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
-      - {label: "Category", name: "category", widget: "select", options: ["Wedding Ideas", "Party Decor Tips", "Custom Sign Guide", "Industry News"]}
-      - {label: "Summary", name: "summary", widget: "text", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: true}
-      - {label: "Author", name: "author", widget: "string", default: "EventDecorSigns"}
-      - {label: "Published", name: "published", widget: "boolean", default: true}
-
-  # Gallery Collection
-  - name: "gallery"
-    label: "Gallery"
-    folder: "content/gallery"
-    create: true
-    slug: "{{title | slugify}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Category", name: "category", widget: "select", options: ["Wedding", "Birthday", "Baby Shower", "Gender Reveal"]}
-      - {label: "Image", name: "image", widget: "image", required: true}
-      - {label: "Client Name", name: "client", widget: "string", required: false}
-      - {label: "Location", name: "location", widget: "string", required: false}
-      - {label: "Testimonial", name: "testimonial", widget: "text", required: false}
-      - {label: "Published", name: "published", widget: "boolean", default: true}
-
-# Widgets customization
-show_preview_links: true
-slug_type: "unicode"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
