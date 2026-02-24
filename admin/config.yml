@@ -1,80 +1,69 @@
+# Decap CMS Configuration for EventDecorSigns
+# https://decapcms.org/docs/
+
 backend:
   name: git-gateway
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+# Media files
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
+# Locale
+locale: "en"
+
+# Collections - Define content types
 collections:
-  # 首页内容
-  - name: "home"
-    label: "首页"
-    folder: "content/home"
-    create: false
-    slug: "{{slug}}"
-    fields:
-      - label: "标题"
-        name: "title"
-        widget: "string"
-      - label: "副标题"
-        name: "subtitle"
-        widget: "text"
-      - label: "按钮文字"
-        name: "button_text"
-        widget: "string"
-
-  # 产品管理
+  # Products Collection
   - name: "products"
-    label: "产品"
+    label: "Products"
     folder: "content/products"
     create: true
-    slug: "{{slug}}"
+    slug: "{{title | slugify}}"
     fields:
-      - label: "产品名称"
-        name: "title"
-        widget: "string"
-      - label: "描述"
-        name: "description"
-        widget: "text"
-      - label: "价格"
-        name: "price"
-        widget: "string"
-      - label: "分类"
-        name: "category"
-        widget: "select"
-        options: ["bags", "electronics", "clothing", "home"]
-      - label: "图片"
-        name: "image"
-        widget: "image"
-        required: false
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Product Type", name: "product_type", widget: "select", options: ["Welcome Signs", "Table Numbers", "Seating Chart", "Dance Floor Decal", "Baby Shower", "Birthday", "Gender Reveal"]}
+      - {label: "Price", name: "price", widget: "string", required: true, default: "From $89"}
+      - {label: "Description", name: "description", widget: "text", required: true}
+      - {label: "Features", name: "features", widget: "list", required: false}
+      - {label: "Main Image", name: "image", widget: "image", required: true}
+      - {label: "Gallery Images", name: "gallery", widget: "image", required: false, multiple: true}
+      - {label: "Colors Available", name: "colors", widget: "list", required: false}
+      - {label: "Sizes Available", name: "sizes", widget: "list", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
 
-  # 关于我们
-  - name: "about"
-    label: "关于我们"
-    folder: "content/about"
-    create: false
-    slug: "{{slug}}"
+  # Blog Posts Collection
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{title | slugify}}"
     fields:
-      - label: "标题"
-        name: "title"
-        widget: "string"
-      - label: "内容"
-        name: "content"
-        widget: "markdown"
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Category", name: "category", widget: "select", options: ["Wedding Ideas", "Party Decor Tips", "Custom Sign Guide", "Industry News"]}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+      - {label: "Author", name: "author", widget: "string", default: "EventDecorSigns"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
 
-  # 联系方式
-  - name: "contact"
-    label: "联系方式"
-    folder: "content/contact"
-    create: false
-    slug: "{{slug}}"
+  # Gallery Collection
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{title | slugify}}"
     fields:
-      - label: "地址"
-        name: "address"
-        widget: "text"
-      - label: "电话"
-        name: "phone"
-        widget: "string"
-      - label: "邮箱"
-        name: "email"
-        widget: "string"
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Category", name: "category", widget: "select", options: ["Wedding", "Birthday", "Baby Shower", "Gender Reveal"]}
+      - {label: "Image", name: "image", widget: "image", required: true}
+      - {label: "Client Name", name: "client", widget: "string", required: false}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "Testimonial", name: "testimonial", widget: "text", required: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+# Widgets customization
+show_preview_links: true
+slug_type: "unicode"
