@@ -1,11 +1,16 @@
 backend:
   name: git-gateway
   branch: main
+  base_url: https://eventdecorsigns.com
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 locale: "en"
+
+display_url: https://eventdecorsigns.com
+
+login_url: https://eventdecorsigns.com
 
 collections:
   - name: "products"
