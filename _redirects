@@ -1,0 +1,2 @@
+# Netlify Identity paths - let Netlify handle these
+/.netlify/*    200!
