@@ -1,9 +1,5 @@
 backend:
-  name: github
-  repo: raymondxu1883-gif/my-ecommerce
-  branch: main
-  base_url: https://eventdecorsigns.com
-  auth_endpoint: /api/auth
+  name: local
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
