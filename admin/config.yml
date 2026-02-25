@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: raymondxu1883-gif/my-ecommerce
+  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
