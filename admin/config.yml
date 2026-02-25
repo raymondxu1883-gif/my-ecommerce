@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: raymondxu1883-gif/my-ecommerce
-  branch: main
+  name: git-gateway
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
