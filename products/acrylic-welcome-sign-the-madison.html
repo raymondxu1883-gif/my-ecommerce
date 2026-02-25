@@ -413,30 +413,30 @@
             <div class="product-grid-detail">
                 <!-- Gallery -->
                 <div class="product-gallery">
-                    <div class="main-image">
+                    <div class="main-image" id="mainImageEmoji">
                         <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="The Madison Wedding Welcome Sign" onerror="this.style.display='none'; this.parentElement.innerHTML='💒'">
                     </div>
                     <div class="thumbnail-row">
-                        <div class="thumbnail active">💒</div>
-                        <div class="thumbnail">🪑</div>
-                        <div class="thumbnail">💃</div>
-                        <div class="thumbnail">📸</div>
-                        <div class="thumbnail">💐</div>
-                        <div class="thumbnail">🎀</div>
-                        <div class="thumbnail">🌸</div>
+                        <div class="thumbnail active" onclick="switchImage(this, '💒')">💒</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🪑')">🪑</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💃')">💃</div>
+                        <div class="thumbnail" onclick="switchImage(this, '📸')">📸</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💐')">💐</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎀')">🎀</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🌸')">🌸</div>
                         <div class="thumbnail">✨</div>
-                        <div class="thumbnail">💕</div>
-                        <div class="thumbnail">🎉</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💕')">💕</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎉')">🎉</div>
                         <div class="thumbnail">🏵️</div>
-                        <div class="thumbnail">🎊</div>
-                        <div class="thumbnail">🌹</div>
-                        <div class="thumbnail">🥂</div>
-                        <div class="thumbnail">💍</div>
-                        <div class="thumbnail">🎁</div>
-                        <div class="thumbnail">📝</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎊')">🎊</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🌹')">🌹</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🥂')">🥂</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💍')">💍</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎁')">🎁</div>
+                        <div class="thumbnail" onclick="switchImage(this, '📝')">📝</div>
                         <div class="thumbnail">🖼️</div>
-                        <div class="thumbnail">🎨</div>
-                        <div class="thumbnail">🌺</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎨')">🎨</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🌺')">🌺</div>
                     </div>
                 </div>
                 
@@ -677,6 +677,15 @@
             document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
             element.classList.add('active');
             document.getElementById('selectedColor').value = element.title;
+        }
+        
+        function switchImage(element, emoji) {
+            // Remove active class from all thumbnails
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            // Add active class to clicked thumbnail
+            element.classList.add('active');
+            // Update main image emoji
+            document.getElementById('mainImageEmoji').textContent = emoji;
         }
     </script>
     <script src="../script.js"></script>
