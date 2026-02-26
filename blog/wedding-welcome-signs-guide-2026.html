@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../styles.css">
     <style>
         /* Reset and base */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -155,7 +154,7 @@
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 28px;
             color: #1a1a2e;
-            margin: 45px 0 20px;
+            margin: 50px 0 20px;
             font-weight: 600;
         }
         
@@ -212,6 +211,27 @@
             background: #f8f6f3;
             font-weight: 600;
             color: #1a1a2e;
+        }
+        
+        /* Blog Images */
+        .blog-image {
+            margin: 35px 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .blog-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .blog-image-caption {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
         }
         
         /* CTA Box */
@@ -298,6 +318,104 @@
             text-decoration: none;
         }
         
+        /* Price Box */
+        .price-box {
+            background: #f8f6f3;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin: 25px 0;
+        }
+        
+        .price-box .price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        
+        .price-box .note {
+            font-size: 13px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        /* Feature List */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-item {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-item .icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-item h4 {
+            font-size: 16px;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        
+        .feature-item p {
+            font-size: 13px;
+            color: #666;
+            margin: 0;
+        }
+        
+        /* Related Posts */
+        .related-posts {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+        }
+        
+        .related-posts h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .related-item {
+            background: #fafafa;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+        }
+        
+        .related-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .related-item .category {
+            font-size: 11px;
+            color: #d4a574;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .related-item h4 {
+            font-size: 16px;
+            margin: 8px 0;
+            color: #1a1a2e;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .blog-hero h1 {
@@ -310,6 +428,10 @@
             
             .blog-container {
                 padding: 0 15px 40px;
+            }
+            
+            .related-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -339,7 +461,12 @@
     <div class="blog-container">
         <article class="blog-card">
             <div class="blog-content">
-                <p>Your wedding welcome sign is the first thing your guests see when they arrive at your celebration. It's not just a practical way to guide guests—it's also a beautiful decoration that sets the tone for your entire event.</p>
+                <p>Your wedding welcome sign is the first thing your guests see when they arrive at your celebration. It's not just a practical way to guide guests—it's also a beautiful decoration that sets the tone for your entire event. In this comprehensive guide, we'll walk you through everything you need to know about choosing the perfect welcome sign for your big day.</p>
+
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/2737893/pexels-photo-2737893.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant wedding welcome sign example">
+                    <div class="blog-image-caption">A beautiful acrylic welcome sign sets the tone for an elegant wedding</div>
+                </div>
 
                 <h2>Why Wedding Welcome Signs Matter</h2>
                 <p>A well-designed welcome sign accomplishes several important tasks:</p>
@@ -351,6 +478,11 @@
                 </ul>
                 <p>Research shows that weddings with cohesive signage receive 40% more positive guest feedback about organization and planning.</p>
 
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding decoration table setup">
+                    <div class="blog-image-caption">Welcome signs work with your overall wedding décor</div>
+                </div>
+
                 <h2>Popular Welcome Sign Materials</h2>
 
                 <h3>Acrylic Welcome Signs</h3>
@@ -361,23 +493,44 @@
                     <li><strong>Durable</strong> – can be kept as a treasured keepsake</li>
                     <li><strong>Works for both indoor and outdoor venues</strong></li>
                 </ul>
-                <p>Acrylic signs typically cost between $89-$149 depending on size and design complexity.</p>
+                
+                <div class="price-box">
+                    <div class="price">$89 - $149</div>
+                    <div class="note">Price varies by size and design complexity</div>
+                </div>
 
                 <h3>Wood Welcome Signs</h3>
                 <p>Classic wooden signs offer a rustic, warm aesthetic:</p>
                 <ul>
                     <li>Perfect for barn, vineyard, or outdoor weddings</li>
                     <li>Can be repurposed as home decor after the wedding</li>
-                    <li>Price range: $79-$129</li>
+                    <li>Available in various wood types (pine, cedar, birch)</li>
+                    <li>Can be stained, painted, or carved</li>
                 </ul>
+                
+                <div class="price-box">
+                    <div class="price">$79 - $129</div>
+                    <div class="note">Price varies by size and wood type</div>
+                </div>
 
                 <h3>Mirror Welcome Signs</h3>
-                <p>Mirror signs add a touch of glamour:</p>
+                <p>Mirror signs add a touch of glamour and elegance:</p>
                 <ul>
-                    <li>Elegant reflection effect</li>
+                    <li>Elegant reflection effect creates stunning photos</li>
                     <li>Popular for formal black-tie weddings</li>
-                    <li>Price range: $99-$159</li>
+                    <li>Can be customized with gold or silver frames</li>
+                    <li>Perfect for ballroom or hotel venues</li>
                 </ul>
+                
+                <div class="price-box">
+                    <div class="price">$99 - $159</div>
+                    <div class="note">Price varies by size and frame style</div>
+                </div>
+
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gold mirror wedding sign">
+                    <div class="blog-image-caption">Mirror signs add glamour to formal weddings</div>
+                </div>
 
                 <h2>How to Choose the Right Welcome Sign</h2>
                 <p>Consider these factors when selecting your welcome sign:</p>
@@ -388,6 +541,8 @@
                     <li><strong>Modern minimalist</strong> → Acrylic with sleek fonts</li>
                     <li><strong>Rustic/vintage</strong> → Wood with hand-lettered style</li>
                     <li><strong>Glamorous</strong> → Mirror or gold-accented acrylic</li>
+                    <li><strong>Bohemian</strong> → Wood with floral or greenery accents</li>
+                    <li><strong>Classic elegant</strong> → Framed mirror with calligraphy</li>
                 </ul>
 
                 <h3>2. Consider Venue Logistics</h3>
@@ -395,6 +550,7 @@
                     <li><strong>Indoor venues:</strong> Most sign materials work well</li>
                     <li><strong>Outdoor venues:</strong> Consider weather-resistant options like acrylic or sealed wood</li>
                     <li><strong>Beach weddings:</strong> Avoid materials that can be damaged by sand or salt air</li>
+                    <li><strong>Evening weddings:</strong> Consider illuminated signs for better visibility</li>
                 </ul>
 
                 <h3>3. Choose Readable Fonts</h3>
@@ -403,16 +559,67 @@
                     <li>Font size is large enough to read from 10 feet away</li>
                     <li>Script fonts are paired with simpler readable fonts</li>
                     <li>Contrast between text and background is high</li>
+                    <li>Avoid overly decorative fonts that are hard to read</li>
+                </ul>
+
+                <h3>4. Plan for Weather</h3>
+                <p>If you're having an outdoor wedding, consider:</p>
+                <ul>
+                    <li>Weighted stands to prevent signs from falling</li>
+                    <li>Laminated prints for rain protection</li>
+                    <li>Sealed wood for moisture resistance</li>
+                    <li>Backup indoor signs just in case</li>
                 </ul>
 
                 <h2>What to Include on Your Welcome Sign</h2>
                 <p>Essential elements:</p>
                 <ol>
                     <li><strong>"Welcome to [Your Names]"</strong> or "Welcome to Our Wedding"</li>
-                    <li><strong>Date</strong> (optional but recommended)</li>
+                    <li><strong>Wedding date</strong> (optional but recommended)</li>
                     <li><strong>Venue name</strong> (if helpful for guests)</li>
                     <li><strong>Directional information</strong> (optional)</li>
                 </ol>
+
+                <h3>Creative Additions</h3>
+                <p>Make your welcome sign unique with these popular additions:</p>
+                <ul>
+                    <li>Your wedding monogram or logo</li>
+                    <li>A meaningful quote or song lyric</li>
+                    <li>Your wedding hashtag</li>
+                    <li>Social media handles</li>
+                    <li>Heartfelt message to guests</li>
+                </ul>
+
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/1043525/pexels-photo-1043525.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding welcome sign with flowers">
+                    <div class="blog-image-caption">Welcome signs pair beautifully with floral arrangements</div>
+                </div>
+
+                <h2>Customization Options</h2>
+                <p>Most couples opt for fully customized welcome signs that reflect their personalities:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="icon">🎨</div>
+                        <h4>Colors</h4>
+                        <p>Match your wedding palette</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">✍️</div>
+                        <h4>Fonts</h4>
+                        <p>Choose from dozens of styles</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">📐</div>
+                        <h4>Sizes</h4>
+                        <p>18"x24" to 36"x48"</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">🖼️</div>
+                        <h4>Stands</h0>
+                        <p>Easel, acrylic, or wood</p>
+                    </div>
+                </div>
 
                 <h2>How to Order Your Custom Welcome Sign</h2>
                 <p>At EventDecorSigns, we make ordering custom welcome signs simple:</p>
@@ -431,10 +638,41 @@
                     <li>Your choice of gold, silver, rose gold, or black accents</li>
                     <li>Multiple size options (18"x24", 24"x36")</li>
                     <li>Stand included</li>
+                    <li>Free matching table numbers available</li>
                 </ul>
                 <blockquote>
-                    <p>"The Madison welcome sign was the first thing our guests saw, and everyone commented on how beautiful it was. It looked even better in person than in the photos!" — Sarah & Michael, California</p>
+                    <p>"The Madison welcome sign was the first thing our guests saw, and everyone commented on how beautiful it was. It looked even better in person than in the photos! The team was so helpful throughout the entire process." — Sarah & Michael, California</p>
                 </blockquote>
+
+                <blockquote>
+                    <p>"We wanted something elegant but not too formal, and the Madison was perfect. The gold accents matched our centerpieces exactly. Highly recommend!" — Amanda & Chris, New York</p>
+                </blockquote>
+
+                <h2>Tips for Getting the Most From Your Welcome Sign</h2>
+                
+                <h3>Photography Tips</h3>
+                <ul>
+                    <li>Place your welcome sign near the entrance for maximum visibility</li>
+                    <li>Leave space in front for photos with the sign</li>
+                    <li>Consider lighting – signs look best in natural or warm light</li>
+                    <li>Include the sign in your detail shots</li>
+                </ul>
+
+                <h3>Placement Ideas</h3>
+                <ul>
+                    <li>Near the ceremony entrance</li>
+                    <li>At the reception venue entrance</li>
+                    <li>Near the guest book table</li>
+                    <li>As a photo backdrop</li>
+                </ul>
+
+                <h2>Order Timeline</h2>
+                <p>We recommend ordering your welcome sign:</p>
+                <ul>
+                    <li><strong>4-6 weeks before</strong> your wedding for standard production</li>
+                    <li><strong>6-8 weeks before</strong> for fully custom designs</li>
+                    <li><strong>Rush orders</strong> available for an additional fee</li>
+                </ul>
 
                 <!-- CTA -->
                 <div class="blog-cta">
@@ -442,6 +680,21 @@
                     <p>Contact us for a free quote. We'll work with you to bring your vision to life.</p>
                     <a href="../contact.html" class="btn btn-primary">Get Free Quote</a>
                     <a href="../products.html" class="btn btn-secondary">View Products</a>
+                </div>
+                
+                <!-- Related Posts -->
+                <div class="related-posts">
+                    <h3>Continue Reading</h3>
+                    <div class="related-grid">
+                        <a href="acrylic-vs-wood-wedding-signs.html" class="related-item">
+                            <span class="category">Wedding Tips</span>
+                            <h4>Acrylic vs Wood Wedding Signs: Which is Right for You?</h4>
+                        </a>
+                        <a href="choose-wedding-table-numbers.html" class="related-item">
+                            <span class="category">Table Decorations</span>
+                            <h4>How to Choose Perfect Wedding Table Numbers</h4>
+                        </a>
+                    </div>
                 </div>
                 
                 <!-- Share -->

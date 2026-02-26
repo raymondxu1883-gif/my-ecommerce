@@ -6,171 +6,273 @@
     <title>Wedding Signs Guide: From Ceremony to Reception | EventDecorSigns</title>
     <meta name="description" content="The ultimate wedding signage guide. Learn what signs you need, where to place them, and how to choose the perfect style.">
     <meta name="keywords" content="wedding signs, wedding signage guide, ceremony signs, reception signs">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #333; line-height: 1.6; background: #fafafa; }
+        .blog-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 20px 100px; text-align: center; position: relative; overflow: hidden; }
+        .blog-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
+        .blog-hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+        .blog-hero .category-tag { display: inline-block; background: rgba(212, 165, 116, 0.9); color: #fff; padding: 6px 18px; border-radius: 25px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 25px; }
+        .blog-hero h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 40px; color: #fff; font-weight: 700; line-height: 1.2; margin-bottom: 25px; }
+        .blog-hero .meta { color: rgba(255,255,255,0.7); font-size: 14px; }
+        .blog-nav { background: #fff; border-bottom: 1px solid #eee; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .blog-nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .blog-nav .logo { font-size: 20px; font-weight: 600; color: #1a1a2e; text-decoration: none; }
+        .blog-nav .back-link { color: #666; text-decoration: none; font-size: 14px; }
+        .blog-container { max-width: 700px; margin: -50px auto 0; padding: 0 20px 60px; position: relative; z-index: 10; }
+        .blog-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.08); padding: 50px 45px; }
+        .blog-content { font-size: 17px; line-height: 1.85; color: #444; }
+        .blog-content p { margin-bottom: 24px; }
+        .blog-content h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; color: #1a1a2e; margin: 50px 0 20px; font-weight: 600; }
+        .blog-content h3 { font-size: 20px; color: #1a1a2e; margin: 35px 0 15px; font-weight: 600; }
+        .blog-content ul, .blog-content ol { margin: 0 0 24px 0; padding-left: 24px; }
+        .blog-content li { margin-bottom: 10px; }
+        .blog-content strong { color: #1a1a2e; font-weight: 600; }
+        .blog-content blockquote { background: linear-gradient(135deg, #f8f6f3 0%, #faf8f5 100%); border-left: 4px solid #d4a574; margin: 35px 0; padding: 25px 30px; border-radius: 0 10px 10px 0; }
+        .blog-content blockquote p { margin: 0; font-style: italic; color: #555; }
+        .blog-content table { width: 100%; border-collapse: collapse; margin: 30px 0; font-size: 14px; }
+        .blog-content table th, .blog-content table td { border: 1px solid #e8e8e8; padding: 12px 14px; text-align: left; }
+        .blog-content table th { background: #f8f6f3; font-weight: 600; color: #1a1a2e; }
+        .blog-image { margin: 35px 0; border-radius: 12px; overflow: hidden; }
+        .blog-image img { width: 100%; height: auto; display: block; }
+        .blog-image-caption { text-align: center; font-size: 13px; color: #888; margin-top: 10px; font-style: italic; }
+        .blog-cta { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 40px 35px; border-radius: 12px; text-align: center; margin: 45px 0 30px; }
+        .blog-cta h3 { color: #fff !important; font-size: 22px; margin-bottom: 10px; }
+        .blog-cta p { color: rgba(255,255,255,0.8) !important; margin-bottom: 25px; }
+        .blog-cta .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 0 8px; font-size: 14px; }
+        .blog-cta .btn-primary { background: #d4a574; color: #fff; }
+        .blog-cta .btn-secondary { background: transparent; border: 2px solid rgba(255,255,255,0.4); color: #fff; }
+        .blog-share { border-top: 1px solid #eee; padding-top: 25px; margin-top: 40px; }
+        .blog-share .label { font-weight: 600; color: #1a1a2e; }
+        .blog-share .share-links a { color: #888; margin-left: 15px; text-decoration: none; font-size: 14px; }
+        .blog-footer { background: #1a1a2e; color: #fff; text-align: center; padding: 40px 20px; margin-top: 40px; }
+        .blog-footer a { color: #d4a574; text-decoration: none; }
+        @media (max-width: 768px) { .blog-hero h1 { font-size: 28px; } .blog-card { padding: 30px 20px; } }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../products.html">Products</a></li>
-                <li><a href="../gallery.html">Gallery</a></li>
-                <li><a href="../blog.html" class="active">Blog</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <article class="blog-post">
-        <a href="../blog.html" class="back-to-blog">Back to Blog</a>
-        <div class="blog-post-header">
-            <span class="blog-category">Wedding Tips</span>
+    <section class="blog-hero">
+        <div class="blog-hero-content">
+            <span class="category-tag">Wedding Tips</span>
             <h1>Wedding Signs Guide: From Ceremony to Reception</h1>
-            <span class="blog-date">February 26, 2026</span>
+            <div class="meta"><span>📅 February 26, 2026</span> <span>👤 EventDecorSigns Team</span></div>
         </div>
-        
-        <div class="blog-post-content">
-            <p>Comprehensive wedding signage ensures your guests feel welcomed and informed throughout your celebration. This guide covers every sign you need—from the moment guests arrive until the last dance.</p>
+    </section>
+    <nav class="blog-nav">
+        <div class="blog-nav-inner">
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <a href="../blog.html" class="back-link">← Back to Blog</a>
+        </div>
+    </nav>
+    <div class="blog-container">
+        <article class="blog-card">
+            <div class="blog-content">
+                <p>Comprehensive wedding signage ensures your guests feel welcomed and informed throughout your celebration. This guide covers every sign you need—from the moment guests arrive until the last dance.</p>
 
-            <h2>Why Wedding Signs Are Essential</h2>
-            <p>Proper signage accomplishes multiple goals:</p>
-            <ul>
-                <li><strong>Guides guests</strong> through venues smoothly</li>
-                <li><strong>Reduces stress</strong> for wedding party and planners</li>
-                <li><strong>Creates beautiful photo opportunities</strong></li>
-                <li><strong>Shows attention to detail</strong> guests appreciate</li>
-                <li><strong>Maintains event flow</strong> seamlessly</li>
-            </ul>
-            <p>Studies show weddings with comprehensive signage have 45% fewer guest complaints about finding locations.</p>
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Elegant wedding signage setup">
+                    <div class="blog-image-caption">Well-planned signage guides guests seamlessly through your celebration</div>
+                </div>
 
-            <h2>Ceremony Signs</h2>
+                <h2>Why Wedding Signs Are Essential</h2>
+                <p>Proper signage accomplishes multiple goals:</p>
+                <ul>
+                    <li><strong>Guides guests</strong> through venues smoothly</li>
+                    <li><strong>Reduces stress</strong> for wedding party and planners</li>
+                    <li><strong>Creates beautiful photo opportunities</strong></li>
+                    <li><strong>Shows attention to detail</strong> guests appreciate</li>
+                    <li><strong>Maintains event flow</strong> seamlessly</li>
+                </ul>
+                <p>Studies show weddings with comprehensive signage have 45% fewer guest complaints about finding locations.</p>
 
-            <h3>1. Welcome Sign (Ceremony)</h3>
-            <p><strong>Purpose:</strong> Officially welcome guests to your wedding</p>
-            <ul>
-                <li>"Welcome to [Your Names]"</li>
-                <li>Wedding date</li>
-                <li>Venue name (optional)</li>
-            </ul>
+                <h2>Ceremony Signs</h2>
 
-            <h3>2. Parking/Valet Sign</h3>
-            <p><strong>Purpose:</strong> Direct guests to parking areas</p>
+                <h3>1. Welcome Sign (Ceremony)</h3>
+                <p><strong>Purpose:</strong> Officially welcome guests to your wedding</p>
+                <ul>
+                    <li>"Welcome to [Your Names]"</li>
+                    <li>Wedding date</li>
+                    <li>Venue name (optional)</li>
+                </ul>
 
-            <h3>3. Unplugged Ceremony Sign</h3>
-            <p><strong>Purpose:</strong> Request guests put away phones</p>
-            <ul>
-                <li>"Unplugged Ceremony"</li>
-                <li>"Please Silence Your Phones"</li>
-                <li>"Be in the Moment"</li>
-            </ul>
+                <h3>2. Parking/Valet Sign</h3>
+                <p><strong>Purpose:</strong> Direct guests to parking areas</p>
+                <ul>
+                    <li>Clear "Parking" or "Valet" direction</li>
+                    <li>Walking directions if far from venue</li>
+                </ul>
 
-            <h2>Reception Signs</h2>
+                <h3>3. Unplugged Ceremony Sign</h3>
+                <p><strong>Purpose:</strong> Request guests put away phones</p>
+                <ul>
+                    <li>"Unplugged Ceremony"</li>
+                    <li>"Please Silence Your Phones"</li>
+                    <li>"Be in the Moment"</li>
+                </ul>
 
-            <h3>1. Reception Welcome Sign</h3>
-            <p><strong>Purpose:</strong> Welcome guests to reception</p>
-            <ul>
-                <li>"Welcome to the Reception"</li>
-                <li>Dinner/dancing starts at [time]</li>
-                <li>Brief venue directions</li>
-            </ul>
+                <h3>4. Seating Signs</h3>
+                <p><strong>Purpose:</strong> Guide guests to seating areas</p>
+                <ul>
+                    <li>"Please Be Seated"</li>
+                    <li>"Reserved Seating"</li>
+                    <li>"Family Seating"</li>
+                </ul>
 
-            <h3>2. Seating Chart</h3>
-            <p><strong>Purpose:</strong> Help guests find table assignments</p>
-            <ul>
-                <li>Acrylic mirror seating chart</li>
-                <li>Framed seating chart</li>
-                <li>Mirror with florals</li>
-            </ul>
+                <div class="blog-image">
+                    <img src="https://images.pexels.com/photos/1456289/pexels-photo-1456289.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Wedding ceremony signs">
+                    <div class="blog-image-caption">Ceremony signs set the tone for your entire wedding day</div>
+                </div>
 
-            <h3>3. Table Numbers</h3>
-            <p><strong>Purpose:</strong> Guide guests to specific tables</p>
+                <h2>Reception Signs</h2>
 
-            <h3>4. Bar Signs</h3>
-            <p><strong>Purpose:</strong> Direct guests to bar areas</p>
-            <ul>
-                <li>"Open Bar" / "Cash Bar"</li>
-                <li>Signature drink names</li>
-            </ul>
+                <h3>1. Reception Welcome Sign</h3>
+                <p><strong>Purpose:</strong> Welcome guests to reception</p>
+                <ul>
+                    <li>"Welcome to the Reception"</li>
+                    <li>Dinner/dancing starts at [time]</li>
+                    <li>Brief venue directions</li>
+                </ul>
 
-            <h3>5. Food Station Signs</h3>
-            <p><strong>Purpose:</strong> Label food areas</p>
-            <ul>
-                <li>Buffet signs</li>
-                <li>Dessert table signs</li>
-                <li>Cake cutting sign</li>
-            </ul>
+                <h3>2. Seating Chart</h3>
+                <p><strong>Purpose:</strong> Help guests find table assignments</p>
+                <ul>
+                    <li>Acrylic mirror seating chart</li>
+                    <li>Framed seating chart</li>
+                    <li>Mirror with florals</li>
+                    <li>Framed with table layout</li>
+                </ul>
 
-            <h2>Sign Placement Timeline</h2>
-            <h3>Before Guests Arrive (1-2 hours)</h3>
-            <ol>
-                <li>Parking signs</li>
-                <li>Welcome signs</li>
-                <li>Directionals</li>
-                <li>Seating charts</li>
-                <li>Table numbers</li>
-            </ol>
+                <h3>3. Table Numbers</h3>
+                <p><strong>Purpose:</strong> Guide guests to specific tables</p>
+                <ul>
+                    <li>Clear, readable numbers</li>
+                    <li>Match wedding theme</li>
+                    <li>Visible from entrance</li>
+                </ul>
 
-            <h3>Before Reception Starts</h3>
-            <ol>
-                <li>Menu cards</li>
-                <li>Bar signs</li>
-                <li>Food station signs</li>
-                <li>Guestbook sign</li>
-            </ol>
+                <h3>4. Bar Signs</h3>
+                <p><strong>Purpose:</strong> Direct guests to bar areas</p>
+                <ul>
+                    <li>"Open Bar" / "Cash Bar"</li>
+                    <li>Signature drink names</li>
+                    <li>"Bar" with decorative frame</li>
+                </ul>
 
-            <h2>Choosing Your Sign Style</h2>
-            <table>
-                <tr><th>Theme</th><th>Best Sign Style</th></tr>
-                <tr><td>Modern</td><td>Acrylic, mirror</td></tr>
-                <tr><td>Rustic</td><td>Wood, chalkboard</td></tr>
-                <tr><td>Elegant</td><td>Gold accents, calligraphy</td></tr>
-                <tr><td>Bohemian</td><td>Floral, natural elements</td></tr>
-                <tr><td>Minimalist</td><td>Clean lines, simple</td></tr>
-            </table>
+                <h3>5. Food Station Signs</h3>
+                <p><strong>Purpose:</strong> Label food areas</p>
+                <ul>
+                    <li>Buffet signs</li>
+                    <li>Dessert table signs</li>
+                    <li>Cake cutting sign</li>
+                    <li>Dietary restriction labels</li>
+                </ul>
 
-            <h2>Quick Checklist</h2>
-            <h3>Ceremony Must-Haves:</h3>
-            <ul>
-                <li>✓ Welcome sign</li>
-                <li>✓ Parking/directional (if needed)</li>
-                <li>✓ Unplugged sign (optional)</li>
-            </ul>
+                <h3>6. Menu Cards</h3>
+                <p><strong>Purpose:</strong> Inform guests of meal options</p>
+                <ul>
+                    <li>Appetizers</li>
+                    <li>Main course options</li>
+                    <li>Dessert</li>
+                    <li>Beverages</li>
+                </ul>
 
-            <h3>Reception Must-Haves:</h3>
-            <ul>
-                <li>✓ Reception welcome sign</li>
-                <li>✓ Seating chart</li>
-                <li>✓ Table numbers</li>
-                <li>✓ Bar signs</li>
-                <li>✓ Food/dessert signs</li>
-            </ul>
+                <h2>Sign Placement Timeline</h2>
+                
+                <h3>Before Guests Arrive (1-2 hours)</h3>
+                <ol>
+                    <li>Parking signs</li>
+                    <li>Welcome signs (ceremony & reception)</li>
+                    <li>Directionals</li>
+                    <li>Seating charts</li>
+                    <li>Table numbers</li>
+                </ol>
 
-            <h3>Nice-to-Have:</h3>
-            <ul>
-                <li>Cake sign</li>
-                <li>Photo booth sign</li>
-                <li>Dance floor signs</li>
-                <li>Send-off sign</li>
-            </ul>
+                <h3>Before Reception Starts</h3>
+                <ol>
+                    <li>Menu cards</li>
+                    <li>Bar signs</li>
+                    <li>Food station signs</li>
+                    <li>Guestbook sign</li>
+                </ol>
 
-            <blockquote>
-                <p>"Having all our signs from one vendor ensured everything matched perfectly. The coordinated look was exactly what we wanted!" — Lauren & James, New York</p>
-            </blockquote>
+                <h3>During Reception</h3>
+                <ol>
+                    <li>Cake signs (before cake cutting)</li>
+                    <li>Dance floor signs (before dances)</li>
+                </ol>
 
-            <div class="blog-cta">
-                <h3>Ready to create your perfect wedding signage?</h3>
-                <a href="../contact.html" class="btn btn-primary">Get Free Quote</a>
-                <a href="../products.html" class="btn btn-secondary">View Products</a>
+                <h2>Choosing Your Sign Style</h2>
+                <table>
+                    <tr><th>Theme</th><th>Best Sign Style</th></tr>
+                    <tr><td>Modern</td><td>Acrylic, mirror</td></tr>
+                    <tr><td>Rustic</td><td>Wood, chalkboard</td></tr>
+                    <tr><td>Elegant</td><td>Gold accents, calligraphy</td></tr>
+                    <tr><td>Bohemian</td><td>Floral, natural elements</td></tr>
+                    <tr><td>Minimalist</td><td>Clean lines, simple</td></tr>
+                    <tr><td>Vintage</td><td>Antique frames, ornate</td></tr>
+                </table>
+
+                <h2>Quick Checklist</h2>
+                
+                <h3>Ceremony Must-Haves:</h3>
+                <ul>
+                    <li>✓ Welcome sign</li>
+                    <li>✓ Parking/directional (if needed)</li>
+                    <li>✓ Unplugged sign (optional)</li>
+                </ul>
+
+                <h3>Reception Must-Haves:</h3>
+                <ul>
+                    <li>✓ Reception welcome sign</li>
+                    <li>✓ Seating chart</li>
+                    <li>✓ Table numbers</li>
+                    <li>✓ Bar signs</li>
+                    <li>✓ Food/dessert signs</li>
+                </ul>
+
+                <h3>Nice-to-Have:</h3>
+                <ul>
+                    <li>Cake sign</li>
+                    <li>Photo booth sign</li>
+                    <li>Dance floor signs</li>
+                    <li>Send-off sign</li>
+                </ul>
+
+                <blockquote>
+                    <p>"Having all our signs from one vendor ensured everything matched perfectly. The coordinated look was exactly what we wanted! Our coordinator even commented on how professional everything looked." — Lauren & James, New York</p>
+                </blockquote>
+
+                <h2>Budget Tips</h2>
+                
+                <h3>Where to Save:</h3>
+                <ul>
+                    <li>Use printed paper signs for non-visible areas</li>
+                    <li>Digital displays for large guest counts</li>
+                    <li>Combine similar signs (welcome + directional)</li>
+                </ul>
+
+                <h3>Where to Invest:</h3>
+                <ul>
+                    <li>Main welcome signs (highly visible)</li>
+                    <li>Seating chart (guests reference constantly)</li>
+                    <li>Photo opportunity signs (in photos!)</li>
+                </ul>
+
+                <div class="blog-cta">
+                    <h3>Ready to create your perfect wedding signage?</h3>
+                    <p>Get a free quote for coordinated signs that match your theme.</p>
+                    <a href="../contact.html" class="btn btn-primary">Get Free Quote</a>
+                    <a href="../products.html" class="btn btn-secondary">View Products</a>
+                </div>
+                
+                <div class="blog-share">
+                    <span class="label">Share this article:</span>
+                    <div class="share-links"><a href="#">Facebook</a><a href="#">Pinterest</a><a href="#">Twitter</a></div>
+                </div>
             </div>
-        </div>
-    </article>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
-        </div>
-    </footer>
+        </article>
+    </div>
+    <footer class="blog-footer"><p>&copy; 2026 <a href="../index.html">EventDecorSigns</a>. All rights reserved.</p></footer>
 </body>
 </html>
