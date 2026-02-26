@@ -1263,155 +1263,222 @@ footer {
 
 /* Blog Post Page Styles */
 .blog-post {
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    padding: 60px 24px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #fff;
 }
 
 .blog-post-header {
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #f0f0f0;
 }
 
 .blog-post-header .blog-category {
     display: inline-block;
-    background: #d4a574;
+    background: linear-gradient(135deg, #d4a574 0%, #c9956c 100%);
     color: #fff;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 12px;
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .blog-post-header h1 {
-    font-size: 36px;
+    font-size: 42px;
     color: #1a1a1a;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
     line-height: 1.2;
     font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.5px;
 }
 
 .blog-post-header .blog-date {
-    color: #888;
+    color: #999;
     font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .blog-post-content {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 19px;
+    line-height: 1.85;
     color: #333;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 .blog-post-content p {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    color: #444;
 }
 
 .blog-post-content h2 {
     font-size: 28px;
     color: #1a1a1a;
-    margin: 40px 0 20px 0;
-    font-weight: 600;
+    margin: 50px 0 24px 0;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.3px;
+    border-left: 4px solid #d4a574;
+    padding-left: 16px;
 }
 
 .blog-post-content h3 {
     font-size: 22px;
-    color: #1a1a1a;
-    margin: 30px 0 15px 0;
+    color: #2a2a2a;
+    margin: 36px 0 16px 0;
     font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .blog-post-content ul, .blog-post-content ol {
-    margin: 0 0 20px 0;
-    padding-left: 25px;
+    margin: 0 0 24px 0;
+    padding-left: 28px;
 }
 
 .blog-post-content li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.blog-post-content li strong {
+    color: #1a1a1a;
 }
 
 .blog-post-content blockquote {
-    background: #f9f9f9;
-    border-left: 4px solid #d4a574;
-    margin: 30px 0;
-    padding: 20px 25px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-left: 5px solid #d4a574;
+    margin: 35px 0;
+    padding: 25px 30px;
     font-style: italic;
     color: #555;
+    border-radius: 0 8px 8px 0;
 }
 
 .blog-post-content blockquote p {
     margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 .blog-post-content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 30px 0;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .blog-post-content table th,
 .blog-post-content table td {
-    border: 1px solid #ddd;
-    padding: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 14px 16px;
     text-align: left;
 }
 
 .blog-post-content table th {
-    background: #f5f5f5;
+    background: #f8f8f8;
     font-weight: 600;
+    color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.blog-post-content table td {
+    color: #444;
 }
 
 .blog-post-content strong {
     color: #1a1a1a;
+    font-weight: 600;
+}
+
+.blog-post-content a {
+    color: #d4a574;
+    text-decoration: underline;
+}
+
+.blog-post-content a:hover {
+    color: #b8956a;
 }
 
 .blog-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #fff;
-    padding: 40px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #eee 100%);
+    border: 2px solid #d4a574;
+    color: #333;
+    padding: 45px 40px;
     border-radius: 12px;
     text-align: center;
     margin: 50px 0 30px 0;
 }
 
 .blog-cta h3 {
-    color: #fff !important;
+    color: #1a1a1a !important;
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .blog-cta p {
-    color: rgba(255,255,255,0.9);
-    margin-bottom: 25px;
+    color: #666 !important;
+    margin-bottom: 28px;
+    font-size: 16px;
 }
 
 .blog-cta .btn {
     display: inline-block;
-    padding: 12px 30px;
-    border-radius: 6px;
+    padding: 14px 36px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    margin: 0 10px;
-    transition: all 0.3s;
+    margin: 0 12px;
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 15px;
 }
 
 .blog-cta .btn-primary {
-    background: #fff;
-    color: #667eea;
+    background: linear-gradient(135deg, #d4a574 0%, #c9956c 100%);
+    color: #fff !important;
+    border: none;
 }
 
 .blog-cta .btn-secondary {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    background: #fff;
+    border: 2px solid #d4a574;
+    color: #d4a574 !important;
 }
 
 .blog-cta .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Back to blog link */
+.back-to-blog {
+    display: inline-flex;
+    align-items: center;
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: color 0.2s;
+}
+
+.back-to-blog:hover {
+    color: #d4a574;
+}
+
+.back-to-blog::before {
+    content: "←";
+    margin-right: 8px;
 }
