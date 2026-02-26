@@ -79,9 +79,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
             border: 2px solid transparent;
             transition: all 0.3s;
+            overflow: hidden;
+        }
+        
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .thumbnail:hover, .thumbnail.active {
@@ -425,30 +431,34 @@
             <div class="product-grid-detail">
                 <!-- Gallery -->
                 <div class="product-gallery">
-                    <div class="main-image" id="mainImageEmoji">
-                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="The Madison Wedding Welcome Sign" onerror="this.style.display='none'; this.parentElement.innerHTML='💒'">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/welcome-sign-1.jpg" alt="The Madison Wedding Welcome Sign">
                     </div>
                     <div class="thumbnail-row">
-                        <div class="thumbnail active" onclick="switchImage(this, '💒')">💒</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🪑')">🪑</div>
-                        <div class="thumbnail" onclick="switchImage(this, '💃')">💃</div>
-                        <div class="thumbnail" onclick="switchImage(this, '📸')">📸</div>
-                        <div class="thumbnail" onclick="switchImage(this, '💐')">💐</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🎀')">🎀</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🌸')">🌸</div>
-                        <div class="thumbnail">✨</div>
-                        <div class="thumbnail" onclick="switchImage(this, '💕')">💕</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🎉')">🎉</div>
-                        <div class="thumbnail">🏵️</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🎊')">🎊</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🌹')">🌹</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🥂')">🥂</div>
-                        <div class="thumbnail" onclick="switchImage(this, '💍')">💍</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🎁')">🎁</div>
-                        <div class="thumbnail" onclick="switchImage(this, '📝')">📝</div>
-                        <div class="thumbnail">🖼️</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🎨')">🎨</div>
-                        <div class="thumbnail" onclick="switchImage(this, '🌺')">🌺</div>
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/welcome-sign-1.jpg')">
+                            <img src="../images/products/welcome-sign-1.jpg" alt="Welcome Sign 1">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-2.jpg')">
+                            <img src="../images/products/welcome-sign-2.jpg" alt="Welcome Sign 2">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-3.jpg')">
+                            <img src="../images/products/welcome-sign-3.jpg" alt="Welcome Sign 3">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-4.jpg')">
+                            <img src="../images/products/welcome-sign-4.jpg" alt="Welcome Sign 4">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-5.jpg')">
+                            <img src="../images/products/welcome-sign-5.jpg" alt="Welcome Sign 5">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-6.jpg')">
+                            <img src="../images/products/welcome-sign-6.jpg" alt="Welcome Sign 6">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-7.jpg')">
+                            <img src="../images/products/welcome-sign-7.jpg" alt="Welcome Sign 7">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '../images/products/welcome-sign-8.jpg')">
+                            <img src="../images/products/welcome-sign-8.jpg" alt="Welcome Sign 8">
+                        </div>
                     </div>
                 </div>
                 
@@ -691,13 +701,16 @@
             document.getElementById('selectedColor').value = element.title;
         }
         
-        function switchImage(element, emoji) {
+        function switchImage(element, imageSrc) {
             // Remove active class from all thumbnails
             document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
             // Add active class to clicked thumbnail
             element.classList.add('active');
-            // Update main image emoji
-            document.getElementById('mainImageEmoji').textContent = emoji;
+            // Update main image
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="The Madison Wedding Welcome Sign">';
+            }
         }
     </script>
     <script src="../script.js"></script>
