@@ -3,66 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature Drink Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom signature drink signs for weddings. Name your special cocktails.">
+    <title>Signature Drink Sign | Wedding Bar Sign | EventDecorSigns</title>
+    <meta name="description" content="Display your signature cocktails with elegant acrylic bar signs. Custom drinks, colors & designs. Perfect for wedding bars.">
+    <meta name="keywords" content="signature drink sign, bar sign, wedding bar signs, cocktail sign, signature cocktail display, reception bar decor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/signature-drink-sign.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Signature Drink Sign | Wedding Bar Sign | EventDecorSigns">
+    <meta property="og:description" content="Display your signature cocktails with elegant acrylic bar signs.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/signature-drink-sign.html">
+    
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
         .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 180px; margin-bottom: 15px; overflow: hidden; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; font-size: 30px; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 600; margin-bottom: 20px; }
+        .product-description { color: #666; line-height: 1.8; margin-bottom: 30px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+        .product-features h3 { margin-bottom: 15px; font-size: 18px; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 30px; }
+        .option-group { margin-bottom: 20px; }
+        .option-group label { display: block; font-weight: 600; margin-bottom: 10px; color: #333; }
+        .option-group select, .option-group input { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; background: white; }
+        .option-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; background: white; min-height: 80px; }
+        .color-options { display: flex; gap: 10px; flex-wrap: wrap; }
+        .color-option { width: 40px; height: 40px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: all 0.3s; }
+        .color-option:hover, .color-option.active { border-color: #333; transform: scale(1.1); }
+        .color-option.clear { background: linear-gradient(135deg, #fff 50%, #ccc 50%); }
+        .color-option.frosted { background: #e8e8e8; }
+        .color-option.white { background: #fff; border: 1px solid #ddd !important; }
+        .color-option.black { background: #333; }
+        .color-option.gold { background: linear-gradient(135deg, #d4a574, #f5deb3); }
+        .color-option.rose-gold { background: linear-gradient(135deg, #e8b4b8, #f5deb3); }
+        .btn-quote { width: 100%; padding: 18px; font-size: 18px; background: #d4a574; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; margin-bottom: 15px; }
+        .btn-quote:hover { background: #c49464; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(212, 165, 116, 0.4); }
+        .custom-note { background: #f0f7ff; padding: 15px; border-radius: 8px; font-size: 14px; color: #666; border-left: 4px solid #4a90d9; }
+        .order-process { background: white; padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .order-process h2 { text-align: center; margin-bottom: 30px; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .process-step { text-align: center; padding: 20px; }
+        .step-number { width: 40px; height: 40px; background: #d4a574; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; }
+        .process-step h4 { margin-bottom: 10px; }
+        .process-step p { font-size: 14px; color: #666; }
+        .faq-section { margin: 60px 0; }
+        .faq-section h2 { margin-bottom: 30px; }
+        .faq-item { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .faq-item h4 { margin-bottom: 10px; color: #333; }
+        .faq-item p { color: #666; font-size: 15px; line-height: 1.6; }
+        .reviews-section { margin: 60px 0; padding: 40px; background: #fafafa; border-radius: 12px; }
+        .reviews-section h2 { margin-bottom: 30px; }
+        .review-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .review-stars { color: #d4a574; margin-bottom: 10px; }
+        .review-text { color: #666; font-style: italic; margin-bottom: 10px; }
+        .review-author { color: #999; font-size: 14px; }
+        .related-products { margin: 60px 0; }
+        .related-products h2 { margin-bottom: 30px; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+        .related-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .related-card-image { height: 150px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .related-card-info { padding: 15px; }
+        .related-card-info h4 { font-size: 16px; margin-bottom: 5px; }
+        .related-card-info .price { color: #d4a574; font-weight: 600; }
+        .buyers-guide { margin: 60px 0; padding: 40px; background: #f9f9f9; border-radius: 12px; }
+        .buyers-guide h2 { margin-bottom: 20px; }
+        .buyers-guide h3 { margin-top: 30px; margin-bottom: 15px; }
+        .drink-examples { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .drink-option { padding: 15px; background: white; border-radius: 8px; border: 2px solid #eee; }
+        .drink-option h4 { margin-bottom: 5px; color: #333; }
+        .drink-option p { font-size: 14px; color: #666; margin: 0; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .drink-examples { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <div class="logo">🎉 EventDecorSigns</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">🍹</div></div>
-                    <div class="product-info-detail">
-                        <h1>Signature Drink Sign</h1>
-                        <p class="price">From $39</p>
-                        <p>Name your signature cocktails with elegant signage! A must-have for wedding bars and reception bars.</p>
-                        <h3>Features:</h3>
-                        <ul>
-                            <li>Custom drink names</li>
-                            <li>Ingredient list</li>
-                            <li>Couple's names</li>
-                            <li>Matching wedding colors</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="page-header">
+        <h1>Signature Drink Signs</h1>
+        <p>Display your signature cocktails with elegant bar signage</p>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <a href="../products.html" style="color: #666;">Bar & Drinks</a> > 
+                <span style="color: #333;">Signature Drink Signs</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">🍸</div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '🍸')">🍸</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🍹')">🍹</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🍷')">🍷</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🍺')">🍺</div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Signature Drink Signs</h2>
-                    <h3>Personalize Your Bar</h3>
-                    <p>Signature drinks add a personal touch to your wedding reception!</p>
-                    <h3>Sign Formats</h3>
-                    <ul>
-                        <li><strong>Single Board:</strong> One signature drink</li>
-                        <li><strong>Double Board:</strong> His & Hers cocktails</li>
-                        <li><strong>Full Bar Menu:</strong> Complete drink list</li>
-                        <li><strong>Mirror Sign:</strong> Elegant mirrored acrylic</li>
-                    </ul>
-                    <h3>Popular Drink Names</h3>
-                    <p>"The Mr. & Mrs." | "Smith Sparkler" | "Love Potion"</p>
+                
+                <div class="product-info-detail">
+                    <h1>Signature Drink Sign</h1>
+                    <div class="product-price">From $39</div>
+                    
+                    <p class="product-description">
+                        Showcase your signature cocktails with our elegant acrylic bar signs! 
+                        Perfect for wedding bars, signature drink stations, or champagne bars. 
+                        Let guests know what signature drinks you're serving.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why couples love it:</h3>
+                        <ul>
+                            <li>Helps guests discover your signature drinks</li>
+                            <li>Adds professional touch to your bar</li>
+                            <li>Premium acrylic in 7 finishes</li>
+                            <li>Customize with your drink names & ingredients</li>
+                            <li>Pairs perfectly with bar menu signs</li>
+                            <li>Great keepsake for cocktail lovers</li>
+                        </ul>
+                    </div>
+                    
+                    <form action="../contact.html" method="GET">
+                        <input type="hidden" name="product" value="Signature Drink Sign">
+                        
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Sign Type *</label>
+                                <select name="sign-type" required>
+                                    <option value="">Choose sign type</option>
+                                    <option value="single">Single Drink Sign</option>
+                                    <option value="double">Two Drinks (Couple's Signature)</option>
+                                    <option value="triple">Three Drinks</option>
+                                    <option value="full-bar">Full Bar Sign (4+ drinks)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Drink Names & Ingredients</label>
+                                <textarea name="drinks" placeholder="Example:
+The Groom: Old Fashioned
+Bourbon, bitters, sugar, orange
+
+The Bride: Lavender Martini
+Vodka, lavender, lemon, simple syrup"></textarea>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Select Finish *</label>
+                                <div class="color-options">
+                                    <div class="color-option clear active" title="Clear" onclick="selectColor(this)"></div>
+                                    <div class="color-option frosted" title="Frosted" onclick="selectColor(this)"></div>
+                                    <div class="color-option white" title="White" onclick="selectColor(this)"></div>
+                                    <div class="color-option black" title="Black" onclick="selectColor(this)"></div>
+                                    <div class="color-option gold" title="Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option rose-gold" title="Rose Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option silver" title="Silver" onclick="selectColor(this)"></div>
+                                </div>
+                                <input type="hidden" name="color" id="selectedColor" value="Clear">
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Size *</label>
+                                <select name="size" required>
+                                    <option value="">Choose a size</option>
+                                    <option value="8x10">8" x 10" - Single drink - From $39</option>
+                                    <option value="12x18">12" x 18" - 2-3 drinks - From $59</option>
+                                    <option value="18x24">18" x 24" - Full bar - From $89</option>
+                                    <option value="custom">Custom Size - Contact us</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Title Text</label>
+                                <select name="title">
+                                    <option value="signature-cocktails">Signature Cocktails</option>
+                                    <option value="signature-drinks">Signature Drinks</option>
+                                    <option value="bar-specials">Bar Specials</option>
+                                    <option value="just-signed">Just Signed</option>
+                                    <option value="custom">Custom Title</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-quote">Get Your Free Quote</button>
+                    </form>
+                    
+                    <div class="custom-note">
+                        💡 <strong>Pro Tip:</strong> Have both partners create a signature drink! Display both with "His & Hers" or your names. It's a fun way to showcase your personalities!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Process -->
+            <div class="order-process">
+                <h2>How To Order</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Choose Your Options</h4>
+                        <p>Select sign type, size & finish</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Share Your Drinks</h4>
+                        <p>Tell us your drink names & ingredients</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Approve & Ship</h4>
+                        <p>Receive proof, approve & we'll ship in 5-7 days</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details -->
+            <div style="margin: 60px 0;">
+                <h2>Product Details</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+                    <div>
+                        <h3>Materials</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Premium 1/8" thick acrylic</li>
+                            <li>High-quality UV printing</li>
+                            <li>Free standing or wall mounted</li>
+                            <li>Lightweight & durable</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Display Options</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Easel stand (not included)</li>
+                            <li>Table top display</li>
+                            <li>Wall mounted</li>
+                            <li>Command strips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Popular Drink Ideas -->
+            <div style="margin: 60px 0;">
+                <h2>Popular Signature Drink Ideas</h2>
+                <div class="drink-examples">
+                    <div class="drink-option">
+                        <h4>🍸 The Classic Couple</h4>
+                        <p><strong>Bride:</strong> Classic Martini<br><strong>Groom:</strong> Old Fashioned</p>
+                    </div>
+                    <div class="drink-option">
+                        <h4>🍹 Summer Romance</h4>
+                        <p><strong>Bride:</strong> Strawberry Mojito<br><strong>Groom:</strong> Pineapple Daiquiri</p>
+                    </div>
+                    <div class="drink-option">
+                        <h4>🍷 Fall in Love</h4>
+                        <p><strong>Bride:</strong> Apple Cider Mimosa<br><strong>Groom:</strong> Maple Bourbon Sour</p>
+                    </div>
+                    <div class="drink-option">
+                        <h4>🌸 Blush & Bashful</h4>
+                        <p><strong>Bride:</strong> Rose Lemonade<br><strong>Groom:</strong> Greyhound</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h4>How many drinks should we feature?</h4>
+                    <p>Most couples feature 2 signature drinks - one for each partner! You can also add a champagne toast option or a non-alcoholic drink. For a full bar, consider multiple signs.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Should we include ingredients?</h4>
+                    <p>Including ingredients is optional but highly recommended! It helps guests know what's in each drink and shows the thought you put into your selections. Keep it simple - main spirits and flavors.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What size do we need?</h4>
+                    <p>For 1-2 drinks at a small bar, 8"x10" works. For 2-3 drinks, go with 12"x18". For a full bar with multiple drinks, 18"x24" provides more space.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can we include cocktail images?</h4>
+                    <p>Yes! We can add small cocktail illustrations or icons. Let us know in your order notes if you'd like graphics included with your drinks.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can we see a proof first?</h4>
+                    <p>Absolutely! After you submit your quote, we'll create a digital proof showing your drinks in your chosen style. Request revisions until you love it!</p>
+                </div>
+            </div>
+            
+            <!-- Reviews -->
+            <div class="reviews-section">
+                <h2>What Our Clients Say</h2>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Our signature drink signs were a hit! Everyone loved finding their drinks at the bar. The gold finish was perfect for our wedding."</p>
+                    <p class="review-author">- Lauren & Mark, Florida</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Such a cute addition to our bar! We had 'The Lauren' and 'The Mark' drinks. Our guests thought it was so creative!"</p>
+                    <p class="review-author">- Ashley & Chris, California</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Great quality and fast delivery! The sign looked amazing at our champagne bar. Will definitely recommend to friends!"</p>
+                    <p class="review-author">- Nicole & Ryan, New York</p>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-grid">
+                    <a href="bar-menu-signs.html" class="related-card">
+                        <div class="related-card-image">🍾</div>
+                        <div class="related-card-info">
+                            <h4>Bar Menu Signs</h4>
+                            <p class="price">From $39</p>
+                        </div>
+                    </a>
+                    <a href="table-numbers.html" class="related-card">
+                        <div class="related-card-image">🔢</div>
+                        <div class="related-card-info">
+                            <h4>Table Numbers</h4>
+                            <p class="price">From $4/piece</p>
+                        </div>
+                    </a>
+                    <a href="mr-mrs-signs.html" class="related-card">
+                        <div class="related-card-image">💑</div>
+                        <div class="related-card-info">
+                            <h4>Mr & Mrs Sign</h4>
+                            <p class="price">From $49</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Buyers Guide -->
+            <div class="buyers-guide">
+                <h2>📝 Buyer's Guide: Signature Drink Signs</h2>
+                
+                <h3>Why Get a Signature Drink Sign?</h3>
+                <p style="color: #666; line-height: 1.8;">Signature drink signs add a personal touch to your bar and help guests discover your custom cocktails. They're a fun way to showcase your personalities as a couple!</p>
+                
+                <h3>Choosing Your Signature Drinks</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Reflect your personalities:</strong> Choose drinks you actually love</li>
+                    <li><strong>Match your theme:</strong> Consider your wedding colors and style</li>
+                    <li><strong>Keep it simple:</strong> Easy-drinking cocktails work best for crowds</li>
+                    <li><strong>Consider the season:</strong> Fresh drinks for summer, warm drinks for fall/winter</li>
+                    <li><strong>Have a backup:</strong> Make sure your bar also serves classic options</li>
+                </ul>
+                
+                <h3>Sign Placement Ideas</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Behind the bar:</strong> Most popular - guests see it when ordering</li>
+                    <li><strong>Bar entrance:</strong> Teases what's to come</li>
+                    <li><strong>Drink station:</strong> Near champagne or cocktail station</li>
+                    <li><strong>Table centerpieces:</strong> Smaller signs at tables</li>
+                </ul>
+                
+                <h3>How Many Drinks?</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>2 drinks:</strong> Most popular - one for each partner</li>
+                    <li><strong>3 drinks:</strong> Add a champagne option or signature mocktail</li>
+                    <li><strong>4+ drinks:</strong> Full bar sign for extensive options</li>
+                </ul>
+                
+                <h3>Order Timeline</h3>
+                <ol style="color: #666; line-height: 1.8;">
+                    <li><strong>4-6 weeks before:</strong> Decide on drinks & place order</li>
+                    <li><strong>2-3 weeks before:</strong> Receive and approve proof</li>
+                    <li><strong>1 week before:</strong> Production completes</li>
+                    <li><strong>3-5 days before:</strong> Sign arrives - bring to venue!</li>
+                </ol>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventDecorSigns</h4>
+                    <p>Custom event decorations and signs for weddings, birthdays, baby showers and all special celebrations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 your@email.com</p>
+                    <p>📱 Your Phone/WhatsApp</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectColor(element) {
+            document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            document.getElementById('selectedColor').value = element.title;
+        }
+        
+        function switchImage(element, emoji) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = emoji;
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
