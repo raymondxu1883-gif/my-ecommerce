@@ -3,72 +3,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom name signs for any event. Personalized acrylic designs for weddings, parties, and home decor.">
+    <title>Name Sign | Personalized Acrylic Name Sign | EventDecorSigns</title>
+    <meta name="description" content="Custom personalized name signs for weddings, nurseries, home decor & events. Premium acrylic in gold, rose gold & more. Free design service.">
+    <meta name="keywords" content="name sign, personalized name sign, acrylic name sign, nursery name sign, wedding name sign, door sign, home decor sign">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/name-sign.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Name Sign | Personalized Acrylic Name Sign | EventDecorSigns">
+    <meta property="og:description" content="Custom personalized name signs for your special occasion.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/name-sign.html">
+    
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
         .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 180px; margin-bottom: 15px; overflow: hidden; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; font-size: 30px; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 600; margin-bottom: 20px; }
+        .product-description { color: #666; line-height: 1.8; margin-bottom: 30px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+        .product-features h3 { margin-bottom: 15px; font-size: 18px; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 30px; }
+        .option-group { margin-bottom: 20px; }
+        .option-group label { display: block; font-weight: 600; margin-bottom: 10px; color: #333; }
+        .option-group input, .option-group select { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; background: white; }
+        .color-options { display: flex; gap: 10px; flex-wrap: wrap; }
+        .color-option { width: 40px; height: 40px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: all 0.3s; }
+        .color-option:hover, .color-option.active { border-color: #333; transform: scale(1.1); }
+        .color-option.clear { background: linear-gradient(135deg, #fff 50%, #ccc 50%); }
+        .color-option.frosted { background: #e8e8e8; }
+        .color-option.white { background: #fff; border: 1px solid #ddd !important; }
+        .color-option.black { background: #333; }
+        .color-option.gold { background: linear-gradient(135deg, #d4a574, #f5deb3); }
+        .color-option.rose-gold { background: linear-gradient(135deg, #e8b4b8, #f5deb3); }
+        .color-option.silver { background: linear-gradient(135deg, #c0c0c0, #e8e8e8); }
+        .color-option.pink { background: #ffb6c1; }
+        .color-option.blue { background: #87ceeb; }
+        .color-option.green { background: #90ee90; }
+        .btn-quote { width: 100%; padding: 18px; font-size: 18px; background: #d4a574; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; margin-bottom: 15px; }
+        .btn-quote:hover { background: #c49464; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(212, 165, 116, 0.4); }
+        .custom-note { background: #f0f7ff; padding: 15px; border-radius: 8px; font-size: 14px; color: #666; border-left: 4px solid #4a90d9; }
+        .order-process { background: white; padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .order-process h2 { text-align: center; margin-bottom: 30px; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .process-step { text-align: center; padding: 20px; }
+        .step-number { width: 40px; height: 40px; background: #d4a574; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; }
+        .process-step h4 { margin-bottom: 10px; }
+        .process-step p { font-size: 14px; color: #666; }
+        .faq-section { margin: 60px 0; }
+        .faq-section h2 { margin-bottom: 30px; }
+        .faq-item { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .faq-item h4 { margin-bottom: 10px; color: #333; }
+        .faq-item p { color: #666; font-size: 15px; line-height: 1.6; }
+        .reviews-section { margin: 60px 0; padding: 40px; background: #fafafa; border-radius: 12px; }
+        .reviews-section h2 { margin-bottom: 30px; }
+        .review-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .review-stars { color: #d4a574; margin-bottom: 10px; }
+        .review-text { color: #666; font-style: italic; margin-bottom: 10px; }
+        .review-author { color: #999; font-size: 14px; }
+        .related-products { margin: 60px 0; }
+        .related-products h2 { margin-bottom: 30px; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+        .related-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .related-card-image { height: 150px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .related-card-info { padding: 15px; }
+        .related-card-info h4 { font-size: 16px; margin-bottom: 5px; }
+        .related-card-info .price { color: #d4a574; font-weight: 600; }
+        .buyers-guide { margin: 60px 0; padding: 40px; background: #f9f9f9; border-radius: 12px; }
+        .buyers-guide h2 { margin-bottom: 20px; }
+        .buyers-guide h3 { margin-top: 30px; margin-bottom: 15px; }
+        .uses-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .use-card { padding: 20px; background: white; border-radius: 8px; }
+        .use-card h4 { margin-bottom: 10px; color: #333; }
+        .use-card p { color: #666; margin: 0; font-size: 14px; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .uses-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <div class="logo">🎉 EventDecorSigns</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">✨</div></div>
-                    <div class="product-info-detail">
-                        <h1>Name Sign</h1>
-                        <p class="price">From $39</p>
-                        <p>A personalized name sign perfect for nurseries, offices, home decor, or any special event. Make any space uniquely yours!</p>
-                        <h3>Uses:</h3>
-                        <ul>
-                            <li>Nursery decor</li>
-                            <li>Home office</li>
-                            <li>Wedding reception</li>
-                            <li>Business signage</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="page-header">
+        <h1>Name Signs</h1>
+        <p>Personalized acrylic name signs for any occasion</p>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <a href="../products.html" style="color: #666;">Custom</a> > 
+                <span style="color: #333;">Name Sign</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">✨</div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '✨')">✨</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🏠')">🏠</div>
+                        <div class="thumbnail" onclick="switchImage(this, '👶')">👶</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💒')">💒</div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Custom Name Signs</h2>
-                    <h3>Versatile & Personal</h3>
-                    <p>Name signs are perfect for adding a personal touch to any space!</p>
-                    <h3>Popular Uses</h3>
-                    <ul>
-                        <li><strong>Nursery:</strong> Baby name decor</li>
-                        <li><strong>Entryway:</strong> Family name welcome</li>
-                        <li><strong>Office:</strong> Door or desk nameplate</li>
-                        <li><strong>Events:</strong> Place cards, table names</li>
-                    </ul>
-                    <h3>Sizing Guide</h3>
-                    <table>
-                        <tr><th>Use</th><th>Recommended Size</th></tr>
-                        <tr><td>Nursery wall</td><td>12" x 18"</td></tr>
-                        <tr><td>Door/Entry</td><td>18" x 24"</td></tr>
-                        <tr><td>Desk/Office</td><td>8" x 12"</td></tr>
-                        <tr><td>Large wall</td><td>24" x 36"+</td></tr>
-                    </table>
+                
+                <div class="product-info-detail">
+                    <h1>Personalized Name Sign</h1>
+                    <div class="product-price">From $39</div>
+                    
+                    <p class="product-description">
+                        Create a stunning personalized name sign for your nursery, wedding, home, or event! 
+                        Perfect for displaying names, initials, or meaningful words. A beautiful, custom 
+                        keepsake you'll treasure forever.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why customers love it:</h3>
+                        <ul>
+                            <li>Fully customizable - any name or word</li>
+                            <li>Premium acrylic in 10 beautiful finishes</li>
+                            <li>Perfect for nurseries, weddings, home & events</li>
+                            <li>Multiple font styles available</li>
+                            <li>Free standing or wall mounted</li>
+                            <li>Great gift for new parents & couples</li>
+                        </ul>
+                    </div>
+                    
+                    <form action="../contact.html" method="GET">
+                        <input type="hidden" name="product" value="Personalized Name Sign">
+                        
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Name or Text *</label>
+                                <input type="text" name="name" placeholder="Enter name or text (e.g., The Smiths, Emma, Love)" required>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Select Finish *</label>
+                                <div class="color-options">
+                                    <div class="color-option gold active" title="Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option rose-gold" title="Rose Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option silver" title="Silver" onclick="selectColor(this)"></div>
+                                    <div class="color-option clear" title="Clear" onclick="selectColor(this)"></div>
+                                    <div class="color-option frosted" title="Frosted" onclick="selectColor(this)"></div>
+                                    <div class="color-option white" title="White" onclick="selectColor(this)"></div>
+                                    <div class="color-option black" title="Black" onclick="selectColor(this)"></div>
+                                    <div class="color-option pink" title="Pink" onclick="selectColor(this)"></div>
+                                    <div class="color-option blue" title="Blue" onclick="selectColor(this)"></div>
+                                </div>
+                                <input type="hidden" name="color" id="selectedColor" value="Gold">
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Size *</label>
+                                <select name="size" required>
+                                    <option value="">Choose a size</option>
+                                    <option value="12x6">12" x 6" - Small - From $39</option>
+                                    <option value="18x9">18" x 9" - Medium - From $59</option>
+                                    <option value="24x12">24" x 12" - Large - From $89</option>
+                                    <option value="36x18">36" x 18" - Extra Large - From $129</option>
+                                    <option value="custom">Custom Size - Contact us</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Font Style</label>
+                                <select name="font">
+                                    <option value="script">Elegant Script</option>
+                                    <option value="modern">Modern Minimal</option>
+                                    <option value="classic">Classic Roman</option>
+                                    <option value="vintage">Vintage Floral</option>
+                                    <option value="playful">Playful Fun</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Use/Occasion</label>
+                                <select name="occasion">
+                                    <option value="nursery">Nursery / Baby Room</option>
+                                    <option value="wedding">Wedding / Party</option>
+                                    <option value="home">Home Decor</option>
+                                    <option value="business">Business / Office</option>
+                                    <option value="gift">Gift</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-quote">Get Your Free Quote</button>
+                    </form>
+                    
+                    <div class="custom-note">
+                        💡 <strong>Gift Idea:</strong> Name signs make perfect gifts for new parents, weddings, housewarmings, and anniversaries!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Process -->
+            <div class="order-process">
+                <h2>How To Order</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Enter Your Name</h4>
+                        <p>Type the name or text you want</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>We'll Design</h4>
+                        <p>Receive your custom digital proof within 24-48 hours</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Approve & Ship</h4>
+                        <p>Once approved, we produce & ship within 5-7 business days</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details -->
+            <div style="margin: 60px 0;">
+                <h2>Product Details</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+                    <div>
+                        <h3>Materials</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Premium 1/8" thick acrylic</li>
+                            <li>High-quality UV printing</li>
+                            <li>Free standing or wall mounted</li>
+                            <li>Lightweight & durable</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Display Options</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Free standing (table top)</li>
+                            <li>Wall mounted with Command strips</li>
+                            <li>Hanging with drilled holes</li>
+                            <li>Easel display</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Popular Uses -->
+            <div style="margin: 60px 0;">
+                <h2>Popular Uses for Name Signs</h2>
+                <div class="uses-grid">
+                    <div class="use-card">
+                        <h4>👶 Nursery Name Sign</h4>
+                        <p>Welcome the new baby with a beautiful name sign for their room. Perfect for photos and lasting keepsake.</p>
+                    </div>
+                    <div class="use-card">
+                        <h4>💒 Wedding Sign</h4>
+                        <p>"Mr & Mrs" signs, table signs, seating cards, or welcome signs for your special day.</p>
+                    </div>
+                    <div class="use-card">
+                        <h4>🏠 Home Decor</h4>
+                        <p>Family name signs, "Welcome" signs, or meaningful quotes for your home.</p>
+                    </div>
+                    <div class="use-card">
+                        <h4>🎁 Perfect Gift</h4>
+                        <p>Great for baby showers, weddings, housewarmings, anniversaries, and birthdays.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h4>How many names/words can I include?</h4>
+                    <p>You can include one name or a short phrase (up to 20 characters recommended). For longer text, consider a larger size.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I see a proof before ordering?</h4>
+                    <p>Absolutely! After submitting your quote, you'll receive a digital proof within 24-48 hours. We can adjust fonts, colors, and layout until you love it!</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What's the best size for a nursery?</h4>
+                    <p>For a nursery, 18"x9" or 24"x12" works beautifully. It fits well above a crib or changing table.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I change colors within the design?</h4>
+                    <p>Yes! You can have multi-color designs. Just specify your color preferences in your order notes.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How do I care for my name sign?</h4>
+                    <p>Simply wipe clean with a soft, damp cloth. Avoid harsh chemicals or abrasive materials.</p>
+                </div>
+            </div>
+            
+            <!-- Reviews -->
+            <div class="reviews-section">
+                <h2>What Our Clients Say</h2>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Perfect nursery sign! It's even more beautiful in person. Couldn't be happier with how it looks in baby's room!"</p>
+                    <p class="review-author">- Jessica M., Texas</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Ordered for our wedding - the 'Mr & Mrs' sign was stunning! Great quality and fast delivery."</p>
+                    <p class="review-author">- Sarah & John, Florida</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Beautiful family name sign for our home! Everyone asks where we got it. Highly recommend!"</p>
+                    <p class="review-author">- Mike & Lisa, California</p>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-grid">
+                    <a href="baby-welcome-sign.html" class="related-card">
+                        <div class="related-card-image">👶</div>
+                        <div class="related-card-info">
+                            <h4>Baby Welcome Sign</h4>
+                            <p class="price">From $59</p>
+                        </div>
+                    </a>
+                    <a href="mr-mrs-signs.html" class="related-card">
+                        <div class="related-card-image">💑</div>
+                        <div class="related-card-info">
+                            <h4>Mr & Mrs Sign</h4>
+                            <p class="price">From $49</p>
+                        </div>
+                    </a>
+                    <a href="little-one-name-sign.html" class="related-card">
+                        <div class="related-card-image">🍼</div>
+                        <div class="related-card-info">
+                            <h4>Little One Name Sign</h4>
+                            <p class="price">From $49</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Buyers Guide -->
+            <div class="buyers-guide">
+                <h2>📝 Buyer's Guide: Name Signs</h2>
+                
+                <h3>Why Get a Name Sign?</h3>
+                <p style="color: #666; line-height: 1.8;">A personalized name sign adds a special touch to any space! Whether for a nursery, wedding, or home, it's a beautiful custom keepsake.</p>
+                
+                <h3>Popular Text Ideas</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Baby Names:</strong> "Emma Grace", "Baby [Last]"</li>
+                    <li><strong>Couples:</strong> "The Smiths", "John & Jane"</li>
+                    <li><strong>Family:</strong> "The [Last Name] Family"</li>
+                    <li><strong>Welcome:</strong> "Welcome", "Our Happy Place"</li>
+                    <li><strong>Meaningful Words:</strong> "Love", "Home", "Family"</li>
+                </ul>
+                
+                <h3>Choosing the Right Size</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>12" x 6":</strong> Gift box, small shelf, door</li>
+                    <li><strong>18" x 9":</strong> Nursery, mantle, office</li>
+                    <li><strong>24" x 12":</strong> Feature wall, large nursery</li>
+                    <li><strong>36" x 18":</strong> Statement piece, entrance</li>
+                </ul>
+                
+                <h3>Best Finishes by Room</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Nursery:</strong> Gold, Rose Gold, Soft Pink, Light Blue</li>
+                    <li><strong>Wedding:</strong> Gold, Rose Gold, Silver, White</li>
+                    <li><strong>Home:</strong> Black, White, Clear, Gold</li>
+                    <li><strong>Modern:</strong> Black, White, Clear</li>
+                </ul>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventDecorSigns</h4>
+                    <p>Custom event decorations and signs for weddings, birthdays, baby showers and all special celebrations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 your@email.com</p>
+                    <p>📱 Your Phone/WhatsApp</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectColor(element) {
+            document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            document.getElementById('selectedColor').value = element.title;
+        }
+        
+        function switchImage(element, emoji) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = emoji;
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
