@@ -3,66 +3,456 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guest Book Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom guest book signs for weddings. Guide guests to sign your guest book.">
+    <title>Guest Book Sign | Wedding Guest Book Sign | EventDecorSigns</title>
+    <meta name="description" content="Guide your guests to sign the guest book with elegant acrylic signs. Perfect for weddings & parties. Customizable designs available.">
+    <meta name="keywords" content="guest book sign, wedding guest book, guest book stand, sign in book, wedding reception sign, guest book display">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/guest-book-sign.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guest Book Sign | Wedding Guest Book Sign | EventDecorSigns">
+    <meta property="og:description" content="Guide your guests with elegant guest book signs for your wedding.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/guest-book-sign.html">
+    
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
         .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 180px; margin-bottom: 15px; overflow: hidden; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; font-size: 30px; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 600; margin-bottom: 20px; }
+        .product-description { color: #666; line-height: 1.8; margin-bottom: 30px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+        .product-features h3 { margin-bottom: 15px; font-size: 18px; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 30px; }
+        .option-group { margin-bottom: 20px; }
+        .option-group label { display: block; font-weight: 600; margin-bottom: 10px; color: #333; }
+        .option-group select { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; background: white; }
+        .color-options { display: flex; gap: 10px; flex-wrap: wrap; }
+        .color-option { width: 40px; height: 40px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: all 0.3s; }
+        .color-option:hover, .color-option.active { border-color: #333; transform: scale(1.1); }
+        .color-option.clear { background: linear-gradient(135deg, #fff 50%, #ccc 50%); }
+        .color-option.frosted { background: #e8e8e8; }
+        .color-option.white { background: #fff; border: 1px solid #ddd !important; }
+        .color-option.black { background: #333; }
+        .color-option.gold { background: linear-gradient(135deg, #d4a574, #f5deb3); }
+        .color-option.rose-gold { background: linear-gradient(135deg, #e8b4b8, #f5deb3); }
+        .btn-quote { width: 100%; padding: 18px; font-size: 18px; background: #d4a574; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; margin-bottom: 15px; }
+        .btn-quote:hover { background: #c49464; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(212, 165, 116, 0.4); }
+        .custom-note { background: #f0f7ff; padding: 15px; border-radius: 8px; font-size: 14px; color: #666; border-left: 4px solid #4a90d9; }
+        .order-process { background: white; padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .order-process h2 { text-align: center; margin-bottom: 30px; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .process-step { text-align: center; padding: 20px; }
+        .step-number { width: 40px; height: 40px; background: #d4a574; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; }
+        .process-step h4 { margin-bottom: 10px; }
+        .process-step p { font-size: 14px; color: #666; }
+        .faq-section { margin: 60px 0; }
+        .faq-section h2 { margin-bottom: 30px; }
+        .faq-item { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .faq-item h4 { margin-bottom: 10px; color: #333; }
+        .faq-item p { color: #666; font-size: 15px; line-height: 1.6; }
+        .reviews-section { margin: 60px 0; padding: 40px; background: #fafafa; border-radius: 12px; }
+        .reviews-section h2 { margin-bottom: 30px; }
+        .review-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .review-stars { color: #d4a574; margin-bottom: 10px; }
+        .review-text { color: #666; font-style: italic; margin-bottom: 10px; }
+        .review-author { color: #999; font-size: 14px; }
+        .related-products { margin: 60px 0; }
+        .related-products h2 { margin-bottom: 30px; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+        .related-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .related-card-image { height: 150px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .related-card-info { padding: 15px; }
+        .related-card-info h4 { font-size: 16px; margin-bottom: 5px; }
+        .related-card-info .price { color: #d4a574; font-weight: 600; }
+        .buyers-guide { margin: 60px 0; padding: 40px; background: #f9f9f9; border-radius: 12px; }
+        .buyers-guide h2 { margin-bottom: 20px; }
+        .buyers-guide h3 { margin-top: 30px; margin-bottom: 15px; }
+        .tips-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .tip-card { padding: 20px; background: white; border-radius: 8px; }
+        .tip-card h4 { margin-bottom: 10px; color: #333; }
+        .tip-card p { color: #666; margin: 0; font-size: 14px; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .tips-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <div class="logo">🎉 EventDecorSigns</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><img src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Acrylic Wedding Guest Book Sign with Gold Frame" style="max-width: 600px; width: 100%; border-radius: 12px;"></div>
-                    <div class="product-info-detail">
-                        <h1>Guest Book Sign</h1>
-                        <p class="price">From $39</p>
-                        <p>Welcome guests to sign your guest book with a beautiful custom sign. A must-have for any wedding reception.</p>
-                        <h3>Options:</h3>
-                        <ul>
-                            <li>"Please Sign Our Guest Book"</li>
-                            <li>Couple names</li>
-                            <li>With arrow/pointer</li>
-                            <li>Alternative options</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="page-header">
+        <h1>Guest Book Signs</h1>
+        <p>Guide your guests to sign with elegant welcome signage</p>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <a href="../products.html" style="color: #666;">Wedding</a> > 
+                <span style="color: #333;">Guest Book Sign</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Acrylic Wedding Guest Book Sign">
+                    </div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/guestbook/acrylic-guestbook-gold.png')">
+                            <img src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Guest Book Gold">
+                        </div>
+                        <div class="thumbnail" onclick="switchImage(this, '💌')">💌</div>
+                        <div class="thumbnail" onclick="switchImage(this, '📖')">📖</div>
+                        <div class="thumbnail" onclick="switchImage(this, '✍️')">✍️</div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Guest Book Signs</h2>
-                    <h3>Guide Your Guests</h3>
-                    <p>A well-placed guest book sign ensures no one misses the opportunity to leave a message!</p>
-                    <h3>Placement Tips</h3>
-                    <ul>
-                        <li>Near the entrance</li>
-                        <li>Next to guest book table</li>
-                        <li>Near sign-in area</li>
-                        <li>At bar area</li>
-                    </ul>
-                    <h3>Guest Book Alternatives</h3>
-                    <p>Wishes cards | Polaroid guest book | Fingerprint tree</p>
+                
+                <div class="product-info-detail">
+                    <h1>Guest Book Sign</h1>
+                    <div class="product-price">From $39</div>
+                    
+                    <p class="product-description">
+                        Help guests find and sign your guest book with our elegant acrylic signs! 
+                        Perfect for weddings, bridal showers, and baby showers. A beautiful 
+                        keepsake to remember your special day.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why couples love it:</h3>
+                        <ul>
+                            <li>Guides guests to sign the guest book</li>
+                            <li>Premium acrylic in 7 beautiful finishes</li>
+                            <li>Multiple text options available</li>
+                            <li>Free standing - easy to place anywhere</li>
+                            <li>Pairs perfectly with welcome signs</li>
+                            <li>Great keepsake after the wedding</li>
+                        </ul>
+                    </div>
+                    
+                    <form action="../contact.html" method="GET">
+                        <input type="hidden" name="product" value="Guest Book Sign">
+                        
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Select Text *</label>
+                                <select name="text" required>
+                                    <option value="">Choose text style</option>
+                                    <option value="guest-book">Guest Book</option>
+                                    <option value="sign-in-book">Please Sign Our Guest Book</option>
+                                    <option value="leave-wishes">Leave Us Your Wishes</option>
+                                    <option value="wishes-advice">Wishes & Advice</option>
+                                    <option value="custom">Custom Text</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Select Finish *</label>
+                                <div class="color-options">
+                                    <div class="color-option gold active" title="Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option rose-gold" title="Rose Gold" onclick="selectColor(this)"></div>
+                                    <div class="color-option silver" title="Silver" onclick="selectColor(this)"></div>
+                                    <div class="color-option clear" title="Clear" onclick="selectColor(this)"></div>
+                                    <div class="color-option frosted" title="Frosted" onclick="selectColor(this)"></div>
+                                    <div class="color-option white" title="White" onclick="selectColor(this)"></div>
+                                    <div class="color-option black" title="Black" onclick="selectColor(this)"></div>
+                                </div>
+                                <input type="hidden" name="color" id="selectedColor" value="Gold">
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Size *</label>
+                                <select name="size" required>
+                                    <option value="">Choose a size</option>
+                                    <option value="8x10">8" x 10" - From $39</option>
+                                    <option value="12x18">12" x 18" - From $59</option>
+                                    <option value="18x24">18" x 24" - From $89</option>
+                                    <option value="custom">Custom Size - Contact us</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Design Style</label>
+                                <select name="style">
+                                    <option value="modern">Modern Minimal</option>
+                                    <option value="script">Elegant Script</option>
+                                    <option value="classic">Classic Roman</option>
+                                    <option value="floral">Floral Border</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-quote">Get Your Free Quote</button>
+                    </form>
+                    
+                    <div class="custom-note">
+                        💡 <strong>Pro Tip:</strong> Place your guest book sign near the entrance or at the sign-in table with a pen. Add a small table or stand for the book!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Process -->
+            <div class="order-process">
+                <h2>How To Order</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Choose Your Options</h4>
+                        <p>Select text, finish & size</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>We'll Design</h4>
+                        <p>Receive your custom digital proof within 24-48 hours</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Approve & Ship</h4>
+                        <p>Once approved, we produce & ship within 5-7 business days</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details -->
+            <div style="margin: 60px 0;">
+                <h2>Product Details</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+                    <div>
+                        <h3>Materials</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Premium 1/8" thick acrylic</li>
+                            <li>High-quality UV printing</li>
+                            <li>Free standing design</li>
+                            <li>Durable & lightweight</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Display Options</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Free standing (table top)</li>
+                            <li>Easel display (easel not included)</li>
+                            <li>Wall mounted</li>
+                            <li>Command strips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Where to Place -->
+            <div style="margin: 60px 0;">
+                <h2>Where to Place Your Guest Book Sign</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>🎂 Near the Entrance</h4>
+                        <p>Place near the reception entrance so guests see it immediately as they walk in.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>📝 Sign-in Table</h4>
+                        <p>The most common spot! Place on a decorated table with the guest book and pens.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>🥂 Bar Area</h4>
+                        <p>Guests often browse here while waiting - great visibility spot!</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>📸 Photo Area Nearby</h4>
+                        <p>Near the photo booth or backdrop where guests gather.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h4>What should I write on the guest book sign?</h4>
+                    <p>Classic options include "Guest Book", "Please Sign Our Guest Book", or "Leave Us Your Wishes". You can also customize with your names or wedding date!</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do I need a physical guest book?</h4>
+                    <p>Yes! The sign guides guests to a physical book. You can use a traditional bound book, a sign-in poster, or even blank pages in a scrapbook.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What size should I get?</h4>
+                    <p>For table placement, 8"x10" or 12"x18" works well. For floor standing or wall display, 18"x24" provides better visibility.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can the sign stand on its own?</h4>
+                    <p>Yes! Our signs have a free standing base. For larger signs, consider using an easel for extra stability.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I see a proof before ordering?</h4>
+                    <p>Absolutely! After submitting your quote, you'll receive a digital proof within 24-48 hours. Request revisions until you love it!</p>
+                </div>
+            </div>
+            
+            <!-- Reviews -->
+            <div class="reviews-section">
+                <h2>What Our Clients Say</h2>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The guest book sign was perfect! Every guest signed and we love looking back at all the sweet messages."</p>
+                    <p class="review-author">- Sarah & Mike, Florida</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Beautiful quality! The gold finish matched our wedding perfectly. Highly recommend!"</p>
+                    <p class="review-author">- Jennifer & David, Texas</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Such a cute addition to our reception! Guests loved signing the book."</p>
+                    <p class="review-author">- Amanda & Chris, California</p>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-grid">
+                    <a href="acrylic-welcome-sign-the-madison.html" class="related-card">
+                        <div class="related-card-image">🚪</div>
+                        <div class="related-card-info">
+                            <h4>Welcome Sign</h4>
+                            <p class="price">From $89</p>
+                        </div>
+                    </a>
+                    <a href="wishes-cards-display.html" class="related-card">
+                        <div class="related-card-image">💝</div>
+                        <div class="related-card-info">
+                            <h4>Wishes Cards Display</h4>
+                            <p class="price">From $59</p>
+                        </div>
+                    </a>
+                    <a href="seating-chart.html" class="related-card">
+                        <div class="related-card-image">🗓️</div>
+                        <div class="related-card-info">
+                            <h4>Seating Chart</h4>
+                            <p class="price">From $149</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Buyers Guide -->
+            <div class="buyers-guide">
+                <h2>📝 Buyer's Guide: Guest Book Signs</h2>
+                
+                <h3>Why Get a Guest Book Sign?</h3>
+                <p style="color: #666; line-height: 1.8;">A guest book sign guides your guests to sign and leave well wishes for you. It's an essential addition to any wedding reception!</p>
+                
+                <h3>Popular Sign Texts</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>"Guest Book"</strong> - Simple & classic</li>
+                    <li><strong>"Please Sign Our Guest Book"</strong> - Polite & clear</li>
+                    <li><strong>"Leave Us Your Wishes"</strong> - Romantic & heartfelt</li>
+                    <li><strong>"Wishes & Advice"</strong> - Encourages longer messages</li>
+                    <li><strong>Custom</strong> - Your own personalized message</li>
+                </ul>
+                
+                <h3>Where to Place</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Reception entrance</strong> - First thing guests see</li>
+                    <li><strong>Sign-in table</strong> - Traditional & easy</li>
+                    <li><strong>Near the bar</strong> - High traffic area</li>
+                    <li><strong>Photo booth area</strong> - Guests gather there</li>
+                </ul>
+                
+                <h3>Complementary Products</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li>Welcome Sign - Sets the tone at entrance</li>
+                    <li>Wishes Cards Display - Alternative to traditional book</li>
+                    <li>Seating Chart - Helps guests find tables</li>
+                    <li>Photo Booth Props - More guest interaction</li>
+                </ul>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventDecorSigns</h4>
+                    <p>Custom event decorations and signs for weddings, birthdays, baby showers and all special celebrations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 your@email.com</p>
+                    <p>📱 Your Phone/WhatsApp</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectColor(element) {
+            document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            document.getElementById('selectedColor').value = element.title;
+        }
+        
+        function switchImage(element, src) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                if (src.includes('.png')) {
+                    mainImage.innerHTML = '<img src="' + src + '" alt="Guest Book Sign">';
+                } else {
+                    mainImage.innerHTML = src;
+                }
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>

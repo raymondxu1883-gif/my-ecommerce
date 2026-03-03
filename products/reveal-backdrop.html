@@ -3,66 +3,454 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reveal Backdrop | EventDecorSigns</title>
-    <meta name="description" content="Gender reveal backdrop and decoration. Perfect for your big moment reveal.">
+    <title>Reveal Backdrop | Gender Reveal Backdrop | EventDecorSigns</title>
+    <meta name="description" content="Stunning gender reveal backdrop for your special moment. Photo-worthy backdrops for boy or girl reveals. Customizable designs available.">
+    <meta name="keywords" content="gender reveal backdrop, gender reveal photo backdrop, reveal party decor, baby reveal sign, gender reveal decoration, reveal moment">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/reveal-backdrop.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Reveal Backdrop | Gender Reveal Backdrop | EventDecorSigns">
+    <meta property="og:description" content="Stunning gender reveal backdrops for your special moment.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/reveal-backdrop.html">
+    
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
         .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 100px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 180px; margin-bottom: 15px; overflow: hidden; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; display: flex; align-items: center; justify-content: center; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; font-size: 30px; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 600; margin-bottom: 20px; }
+        .product-description { color: #666; line-height: 1.8; margin-bottom: 30px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 30px; }
+        .product-features h3 { margin-bottom: 15px; font-size: 18px; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 30px; }
+        .option-group { margin-bottom: 20px; }
+        .option-group label { display: block; font-weight: 600; margin-bottom: 10px; color: #333; }
+        .option-group select { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; background: white; }
+        .color-options { display: flex; gap: 10px; flex-wrap: wrap; }
+        .color-option { width: 40px; height: 40px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: all 0.3s; }
+        .color-option:hover, .color-option.active { border-color: #333; transform: scale(1.1); }
+        .color-option.blue { background: #87ceeb; }
+        .color-option.pink { background: #ffb6c1; }
+        .color-option.neutral { background: linear-gradient(135deg, #ffb6c1 50%, #87ceeb 50%); }
+        .color-option.gold { background: linear-gradient(135deg, #d4a574, #f5deb3); }
+        .color-option.white { background: #fff; border: 1px solid #ddd !important; }
+        .btn-quote { width: 100%; padding: 18px; font-size: 18px; background: #d4a574; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; transition: all 0.3s; margin-bottom: 15px; }
+        .btn-quote:hover { background: #c49464; transform: translateY(-2px); box-shadow: 0 5px 20px rgba(212, 165, 116, 0.4); }
+        .custom-note { background: #f0f7ff; padding: 15px; border-radius: 8px; font-size: 14px; color: #666; border-left: 4px solid #4a90d9; }
+        .order-process { background: white; padding: 40px; border-radius: 12px; margin: 40px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .order-process h2 { text-align: center; margin-bottom: 30px; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .process-step { text-align: center; padding: 20px; }
+        .step-number { width: 40px; height: 40px; background: #d4a574; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; }
+        .process-step h4 { margin-bottom: 10px; }
+        .process-step p { font-size: 14px; color: #666; }
+        .faq-section { margin: 60px 0; }
+        .faq-section h2 { margin-bottom: 30px; }
+        .faq-item { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .faq-item h4 { margin-bottom: 10px; color: #333; }
+        .faq-item p { color: #666; font-size: 15px; line-height: 1.6; }
+        .reviews-section { margin: 60px 0; padding: 40px; background: #fafafa; border-radius: 12px; }
+        .reviews-section h2 { margin-bottom: 30px; }
+        .review-item { background: white; padding: 20px; border-radius: 8px; margin-bottom: 15px; }
+        .review-stars { color: #d4a574; margin-bottom: 10px; }
+        .review-text { color: #666; font-style: italic; margin-bottom: 10px; }
+        .review-author { color: #999; font-size: 14px; }
+        .related-products { margin: 60px 0; }
+        .related-products h2 { margin-bottom: 30px; }
+        .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .related-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05); transition: all 0.3s; text-decoration: none; color: inherit; display: block; }
+        .related-card:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+        .related-card-image { height: 150px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .related-card-info { padding: 15px; }
+        .related-card-info h4 { font-size: 16px; margin-bottom: 5px; }
+        .related-card-info .price { color: #d4a574; font-weight: 600; }
+        .buyers-guide { margin: 60px 0; padding: 40px; background: #f9f9f9; border-radius: 12px; }
+        .buyers-guide h2 { margin-bottom: 20px; }
+        .buyers-guide h3 { margin-top: 30px; margin-bottom: 15px; }
+        .ideas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0; }
+        .idea-card { padding: 20px; background: white; border-radius: 8px; }
+        .idea-card h4 { margin-bottom: 10px; color: #333; }
+        .idea-card p { color: #666; margin: 0; font-size: 14px; }
+        .confetti-info { background: #fff5f5; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #d4a574; }
+        .confetti-info h4 { margin-bottom: 10px; }
+        .confetti-info p { color: #666; margin: 0; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; }
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .ideas-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <div class="logo">🎉 EventDecorSigns</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">🎊</div></div>
-                    <div class="product-info-detail">
-                        <h1>Reveal Backdrop</h1>
-                        <p class="price">From $149</p>
-                        <p>Create the perfect backdrop for your gender reveal moment! Our backdrops are designed to work seamlessly with confetti cannons and smoke bombs.</p>
-                        <h3>Features:</h3>
-                        <ul>
-                            <li>Works with confetti cannons</li>
-                            <li>Reusable design</li>
-                            <li>Customizable text & colors</li>
-                            <li>Various sizes available</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="page-header">
+        <h1>Gender Reveal Backdrops</h1>
+        <p>Create the perfect moment for your big reveal</p>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <a href="../products.html" style="color: #666;">Gender Reveal</a> > 
+                <span style="color: #333;">Reveal Backdrop</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">💙</div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '💙')">💙</div>
+                        <div class="thumbnail" onclick="switchImage(this, '💖')">💖</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎈')">🎈</div>
+                        <div class="thumbnail" onclick="switchImage(this, '🎉')">🎉</div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Gender Reveal Backdrop</h2>
-                    <h3>Planning Your Reveal Moment</h3>
-                    <p>The gender reveal is one of the most memorable moments of your pregnancy journey. Choose a backdrop that makes this moment photo-worthy!</p>
-                    <h3>Backdrop Types</h3>
-                    <ul>
-                        <li><strong>Balloon Arch:</strong> Classic pink or blue balloons</li>
-                        <li><strong>Fabric Backdrop:</strong> Elegant draping in neutral colors</li>
-                        <li><strong>Floral Wall:</strong> Flower arrangements in reveal colors</li>
-                        <li><strong>Acrylic Panel:</strong> Modern with custom designs</li>
-                    </ul>
-                    <h3>Size Recommendations</h3>
-                    <p>Small party: 6ft x 6ft | Medium: 8ft x 8ft | Large: 10ft x 10ft</p>
+                
+                <div class="product-info-detail">
+                    <h1>Gender Reveal Backdrop</h1>
+                    <div class="product-price">From $149</div>
+                    
+                    <p class="product-description">
+                        Create the perfect photo moment for your gender reveal! Our stunning backdrops 
+                        provide the perfect backdrop for your special moment - whether you're popping 
+                        confetti cannons, cutting a cake, or sharing the news with loved ones.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why parents love it:</h3>
+                        <ul>
+                            <li>Perfect for gender reveal photos & videos</li>
+                            <li>Multiple sizes for any venue</li>
+                            <li>Works with confetti cannons, cakes & more</li>
+                            <li>Free standing or wall mounted</li>
+                            <li>Reusable for other events</li>
+                            <li>Great keepsake from your reveal</li>
+                        </ul>
+                    </div>
+                    
+                    <form action="../contact.html" method="GET">
+                        <input type="hidden" name="product" value="Gender Reveal Backdrop">
+                        
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label>Reveal Style *</label>
+                                <select name="style" required>
+                                    <option value="">Choose reveal style</option>
+                                    <option value="balloon">Balloon Compatible</option>
+                                    <option value="cake">Cake Reveal</option>
+                                    <option value="confetti">Confetti Cannon Compatible</option>
+                                    <option value="sign">Sign Holder</option>
+                                    <option value="photo-frame">Photo Frame Style</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Theme/Colors *</label>
+                                <div class="color-options">
+                                    <div class="color-option blue active" title="Blue (It's a Boy!)" onclick="selectColor(this)"></div>
+                                    <div class="color-option pink" title="Pink (It's a Girl!)" onclick="selectColor(this)"></div>
+                                    <div class="color-option neutral" title="Neutral/Surprise" onclick="selectColor(this)"></div>
+                                    <div class="color-option gold" title="Gold/Neutral" onclick="selectColor(this)"></div>
+                                    <div class="color-option white" title="White/Clean" onclick="selectColor(this)"></div>
+                                </div>
+                                <input type="hidden" name="color" id="selectedColor" value="Blue">
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Size *</label>
+                                <select name="size" required>
+                                    <option value="">Choose a size</option>
+                                    <option value="4x6">4' x 6' - From $149</option>
+                                    <option value="5x7">5' x 7' - From $199</option>
+                                    <option value="6x8">6' x 8' - From $249</option>
+                                    <option value="custom">Custom Size - Contact us</option>
+                                </select>
+                            </div>
+                            
+                            <div class="option-group">
+                                <label>Add-Ons</label>
+                                <select name="addons">
+                                    <option value="none">No add-ons</option>
+                                    <option value="sign-holder">+ Sign Holder Stand (+$30)</option>
+                                    <option value="weights">+ Sand Weights for Outdoor (+$20)</option>
+                                    <option value="package">+ Complete Package (Stand + Weights) (+$45)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-quote">Get Your Free Quote</button>
+                    </form>
+                    
+                    <div class="custom-note">
+                        💡 <strong>Pro Tip:</strong> Position your backdrop in good lighting for the best photos! Place your phone or camera on video mode to capture the moment!
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Process -->
+            <div class="order-process">
+                <h2>How To Order</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Choose Your Options</h4>
+                        <p>Select size, style & colors</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>We'll Design</h4>
+                        <p>Receive your custom digital proof within 24-48 hours</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Approve & Ship</h4>
+                        <p>Once approved, we produce & ship within 5-7 business days</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Details -->
+            <div style="margin: 60px 0;">
+                <h2>Product Details</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px;">
+                    <div>
+                        <h3>Materials</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Premium vinyl backdrop</li>
+                            <li>High-quality printing</li>
+                            <li>Lightweight & portable</li>
+                            <li>Durable for indoor/outdoor</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>What's Included</h3>
+                        <ul style="color: #666; line-height: 2;">
+                            <li>Vinyl backdrop</li>
+                            <li>Stand NOT included (add on if needed)</li>
+                            <li>Grommets for easy hanging</li>
+                            <li>Carrying bag</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reveal Ideas -->
+            <div style="margin: 60px 0;">
+                <h2>🎉 Creative Reveal Ideas</h2>
+                <div class="ideas-grid">
+                    <div class="idea-card">
+                        <h4>🎈 Balloon Release</h4>
+                        <p>Fill blue or pink balloons inside the backdrop frame. When revealed, release the balloons for an amazing photo moment!</p>
+                    </div>
+                    <div class="idea-card">
+                        <h4>🎂 Cake Cut</h4>
+                        <p>Order a "reveal cake" with blue or pink inside. Cut the cake in front of the backdrop for the big reveal!</p>
+                    </div>
+                    <div class="idea-card">
+                        <h4>🧨 Confetti Cannon</h4>
+                        <p>The most popular! Stand in front of the backdrop and pop confetti cannons. Perfect for videos!</p>
+                    </div>
+                    <div class="idea-card">
+                        <h4>📸 Sign Reveal</h4>
+                        <p>Hold up a "It's a Boy!" or "It's a Girl!" sign in front of the backdrop for cute photos.</p>
+                    </div>
+                </div>
+                
+                <div class="confetti-info">
+                    <h4>🧨 Confetti Cannon Tips</h4>
+                    <p>Confetti cannons work best! The colored confetti creates an amazing shower effect in photos. We recommend 12" or 20" confetti cannons for the best effect. Make sure to test your confetti colors beforehand!</p>
+                </div>
+            </div>
+            
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h4>Do I need a stand for the backdrop?</h4>
+                    <p>A stand is recommended for most uses. You can add a stand when ordering, or use command strips for wall mounting. For outdoor use, we recommend adding sand weights.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What's the best size for my reveal party?</h4>
+                    <p>For indoor parties with 20-50 guests, 4'x6' works well. For larger venues or outdoor parties, 5'x7' or 6'x8' provides better visibility. Consider your photo angles too!</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I use this outdoors?</h4>
+                    <p>Yes! Our vinyl backdrops work outdoors. We recommend using sand weights to keep it stable in wind, and avoiding direct sunlight for the best photos.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How do I set up the confetti cannon moment?</h4>
+                    <p>Position the reveal person(s) in front of the backdrop. Have a helper with the confetti cannon ready. When everyone is ready, POP! Make sure your camera is on video mode!</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I see a proof before ordering?</h4>
+                    <p>Absolutely! After submitting your quote, you'll receive a digital proof within 24-48 hours showing your design. Request revisions until you love it!</p>
+                </div>
+            </div>
+            
+            <!-- Reviews -->
+            <div class="reviews-section">
+                <h2>What Our Clients Say</h2>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The backdrop made our gender reveal absolutely perfect! The photos are incredible. Highly recommend!"</p>
+                    <p class="review-author">- Jessica & John, Texas</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best investment for our reveal party! The confetti cannon moment was everything we dreamed of."</p>
+                    <p class="review-author">- Sarah & Mike, California</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Great quality and fast shipping! The backdrop was easy to set up and looked amazing!"</p>
+                    <p class="review-author">- Amanda & Chris, Florida</p>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="related-grid">
+                    <a href="gender-reveal-sign.html" class="related-card">
+                        <div class="related-card-image">🧸</div>
+                        <div class="related-card-info">
+                            <h4>Gender Reveal Sign</h4>
+                            <p class="price">From $79</p>
+                        </div>
+                    </a>
+                    <a href="baby-welcome-sign.html" class="related-card">
+                        <div class="related-card-image">👶</div>
+                        <div class="related-card-info">
+                            <h4>Baby Welcome Sign</h4>
+                            <p class="price">From $59</p>
+                        </div>
+                    </a>
+                    <a href="wishes-cards-display.html" class="related-card">
+                        <div class="related-card-image">💝</div>
+                        <div class="related-card-info">
+                            <h4>Wishes Cards Display</h4>
+                            <p class="price">From $59</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Buyers Guide -->
+            <div class="buyers-guide">
+                <h2>📝 Buyer's Guide: Gender Reveal Backdrops</h2>
+                
+                <h3>Why Get a Reveal Backdrop?</h3>
+                <p style="color: #666; line-height: 1.8;">A backdrop creates the perfect photo background for your gender reveal moment. It's essential for capturing amazing photos and videos of the big reveal!</p>
+                
+                <h3>Popular Reveal Styles</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Balloon Compatible:</strong> Frame for releasing balloons</li>
+                    <li><strong>Cake Reveal:</strong> Perfect for cutting the reveal cake</li>
+                    <li><strong>Confetti Cannon:</strong> Most popular for dramatic effect</li>
+                    <li><strong>Sign Holder:</strong> Hold up signs for the reveal</li>
+                    <li><strong>Photo Frame:</strong> Step inside for photos</li>
+                </ul>
+                
+                <h3>Where to Place Your Backdrop</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li><strong>Outdoor lawn:</strong> Natural lighting is best!</li>
+                    <li><strong>Indoor venue:</strong> Against a clean wall</li>
+                    <li><strong>Backyard:</strong> Intimate & easy to set up</li>
+                    <li><strong>Restaurant/venue:</strong> Check with venue first</li>
+                </ul>
+                
+                <h3>Tips for Perfect Photos</h3>
+                <ul style="color: #666; line-height: 2;">
+                    <li>Position in shade or indirect light</li>
+                    <li>Have someone dedicated to photos/video</li>
+                    <li>Use video mode to capture the moment</li>
+                    <li>Test confetti cannons beforehand</li>
+                    <li>Have backup confetti!</li>
+                </ul>
+                
+                <div style="margin-top: 40px; text-align: center;">
+                    <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventDecorSigns</h4>
+                    <p>Custom event decorations and signs for weddings, birthdays, baby showers and all special celebrations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 your@email.com</p>
+                    <p>📱 Your Phone/WhatsApp</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectColor(element) {
+            document.querySelectorAll('.color-option').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            document.getElementById('selectedColor').value = element.title;
+        }
+        
+        function switchImage(element, emoji) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = emoji;
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
