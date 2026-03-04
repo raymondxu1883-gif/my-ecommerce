@@ -3,67 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom birthday age signs. Highlight the milestone with beautiful acrylic designs.">
+    <title>Age Sign | Birthday Milestone Sign | EventDecorSigns</title>
+    <meta name="description" content="Custom age birthday signs. Celebrate milestone birthdays with elegant acrylic designs. 18th, 21st, 30th, 40th, 50th & more. Free design service.">
+    <meta name="keywords" content="age sign, birthday sign, milestone birthday, 21st birthday sign, 30th birthday sign, 40th birthday sign, over the hill sign, birthday decor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/age-sign.html">
+    <meta property="og:title" content="Age Sign | Birthday Milestone Sign | EventDecorSigns">
+    <meta property="og:description" content="Celebrate milestone birthdays with elegant custom age signs.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/age-sign.html">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
-        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 100px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px; max-width: 1200px; margin: 0 auto 60px; }
+        .product-gallery { position: sticky; top: 100px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; }
+        .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; color: #333; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 700; margin-bottom: 20px; }
+        .product-description { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 25px; }
+        .product-features h3 { font-size: 18px; margin-bottom: 15px; color: #333; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; color: #555; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 25px; }
+        .product-options label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .product-options select, .product-options input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px; }
+        .product-cta { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-quote { background: #d4a574; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+        .btn-quote:hover { background: #c9956c; transform: translateY(-2px); }
+        .btn-contact { background: transparent; border: 2px solid #d4a574; color: #d4a574; padding: 14px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .product-details-section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .product-details-section h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .product-details-section ul { padding-left: 20px; }
+        .product-details-section li { margin-bottom: 10px; color: #555; }
+        .faq-section { background: #f9f9f9; padding: 50px 20px; margin-top: 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .faq-question { font-weight: 600; color: #333; margin-bottom: 10px; }
+        .faq-answer { color: #555; line-height: 1.6; }
+        .testimonials { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .testimonial-card { background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .testimonial-card .stars { color: #d4a574; margin-bottom: 10px; }
+        .testimonial-card p { font-style: italic; color: #555; margin-bottom: 10px; }
+        .testimonial-card .author { color: #888; font-size: 14px; }
+        .buyers-guide { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .buyers-guide h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .buyers-guide h3 { font-size: 18px; margin: 25px 0 10px; color: #333; }
+        .buyers-guide p, .buyers-guide li { color: #555; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .product-gallery { position: static; }
+            .product-info-detail h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">🎂</div></div>
-                    <div class="product-info-detail">
-                        <h1>Age Sign</h1>
-                        <p class="price">From $39</p>
-                        <p>Celebrate the milestone with a custom age sign! Perfect for birthday parties, milestone birthdays, and "over the hill" celebrations.</p>
-                        <h3>Options:</h3>
-                        <ul>
-                            <li>Any age number (1-100+)</li>
-                            <li>Milestone ages (18, 21, 30, 40, 50, etc.)</li>
-                            <li>"Over the Hill" designs</li>
-                            <li>Gold, rose gold, silver finishes</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <span style="color: #333;">Age Sign</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/age-sign.png" alt="Age Birthday Sign">
+                    </div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/age-sign.png')">
+                            <img src="../images/products/age-sign.png" alt="Age Sign 1">
+                        </div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Birthday Age Signs</h2>
-                    <h3>Milestone Celebrations</h3>
-                    <p>An age sign is the perfect centerpiece for any birthday celebration!</p>
-                    <h3>Popular Milestone Ages</h3>
-                    <ul>
-                        <li>18th Birthday - Legal adult</li>
-                        <li>21st Birthday - Coming of age</li>
-                        <li>30th Birthday - New decade</li>
-                        <li>40th, 50th, 60th - Big milestones</li>
-                        <li>"Over the Hill" - 50+</li>
-                    </ul>
-                    <h3>Sizing</h3>
-                    <p>Small (photo prop): 12" | Medium (table): 18" | Large (backdrop): 24"+</p>
+                
+                <div class="product-info-detail">
+                    <h1>Age Sign - Birthday Milestone Celebration</h1>
+                    <div class="product-price">From $39</div>
                     
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
+                    <p class="product-description">
+                        Make the birthday milestone unforgettable with a custom age sign! Perfect for celebrating 18th, 21st, 30th, 40th, 50th birthdays and beyond. Whether it's a "Over the Hill" celebration or a glamorous milestone, our age signs create the perfect photo opportunity and party centerpiece.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why you'll love it:</h3>
+                        <ul>
+                            <li>Custom any age number (1-100+)</li>
+                            <li>Premium acrylic or wood materials</li>
+                            <li>Multiple finishes: Gold, Rose Gold, Silver, Black</li>
+                            <li>Photo-worthy centerpiece</li>
+                            <li>Free digital proof before production</li>
+                            <li>Perfect for "Over the Hill" celebrations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <label>Choose Age Number</label>
+                        <select>
+                            <option>Custom Number (1-100+)</option>
+                            <option>18th - Coming of Age</option>
+                            <option>21st - Legal Adult</option>
+                            <option>30th - Dirty Thirty</option>
+                            <option>40th - Fabulous 40</option>
+                            <option>50th - Half Century</option>
+                            <option>60th - Fabulous 60</option>
+                            <option>Over the Hill (50+)</option>
+                        </select>
+                        
+                        <label>Choose Material</label>
+                        <select>
+                            <option>Premium Acrylic</option>
+                            <option>Wood Sign</option>
+                            <option>Mirror Acrylic</option>
+                        </select>
+                        
+                        <label>Choose Color</label>
+                        <select>
+                            <option>Gold</option>
+                            <option>Rose Gold</option>
+                            <option>Silver</option>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Custom Color</option>
+                        </select>
+                        
+                        <label>Choose Size</label>
+                        <select>
+                            <option>Small (12") - Photo Prop</option>
+                            <option>Medium (18") - Table Sign</option>
+                            <option>Large (24") - Backdrop Sign</option>
+                            <option>Extra Large (36")</option>
+                        </select>
+                    </div>
+                    
+                    <div class="product-cta">
+                        <a href="../contact.html" class="btn-quote">Get Free Quote</a>
+                        <a href="../contact.html" class="btn-contact">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="product-details-section">
+        <h2>Product Details</h2>
+        
+        <h3>Materials</h3>
+        <ul>
+            <li>Premium acrylic (5mm thick) - modern & elegant</li>
+            <li>Wood options - rustic & charming</li>
+            <li>Mirror acrylic - glamorous reflective finish</li>
+            <li>High-quality UV ink printing</li>
+        </ul>
+        
+        <h3>Display Options</h3>
+        <ul>
+            <li>Easel stand included</li>
+            <li>Hanging with pre-drilled holes</li>
+            <li>Self-standing design</li>
+            <li>Perfect for photo backdrop, entrance, or cake table</li>
+        </ul>
+        
+        <h3>Popular Uses</h3>
+        <ul>
+            <li>Milestone birthday parties</li>
+            <li>"Over the Hill" celebrations</li>
+            <li>Photo booth prop</li>
+            <li>Cake table centerpiece</li>
+        </ul>
+    </section>
+
+    <section class="buyers-guide">
+        <h2>📝 Buyer's Guide: Birthday Age Signs</h2>
+        
+        <h3>Milestone Celebrations</h3>
+        <p>An age sign is the perfect centerpiece for any birthday celebration! It draws attention, creates photo opportunities, and lets the guest of honor shine.</p>
+        
+        <h3>Popular Milestone Ages</h3>
+        <ul>
+            <li><strong>18th Birthday</strong> - Legal adult, new chapter begins</li>
+            <li><strong>21st Birthday</strong> - Coming of age celebration</li>
+            <li><strong>30th Birthday</strong> - "Dirty Thirty" fun</li>
+            <li><strong>40th Birthday</strong> - Fabulous 40s begin</li>
+            <li><strong>50th Birthday</strong> - Half century milestone</li>
+            <li><strong>60th+ Birthday</strong> - Wisdom & experience</li>
+            <li><strong>"Over the Hill"</strong> - 50+ with humor</li>
+        </ul>
+        
+        <h3>Sizing Guide</h3>
+        <ul>
+            <li><strong>Small (12")</strong> - Photo prop, table decoration</li>
+            <li><strong>Medium (18")</strong> - Table centerpiece, gift table</li>
+            <li><strong>Large (24")</strong> - Photo backdrop, entrance</li>
+            <li><strong>Extra Large (36")</strong> - Large venue, outdoor</li>
+        </ul>
+        
+        <h3>Color Meanings</h3>
+        <ul>
+            <li><strong>Gold</strong> - Luxury, celebration, achievement</li>
+            <li><strong>Rose Gold</strong> - Modern, romantic, trendy</li>
+            <li><strong>Silver</strong> - Elegant, classic, sophisticated</li>
+            <li><strong>Black</strong> - Modern, bold, "Over the Hill"</li>
+        </ul>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I get any age number?</div>
+                <div class="faq-answer">Yes! We can create signs for any age from 1 to 100+. Just let us know the number you need when requesting your quote.</div>
             </div>
-        </section>
-    </main>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long does production take?</div>
+                <div class="faq-answer">Production takes 3-5 business days after design approval. Rush orders available for an additional fee.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is the easel included?</div>
+                <div class="faq-answer">Yes! All age signs come with a free easel stand for easy display.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I customize the design?</div>
+                <div class="faq-answer">Absolutely! We offer custom text, fonts, and designs. Send us your ideas and we'll create something unique!</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Turned my 40th birthday into something special! The gold sign was stunning and made the perfect backdrop for photos."</p>
+            <div class="author">- Sarah M., Texas</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Got the 'Over the Hill' sign for my husband's 50th. Everyone loved it! Great quality and fast shipping."</p>
+            <div class="author">- Jennifer L., Florida</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Perfect for my daughter's 21st birthday! The rose gold was beautiful. Would definitely order again."</p>
+            <div class="author">- Michelle K., California</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchImage(element, imageSrc) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Age Birthday Sign">';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
