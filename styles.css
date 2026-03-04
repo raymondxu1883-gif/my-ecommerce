@@ -108,7 +108,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px 0 40px;
+    padding: 15px 40px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -120,11 +120,11 @@ nav {
 }
 
 .logo img {
-    height: 100px;
+    height: 80px;
     width: auto;
-    max-width: 400px;
+    max-width: 350px;
     object-fit: contain;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .nav-links {
