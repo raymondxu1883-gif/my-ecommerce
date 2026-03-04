@@ -108,7 +108,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 10px 40px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -123,6 +123,7 @@ nav {
     height: 150px;
     width: auto;
     max-width: 500px;
+    object-fit: contain;
 }
 
 .nav-links {
