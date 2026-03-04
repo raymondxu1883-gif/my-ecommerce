@@ -124,6 +124,7 @@ nav {
     width: auto;
     max-width: 400px;
     object-fit: contain;
+    margin-bottom: 5px;
 }
 
 .nav-links {
