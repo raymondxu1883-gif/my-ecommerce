@@ -3,67 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diaper Cake Topper | EventDecorSigns</title>
-    <meta name="description" content="Custom diaper cake toppers for baby showers. adorable additions to your diaper cake.">
+    <title>Diaper Cake Topper | Baby Shower Decor | EventDecorSigns</title>
+    <meta name="description" content="Custom diaper cake toppers for baby showers. adorable designs with 'It's a Boy/Girl', baby name & more. Perfect shower centerpiece. Free design service.">
+    <meta name="keywords" content="diaper cake topper, baby shower topper, it's a boy sign, it's a girl sign, baby shower centerpiece, diaper cake decor, shower decoration, baby name topper">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/diaper-cake-topper.html">
+    <meta property="og:title" content="Diaper Cake Topper | Baby Shower Decor | EventDecorSigns">
+    <meta property="og:description" content="Adorable diaper cake toppers for your baby shower.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/diaper-cake-topper.html">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
-        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px; max-width: 1200px; margin: 0 auto 60px; }
+        .product-gallery { position: sticky; top: 100px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; }
+        .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; color: #333; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 700; margin-bottom: 20px; }
+        .product-description { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 25px; }
+        .product-features h3 { font-size: 18px; margin-bottom: 15px; color: #333; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; color: #555; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 25px; }
+        .product-options label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .product-options select, .product-options input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px; }
+        .product-cta { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-quote { background: #d4a574; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+        .btn-quote:hover { background: #c9956c; transform: translateY(-2px); }
+        .btn-contact { background: transparent; border: 2px solid #d4a574; color: #d4a574; padding: 14px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .product-details-section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .product-details-section h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .product-details-section ul { padding-left: 20px; }
+        .product-details-section li { margin-bottom: 10px; color: #555; }
+        .faq-section { background: #f9f9f9; padding: 50px 20px; margin-top: 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .faq-question { font-weight: 600; color: #333; margin-bottom: 10px; }
+        .faq-answer { color: #555; line-height: 1.6; }
+        .testimonials { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .testimonial-card { background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .testimonial-card .stars { color: #d4a574; margin-bottom: 10px; }
+        .testimonial-card p { font-style: italic; color: #555; margin-bottom: 10px; }
+        .testimonial-card .author { color: #888; font-size: 14px; }
+        .buyers-guide { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .buyers-guide h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .buyers-guide h3 { font-size: 18px; margin: 25px 0 10px; color: #333; }
+        .buyers-guide p, .buyers-guide li { color: #555; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .product-gallery { position: static; }
+            .product-info-detail h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">🎂</div></div>
-                    <div class="product-info-detail">
-                        <h1>Diaper Cake Topper</h1>
-                        <p class="price">From $29</p>
-                        <p>Add the perfect finishing touch to your diaper cake! Our custom toppers feature adorable designs and can be customized with baby name or gender.</p>
-                        <h3>Design Options:</h3>
-                        <ul>
-                            <li>"It's a Boy/Girl" signs</li>
-                            <li>Baby name toppers</li>
-                            <li>Minimalist designs</li>
-                            <li>Floral themes</li>
-                            <li>Animal designs</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <span style="color: #333;">Diaper Cake Topper</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper">
+                    </div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/diaper-cake-topper.png')">
+                            <img src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper 1">
+                        </div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Diaper Cake Toppers</h2>
-                    <h3>Making Your Diaper Cake Special</h3>
-                    <p>A topper transforms a simple diaper cake into a stunning centerpiece for your baby shower.</p>
-                    <h3>Topper Styles</h3>
-                    <ul>
-                        <li><strong>Acrylic Signs:</strong> Modern, durable, reusable</li>
-                        <li><strong>Wooden Signs:</strong> Rustic, natural look</li>
-                        <li><strong>Fabric Banners:</strong> Soft, flexible</li>
-                        <li><strong>Paper Flowers:</strong> Colorful, lightweight</li>
-                    </ul>
-                    <h3>Size Guide</h3>
-                    <p>Standard: 6"x8" | Large centerpieces: 8"x10"</p>
+                
+                <div class="product-info-detail">
+                    <h1>Diaper Cake Topper - Baby Shower Centerpiece</h1>
+                    <div class="product-price">From $29</div>
+                    
+                    <p class="product-description">
+                        Add the perfect finishing touch to your diaper cake! Our custom toppers feature adorable designs and can be customized with baby name, gender reveal, or sweet messages. Transform a simple diaper cake into a stunning shower centerpiece that guests will love!
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why you'll love it:</h3>
+                        <ul>
+                            <li>"It's a Boy" / "It's a Girl" signs</li>
+                            <li>Custom baby name toppers</li>
+                            <li>Minimalist & modern designs</li>
+                            <li>Floral & themed designs</li>
+                            <li>Animal & whimsical options</li>
+                            <li>Perfect photo opportunity</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <label>Choose Design</label>
+                        <select>
+                            <option>"It's a Boy"</option>
+                            <option>"It's a Girl"</option>
+                            <option>"It's a Boy! (or Girl?)"</option>
+                            <option>Baby Name Topper</option>
+                            <option>"Welcome Baby"</option>
+                            <option>Custom Design</option>
+                        </select>
+                        
+                        <label>Choose Material</label>
+                        <select>
+                            <option>Premium Acrylic</option>
+                            <option>Wood Sign</option>
+                            <option>Paper/Cardstock</option>
+                        </select>
+                        
+                        <label>Choose Color</label>
+                        <select>
+                            <option>Pink & Gold</option>
+                            <option>Blue & Gold</option>
+                            <option>Neutral/Gender Reveal</option>
+                            <option>Pastel Rainbow</option>
+                            <option>Custom Color</option>
+                        </select>
+                        
+                        <label>Choose Size</label>
+                        <select>
+                            <option>Small (6" x 8")</option>
+                            <option>Medium (8" x 10")</option>
+                            <option>Large (10" x 12")</option>
+                        </select>
+                    </div>
+                    
+                    <div class="product-cta">
+                        <a href="../contact.html" class="btn-quote">Get Free Quote</a>
+                        <a href="../contact.html" class="btn-contact">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <section class="product-details-section">
+        <h2>Product Details</h2>
+        
+        <h3>Materials</h3>
+        <ul>
+            <li>Premium acrylic (5mm) - modern, durable, reusable</li>
+            <li>Wood sign - rustic, natural look</li>
+            <li>High-quality printing</li>
+            <li>Multiple finish options</li>
+        </ul>
+        
+        <h3>Display Options</h3>
+        <ul>
+            <li>Stake (push into cake)</li>
+            <li>Stand alone</li>
+            <li>Attach to cake top</li>
+            <li>Free standing</li>
+        </ul>
+        
+        <h3>Popular Uses</h3>
+        <ul>
+            <li>Baby shower centerpiece</li>
+            <li>Diaper cake decoration</li>
+            <li>Gender reveal party</li>
+            <li>Nursery decor after shower</li>
+            <li>Hospital gift basket</li>
+        </ul>
+    </section>
+
+    <section class="buyers-guide">
+        <h2>📝 Buyer's Guide: Diaper Cake Toppers</h2>
+        
+        <h3>Making Your Diaper Cake Special</h3>
+        <p>A topper transforms a simple diaper cake into a stunning centerpiece for your baby shower. It's the perfect finishing touch that guests will notice and admire!</p>
+        
+        <h3>Topper Styles</h3>
+        <ul>
+            <li><strong>Acrylic Signs:</strong> Modern, sleek, durable, can be reused as nursery decor</li>
+            <li><strong>Wooden Signs:</strong> Rustic, charming, natural aesthetic</li>
+            <li><strong>Paper/Cardstock:</strong> Lightweight, colorful, budget-friendly</li>
+            <li><strong>Fabric Banners:</strong> Soft, flexible, whimsical</li>
+        </ul>
+        
+        <h3>Size Guide</h3>
+        <ul>
+            <li><strong>Small (6" x 8")</strong> - Small cupcakes, mini cakes</li>
+            <li><strong>Medium (8" x 10")</strong> - Standard diaper cake</li>
+            <li><strong>Large (10" x 12")</strong> - Large centerpieces, triple-tier cakes</li>
+        </ul>
+        
+        <h3>Theme Ideas</h3>
+        <ul>
+            <li><strong>Classic:</strong> "It's a Boy!" or "It's a Girl!" in elegant script</li>
+            <li><strong>Modern:</strong> Minimalist design with gold accents</li>
+            <li><strong>Nature:</strong> Florals, leaves, woodland creatures</li>
+            <li><strong>Vintage:</strong> Romantic, soft colors, lace patterns</li>
+        </ul>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">What size topper do I need for my diaper cake?</div>
+                <div class="faq-answer">For a standard 2-3 tier diaper cake, we recommend medium (8" x 10") to large (10" x 12"). The topper should be visible above the cake but not overpower it.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I get a custom name on the topper?</div>
+                <div class="faq-answer">Absolutely! We can add the baby's name, parents' names, or any custom text you like. Just let us know when you request your quote.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is the topper food-safe?</div>
+                <div class="faq-answer">Our toppers are designed as decorative items and should not come into direct contact with food. Place it so it sits above the cake or on a pick/stem.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How far in advance should I order?</div>
+                <div class="faq-answer">We recommend ordering at least 1 week before your baby shower. Rush orders are available for an additional fee.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"The 'It's a Girl' topper was absolutely perfect! It looked gorgeous on our diaper cake and everyone loved it."</p>
+            <div class="author">- Amanda R., Texas</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Added our baby's name - it was the highlight of the shower! Now it's in the nursery. Great quality!"</p>
+            <div class="author">- Jessica M., Florida</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Beautiful gold acrylic topper! It added such an elegant touch to our diaper cake. Highly recommend!"</p>
+            <div class="author">- Michelle K., California</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchImage(element, imageSrc) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Diaper Cake Topper">';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>

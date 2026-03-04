@@ -3,134 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hashtag Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom wedding hashtag signs. Perfect for Instagram & social media. Customizable designs in gold, rose gold & more.">
+    <title>Hashtag Sign | Wedding Instagram Sign | EventDecorSigns</title>
+    <meta name="description" content="Custom wedding hashtag signs for Instagram & social media. Encourage guests to share photos with your unique hashtag. Free design service. Fast shipping.">
+    <meta name="keywords" content="wedding hashtag sign, Instagram sign, social media sign, photo sharing sign, wedding sign, hashtag decor, wedding instagram, photo tag sign">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/hashtag-sign.html">
+    <meta property="og:title" content="Hashtag Sign | Wedding Instagram Sign | EventDecorSigns">
+    <meta property="og:description" content="Encourage guests to share photos with your custom wedding hashtag!">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/hashtag-sign.html">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
-        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 120px; }
-        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .color-options { display: flex; gap: 10px; margin: 20px 0; }
-        .color-option { width: 40px; height: 40px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; }
-        .color-option.active { border-color: #333; }
-        .size-options { margin: 20px 0; }
-        .size-options label { margin-right: 20px; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 10px 5px 10px 0; }
-        .btn:hover { background: #c49464; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h2 { margin-bottom: 20px; }
-        .buyers-guide h3 { margin-top: 30px; }
-        .buyers-guide table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        .buyers-guide th, .buyers-guide td { padding: 12px; border: 1px solid #ddd; }
-        .buyers-guide th { background: #eee; }
+        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px; max-width: 1200px; margin: 0 auto 60px; }
+        .product-gallery { position: sticky; top: 100px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; }
+        .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; color: #333; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 700; margin-bottom: 20px; }
+        .product-description { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 25px; }
+        .product-features h3 { font-size: 18px; margin-bottom: 15px; color: #333; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; color: #555; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 25px; }
+        .product-options label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .product-options select, .product-options input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px; }
+        .product-cta { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-quote { background: #d4a574; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+        .btn-quote:hover { background: #c9956c; transform: translateY(-2px); }
+        .btn-contact { background: transparent; border: 2px solid #d4a574; color: #d4a574; padding: 14px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .product-details-section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .product-details-section h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .product-details-section ul { padding-left: 20px; }
+        .product-details-section li { margin-bottom: 10px; color: #555; }
+        .faq-section { background: #f9f9f9; padding: 50px 20px; margin-top: 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .faq-question { font-weight: 600; color: #333; margin-bottom: 10px; }
+        .faq-answer { color: #555; line-height: 1.6; }
+        .testimonials { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .testimonial-card { background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .testimonial-card .stars { color: #d4a574; margin-bottom: 10px; }
+        .testimonial-card p { font-style: italic; color: #555; margin-bottom: 10px; }
+        .testimonial-card .author { color: #888; font-size: 14px; }
+        .buyers-guide { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .buyers-guide h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .buyers-guide h3 { font-size: 18px; margin: 25px 0 10px; color: #333; }
+        .buyers-guide p, .buyers-guide li { color: #555; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .product-gallery { position: static; }
+            .product-info-detail h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="../index.html" class="logo">EventDecorSigns</a>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../products.html">Products</a></li>
-                    <li><a href="../blog.html">Blog</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </div>
+        <nav>
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
         </nav>
     </header>
 
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery">
-                        <div class="main-image">#️⃣</div>
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <span style="color: #333;">Hashtag Sign</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/hashtag-sign.png" alt="Wedding Hashtag Sign">
                     </div>
-                    <div class="product-info-detail">
-                        <h1>#Hashtag Sign</h1>
-                        <p class="price">From $49</p>
-                        <p>Make it easy for guests to share your special day on social media! Our custom hashtag signs encourage guests to use your unique wedding hashtag, creating a digital album of memories.</p>
-                        
-                        <h3>Popular Hashtag Ideas</h3>
-                        <ul>
-                            <li>#SmithWedding2026</li>
-                            <li>#JohnAndJane</li>
-                            <li>#TheFutureMrsSmith</li>
-                        </ul>
-                        
-                        <h3>Color Options</h3>
-                        <div class="color-options">
-                            <div class="color-option" style="background: #D4AF37;" title="Gold"></div>
-                            <div class="color-option" style="background: #B76E79;" title="Rose Gold"></div>
-                            <div class="color-option" style="background: #C0C0C0;" title="Silver"></div>
-                            <div class="color-option" style="background: #2C3E50;" title="Navy"></div>
-                            <div class="color-option" style="background: #1a1a1a;" title="Black"></div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/hashtag-sign.png')">
+                            <img src="../images/products/hashtag-sign.png" alt="Hashtag Sign 1">
                         </div>
-                        
-                        <h3>Size</h3>
-                        <div class="size-options">
-                            <label><input type="radio" name="size" checked> 12" x 18" - $49</label>
-                            <label><input type="radio" name="size"> 18" x 24" - $69</label>
-                            <label><input type="radio" name="size"> 24" x 36" - $89</label>
-                        </div>
-                        
-                        <a href="../contact.html" class="btn">Get Quote</a>
                     </div>
                 </div>
                 
-                <!-- Buyer's Guide -->
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: How to Choose the Perfect Hashtag Sign</h2>
+                <div class="product-info-detail">
+                    <h1>#Hashtag Sign - Wedding Instagram & Social Media</h1>
+                    <div class="product-price">From $49</div>
                     
-                    <h3>Why Do You Need a Wedding Hashtag?</h3>
-                    <p>A wedding hashtag makes it easy to find all photos your guests share on Instagram, Facebook, and TikTok. Instead of chasing down photos, you can simply search your hashtag after the wedding!</p>
+                    <p class="product-description">
+                        Make it easy for guests to share your special day on social media! Our custom hashtag signs encourage guests to use your unique wedding hashtag, creating a digital album of memories you'll treasure forever.
+                    </p>
                     
-                    <h3>Choosing the Right Size</h3>
-                    <table>
-                        <tr><th>Venue</th><th>Recommended Size</th></tr>
-                        <tr><td>Table card holder</td><td>12" x 18"</td></tr>
-                        <tr><td>Entrance welcome table</td><td>18" x 24"</td></tr>
-                        <tr><td>Photo wall backdrop</td><td>24" x 36"</td></tr>
-                    </table>
+                    <div class="product-features">
+                        <h3>Why you'll love it:</h3>
+                        <ul>
+                            <li>Custom wedding hashtag</li>
+                            <li>Works with Instagram, TikTok, Facebook</li>
+                            <li>Creates digital memory collection</li>
+                            <li>Perfect photo backdrop</li>
+                            <li>Free digital proof</li>
+                            <li>Multiple size options</li>
+                        </ul>
+                    </div>
                     
-                    <h3>Popular Hashtag Formats</h3>
-                    <ul>
-                        <li><strong>Classic:</strong> #LastNameWeddingYear (e.g., #SmithWedding2026)</li>
-                        <li><strong>Couple Names:</strong> #JohnAndJane</li>
-                        <li><strong>Fun:</strong> #SmithsTieTheKnot</li>
-                        <li><strong>Initials:</strong> #JplusJ2026</li>
-                    </ul>
+                    <div class="product-options">
+                        <label>Choose Your Hashtag</label>
+                        <select>
+                            <option>Custom Hashtag (Your Design)</option>
+                        </select>
+                        <input type="text" placeholder="Enter your hashtag (e.g., #SmithWedding2026)" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px;">
+                        
+                        <label>Choose Material</label>
+                        <select>
+                            <option>Premium Acrylic</option>
+                            <option>Wood Sign</option>
+                            <option>Mirror Acrylic</option>
+                            <option>Paper/Poster</option>
+                        </select>
+                        
+                        <label>Choose Color</label>
+                        <select>
+                            <option>Gold</option>
+                            <option>Rose Gold</option>
+                            <option>Silver</option>
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Custom Color</option>
+                        </select>
+                        
+                        <label>Choose Size</label>
+                        <select>
+                            <option>Small (12" x 18") - Table Sign</option>
+                            <option>Medium (18" x 24") - Standard</option>
+                            <option>Large (24" x 36") - Floor Sign</option>
+                            <option>Extra Large (36" x 48")</option>
+                        </select>
+                    </div>
                     
-                    <h3>Display Tips</h3>
-                    <ul>
-                        <li>Place near the guest book table</li>
-                        <li>Add to the entrance sign area</li>
-                        <li>Include on table cards</li>
-                        <li>Position near the photo booth</li>
-                    </ul>
-                    
-                    <h3>Order Timeline</h3>
-                    <p>Order at least 3 weeks before your wedding. We'll send a digital proof within 24-48 hours for your approval before production.</p>
-                    
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
+                    <div class="product-cta">
+                        <a href="../contact.html" class="btn-quote">Get Free Quote</a>
+                        <a href="../contact.html" class="btn-contact">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="product-details-section">
+        <h2>Product Details</h2>
+        
+        <h3>Materials</h3>
+        <ul>
+            <li>Premium acrylic (5mm) - modern & elegant</li>
+            <li>Wood sign - rustic & charming</li>
+            <li>Mirror acrylic - glamorous reflective</li>
+            <li>High-quality UV printing</li>
+        </ul>
+        
+        <h3>Display Options</h3>
+        <ul>
+            <li>Easel stand included</li>
+            <li>Hanging with pre-drilled holes</li>
+            <li>Self-standing design</li>
+            <li>Table top display</li>
+        </ul>
+        
+        <h3>Popular Uses</h3>
+        <ul>
+            <li>Wedding welcome sign area</li>
+            <li>Guest book table</li>
+            <li>Photo booth area</li>
+            <li>Cocktail hour</li>
+            <li>Dance floor entrance</li>
+        </ul>
+    </section>
+
+    <section class="buyers-guide">
+        <h2>📝 Buyer's Guide: Wedding Hashtag Signs</h2>
+        
+        <h3>Why You Need a Wedding Hashtag</h3>
+        <p>A wedding hashtag makes it easy to find all photos your guests share on Instagram, Facebook, and TikTok. Instead of chasing down photos, you can simply search your hashtag after the wedding to see every moment!</p>
+        
+        <h3>Popular Hashtag Formats</h3>
+        <ul>
+            <li><strong>Classic:</strong> #LastNameWeddingYear (e.g., #SmithWedding2026)</li>
+            <li><strong>Couple Names:</strong> #JohnAndJane</li>
+            <li><strong>Fun:</strong> #SmithsTieTheKnot</li>
+            <li><strong>Initials:</strong> #JplusJ2026</li>
+            <li><strong>Location:</strong> #SmithsInNashville</li>
+        </ul>
+        
+        <h3>Choosing the Right Size</h3>
+        <ul>
+            <li><strong>Small (12" x 18")</strong> - Table card holder, intimate venues</li>
+            <li><strong>Medium (18" x 24")</strong> - Entrance, guest table</li>
+            <li><strong>Large (24" x 36")</strong> - Photo wall, large venues</li>
+            <li><strong>Extra Large (36" x 48")</strong> - Grand displays, outdoor</li>
+        </ul>
+        
+        <h3>Display Tips</h3>
+        <ul>
+            <li>Place near the guest book table</li>
+            <li>Add to the entrance sign area</li>
+            <li>Include on table cards</li>
+            <li>Position near the photo booth</li>
+            <li>Announce at reception for awareness</li>
+        </ul>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I create a wedding hashtag?</div>
+                <div class="faq-answer">Choose something unique! Mix your names, wedding year, or fun words. Search Instagram first to make sure it's not already heavily used. Keep it simple and easy to remember!</div>
             </div>
-        </section>
-    </main>
+            
+            <div class="faq-item">
+                <div class="faq-question">Where should I display the hashtag sign?</div>
+                <div class="faq-answer">Best spots: guest book table, entrance, photo booth area, or cocktail hour bar. Place it somewhere with good lighting for photos.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How far in advance should I order?</div>
+                <div class="faq-answer">Order at least 3 weeks before your wedding. We'll send a digital proof within 24-48 hours for your approval before production.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I use the hashtag sign for other events?</div>
+                <div class="faq-answer">Absolutely! Hashtag signs work great for anniversaries, birthday parties, corporate events, and more.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Our hashtag sign was perfect! We found over 200 photos on Instagram after our wedding. Such a great way to see the whole day!"</p>
+            <div class="author">- Emily & Tom, New York</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Love our hashtag sign! The gold acrylic looked gorgeous and matched our wedding theme perfectly."</p>
+            <div class="author">- Sarah K., California</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Best wedding investment! Guests loved using the hashtag and we got so many great photos we'd never have seen otherwise."</p>
+            <div class="author">- David & Maria, Texas</div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function switchImage(element, imageSrc) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Hashtag Sign">';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>

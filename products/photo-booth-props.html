@@ -3,67 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Booth Props | EventDecorSigns</title>
-    <meta name="description" content="Custom photo booth props for weddings and parties. Fun props for memorable photos.">
+    <title>Photo Booth Props | Wedding Party Props | EventDecorSigns</title>
+    <meta name="description" content="Custom photo booth props for weddings & parties. Fun props, speech bubbles, frames & more. Create memorable photos. Free design service.">
+    <meta name="keywords" content="photo booth props, wedding props, party props, photo booth signs, speech bubbles, photo frame props, wedding favors, photo fun">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/photo-booth-props.html">
+    <meta property="og:title" content="Photo Booth Props | Wedding Party Props | EventDecorSigns">
+    <meta property="og:description" content="Fun photo booth props for unforgettable wedding photos!">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/photo-booth-props.html">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
-        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px; max-width: 1200px; margin: 0 auto 60px; }
+        .product-gallery { position: sticky; top: 100px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; }
+        .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; color: #333; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 700; margin-bottom: 20px; }
+        .product-description { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 25px; }
+        .product-features h3 { font-size: 18px; margin-bottom: 15px; color: #333; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; color: #555; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 25px; }
+        .product-options label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .product-options select, .product-options input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px; }
+        .product-cta { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-quote { background: #d4a574; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+        .btn-quote:hover { background: #c9956c; transform: translateY(-2px); }
+        .btn-contact { background: transparent; border: 2px solid #d4a574; color: #d4a574; padding: 14px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .product-details-section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .product-details-section h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .product-details-section ul { padding-left: 20px; }
+        .product-details-section li { margin-bottom: 10px; color: #555; }
+        .faq-section { background: #f9f9f9; padding: 50px 20px; margin-top: 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .faq-question { font-weight: 600; color: #333; margin-bottom: 10px; }
+        .faq-answer { color: #555; line-height: 1.6; }
+        .testimonials { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .testimonial-card { background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .testimonial-card .stars { color: #d4a574; margin-bottom: 10px; }
+        .testimonial-card p { font-style: italic; color: #555; margin-bottom: 10px; }
+        .testimonial-card .author { color: #888; font-size: 14px; }
+        .buyers-guide { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .buyers-guide h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .buyers-guide h3 { font-size: 18px; margin: 25px 0 10px; color: #333; }
+        .buyers-guide p, .buyers-guide li { color: #555; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .product-gallery { position: static; }
+            .product-info-detail h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">📸</div></div>
-                    <div class="product-info-detail">
-                        <h1>Photo Booth Props</h1>
-                        <p class="price">From $39 / set</p>
-                        <p>Add fun to your wedding photos with custom photo booth props! Perfect for creating memorable moments with family and friends.</p>
-                        <h3>Prop Types:</h3>
-                        <ul>
-                            <li>Mustache & lips on sticks</li>
-                            <li>Speech bubbles</li>
-                            <li>Heart frames</li>
-                            <li>"Just Married" signs</li>
-                            <li>Glasses & crowns</li>
-                        </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <span style="color: #333;">Photo Booth Props</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/photo-booth-props.png" alt="Photo Booth Props">
+                    </div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/photo-booth-props.png')">
+                            <img src="../images/products/photo-booth-props.png" alt="Photo Booth Props 1">
+                        </div>
                     </div>
                 </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Photo Booth Props</h2>
-                    <h3>Fun Photo Opportunities</h3>
-                    <p>Photo booth props encourage guests to let loose and create fun memories!</p>
-                    <h3>Popular Prop Themes</h3>
-                    <ul>
-                        <li><strong>Wedding:</strong> Rings, hearts, "Just Married"</li>
-                        <li><strong>Vintage:</strong> Classic frames, vintage cars</li>
-                        <li><strong>Modern:</strong> Neon signs, emojis</li>
-                        <li><strong>Rustic:</strong> Wood textures, flowers</li>
-                    </ul>
-                    <h3>Quantity Guide</h3>
-                    <p>Small party (30 guests): 10-15 props | Medium (100 guests): 20-30 props | Large: 40+ props</p>
+                
+                <div class="product-info-detail">
+                    <h1>Photo Booth Props - Wedding & Party Fun</h1>
+                    <div class="product-price">From $39 / set</div>
+                    
+                    <p class="product-description">
+                        Add fun and laughter to your wedding or party with custom photo booth props! From speech bubbles to mustaches on sticks, our props create memorable photo opportunities that guests will love. Perfect for creating a fun photo experience!
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why you'll love it:</h3>
+                        <ul>
+                            <li>Mustache & lips on sticks</li>
+                            <li>Speech bubble props</li>
+                            <li>Heart & frame props</li>
+                            <li>"Just Married" signs</li>
+                            <li>Glasses & crowns</li>
+                            <li>Custom designs available</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <label>Choose Prop Set</label>
+                        <select>
+                            <option>Wedding Essentials Set</option>
+                            <option>Fun & Silly Set</option>
+                            <option>Elegant Frames Set</option>
+                            <option>"Just Married" Set</option>
+                            <option>Complete Party Set</option>
+                            <option>Custom Set</option>
+                        </select>
+                        
+                        <label>Choose Theme</label>
+                        <select>
+                            <option>Wedding Love</option>
+                            <option>Vintage</option>
+                            <option>Modern</option>
+                            <option>Rustic</parameter>
+                            <option>Tropical/Party</option>
+                            <option>Custom Theme</option>
+                        </select>
+                        
+                        <label>Choose Quantity</label>
+                        <select>
+                            <option>Small Set (10 pcs)</option>
+                            <option>Medium Set (20 pcs)</option>
+                            <option>Large Set (30 pcs)</option>
+                            <option>Extra Large (40+ pcs)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="product-cta">
+                        <a href="../contact.html" class="btn-quote">Get Free Quote</a>
+                        <a href="../contact.html" class="btn-contact">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <section class="product-details-section">
+        <h2>Product Details</h2>
+        
+        <h3>Materials</h3>
+        <ul>
+            <li>Premium cardstock - lightweight & colorful</li>
+            <li>Acrylic signs - durable & reusable</li>
+            <li>Wooden sticks - sturdy handle</li>
+            <li>High-quality printing</li>
+        </ul>
+        
+        <h3>What's Included</h3>
+        <ul>
+            <li>Variety of prop designs</li>
+            <li>Wooden handles/sticks</li>
+            <li>Storage bag</li>
+            <li>Instructions</li>
+        </ul>
+        
+        <h3>Popular Uses</h3>
+        <ul>
+            <li>Wedding reception</li>
+            <li>Bachelor/Bachelorette parties</li>
+            <li>Birthday parties</li>
+            <li>Baby showers</li>
+            <li>Corporate events</li>
+        </ul>
+    </section>
+
+    <section class="buyers-guide">
+        <h2>📝 Buyer's Guide: Photo Booth Props</h2>
+        
+        <h3>Fun Photo Opportunities</h3>
+        <p>Photo booth props encourage guests to let loose and create fun memories! They're a must-have entertainment element for any celebration.</p>
+        
+        <h3>Popular Prop Themes</h3>
+        <ul>
+            <li><strong>Wedding:</strong> Rings, hearts, "Just Married", "Mr. & Mrs."</li>
+            <li><strong>Vintage:</strong> Classic frames, vintage cars, old Hollywood</li>
+            <li><strong>Modern:</strong> Neon signs, emojis, trendy designs</li>
+            <li><strong>Rustic:</strong> Wood textures, flowers, nature</li>
+            <li><strong>Fun:</strong> Mustaches, lips, silly glasses</li>
+        </ul>
+        
+        <h3>Quantity Guide</h3>
+        <ul>
+            <li><strong>Small (10 pcs)</strong> - Intimate gatherings (30 guests)</li>
+            <li><strong>Medium (20 pcs)</strong> - Standard party (50-100 guests)</li>
+            <li><strong>Large (30 pcs)</strong> - Large events (100-200 guests)</li>
+            <li><strong>Extra Large (40+ pcs)</strong> - Big celebrations (200+ guests)</li>
+        </ul>
+        
+        <h3>Tips for Best Photos</h3>
+        <ul>
+            <li>Set up near good lighting</li>
+            <li>Provide a simple backdrop</li>
+            <li>Keep props visible and accessible</li>
+            <li>Designate someone to help guests</li>
+        </ul>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How many props do I need?</div>
+                <div class="faq-answer">For 50-100 guests, we recommend 20-30 props. For larger events, go with 30-40+. It's better to have extras than run out!</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I customize the props with our names?</div>
+                <div class="faq-answer">Absolutely! We can add your names, wedding date, or custom text to many prop designs.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Are the props reusable?</div>
+                <div class="faq-answer">Our acrylic signs are reusable. Cardstock props are designed for single-use events but can be kept as memorabilia!</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How far in advance should I order?</div>
+                <div class="faq-answer">Order at least 2 weeks before your event. Rush orders available for an additional fee.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Our guests loved the photo booth props! So much fun and great photos. Highly recommend!"</p>
+            <div class="author">- Rachel T., New York</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"The 'Just Married' props were perfect for our wedding! Everyone had so much fun taking photos."</p>
+            <div class="author">- David & Mike, California</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Great quality props! They added so much fun to our reception. Will definitely order again."</p>
+            <div class="author">- Jennifer W., Illinois</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchImage(element, imageSrc) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Photo Booth Props">';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>

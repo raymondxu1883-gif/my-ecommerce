@@ -3,67 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little One Name Sign | EventDecorSigns</title>
-    <meta name="description" content="Custom baby name signs for nursery and shower. Beautiful acrylic designs.">
+    <title>Little One Name Sign | Baby Name Sign | EventDecorSigns</title>
+    <meta name="description" content="Custom baby name signs for nursery, baby shower & hospital gift. Beautiful acrylic designs with birth stats. Perfect nursery decor. Free design service.">
+    <meta name="keywords" content="baby name sign, nursery sign, baby room decor, birth stats sign, baby shower gift, hospital gift, nursery wall art, personalized baby sign">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://eventdecorsigns.com/products/little-one-name-sign.html">
+    <meta property="og:title" content="Little One Name Sign | Baby Name Sign | EventDecorSigns">
+    <meta property="og:description" content="Beautiful custom baby name signs for nursery & baby shower.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://eventdecorsigns.com/products/little-one-name-sign.html">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .product-detail { padding: 40px 0; }
-        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto 60px; }
-        .main-image { max-width: 600px; width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-        .price { font-size: 28px; color: #d4a574; margin: 20px 0; }
-        .btn { display: inline-block; padding: 15px 40px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .buyers-guide { margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 12px; }
-        .buyers-guide h3 { margin-top: 30px; }
+        .product-grid-detail { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px; max-width: 1200px; margin: 0 auto 60px; }
+        .product-gallery { position: sticky; top: 100px; }
+        .main-image { max-width: 600px; width: 100%; aspect-ratio: 1/1; background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%); border-radius: 12px; overflow: hidden; margin-bottom: 15px; }
+        .main-image img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; max-width: 600px; }
+        .thumbnail { width: 80px; height: 80px; border-radius: 8px; background: #f5f5f5; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; overflow: hidden; }
+        .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbnail:hover, .thumbnail.active { border-color: #d4a574; }
+        .product-info-detail h1 { font-size: 32px; margin-bottom: 10px; color: #333; }
+        .product-price { font-size: 28px; color: #d4a574; font-weight: 700; margin-bottom: 20px; }
+        .product-description { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 25px; }
+        .product-features { background: #f9f9f9; padding: 25px; border-radius: 12px; margin-bottom: 25px; }
+        .product-features h3 { font-size: 18px; margin-bottom: 15px; color: #333; }
+        .product-features ul { list-style: none; padding: 0; }
+        .product-features li { padding: 8px 0; padding-left: 25px; position: relative; color: #555; }
+        .product-features li::before { content: "✓"; position: absolute; left: 0; color: #d4a574; font-weight: bold; }
+        .product-options { margin-bottom: 25px; }
+        .product-options label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .product-options select, .product-options input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px; }
+        .product-cta { display: flex; gap: 15px; flex-wrap: wrap; }
+        .btn-quote { background: #d4a574; color: #fff; padding: 16px 36px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s; }
+        .btn-quote:hover { background: #c9956c; transform: translateY(-2px); }
+        .btn-contact { background: transparent; border: 2px solid #d4a574; color: #d4a574; padding: 14px 34px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        .product-details-section { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .product-details-section h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .product-details-section ul { padding-left: 20px; }
+        .product-details-section li { margin-bottom: 10px; color: #555; }
+        .faq-section { background: #f9f9f9; padding: 50px 20px; margin-top: 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+        .faq-question { font-weight: 600; color: #333; margin-bottom: 10px; }
+        .faq-answer { color: #555; line-height: 1.6; }
+        .testimonials { padding: 50px 20px; max-width: 800px; margin: 0 auto; }
+        .testimonial-card { background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px; margin-bottom: 20px; }
+        .testimonial-card .stars { color: #d4a574; margin-bottom: 10px; }
+        .testimonial-card p { font-style: italic; color: #555; margin-bottom: 10px; }
+        .testimonial-card .author { color: #888; font-size: 14px; }
+        .buyers-guide { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .buyers-guide h2 { font-size: 24px; margin-bottom: 20px; color: #333; }
+        .buyers-guide h3 { font-size: 18px; margin: 25px 0 10px; color: #333; }
+        .buyers-guide p, .buyers-guide li { color: #555; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .product-grid-detail { grid-template-columns: 1fr; }
+            .product-gallery { position: static; }
+            .product-info-detail h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar"><div class="container"><a href="../index.html" class="logo">EventDecorSigns</a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="../products.html">Products</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div></nav>
+        <nav>
+            <a href="../index.html" class="logo">🎉 EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    <main>
-        <section class="product-detail">
-            <div class="container">
-                <div class="product-grid-detail">
-                    <div class="product-gallery"><div class="main-image">👶</div></div>
-                    <div class="product-info-detail">
-                        <h1>Little One Name Sign</h1>
-                        <p class="price">From $49</p>
-                        <p>Welcome the new little one with a beautiful custom name sign. Perfect for nursery decoration, baby shower favors, or hospital gift.</p>
-                        <h3>Options:</h3>
+
+    <section class="product-detail">
+        <div class="container">
+            <div style="margin-bottom: 20px; color: #666;">
+                <a href="../products.html" style="color: #666;">Products</a> > 
+                <span style="color: #333;">Little One Name Sign</span>
+            </div>
+            
+            <div class="product-grid-detail">
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="../images/products/little-one-name-sign.png" alt="Baby Name Sign">
+                    </div>
+                    <div class="thumbnail-row">
+                        <div class="thumbnail active" onclick="switchImage(this, '../images/products/little-one-name-sign.png')">
+                            <img src="../images/products/little-one-name-sign.png" alt="Baby Name Sign 1">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-info-detail">
+                    <h1>Little One Name Sign - Baby Nursery & Shower</h1>
+                    <div class="product-price">From $49</div>
+                    
+                    <p class="product-description">
+                        Welcome the new little one with a beautiful custom name sign! Perfect for nursery decoration, baby shower centerpieces, hospital gifts, or birth announcements. Create a cherished keepsake that parents will treasure forever.
+                    </p>
+                    
+                    <div class="product-features">
+                        <h3>Why you'll love it:</h3>
                         <ul>
                             <li>Custom baby name</li>
                             <li>Birth stats (name, date, weight, length)</li>
                             <li>Nursery decor themes</li>
-                            <li>Gift box available</li>
+                            <li>Premium acrylic or wood</li>
+                            <li>Ready to hang</li>
+                            <li>Perfect gift idea</li>
                         </ul>
-                        <a href="../contact.html" class="btn">Get Quote</a>
                     </div>
-                </div>
-                <div class="buyers-guide">
-                    <h2>📝 Buyer's Guide: Baby Name Signs</h2>
-                    <h3>Perfect Gifts for New Parents</h3>
-                    <p>A personalized baby name sign is a cherished keepsake that parents will treasure for years.</p>
-                    <h3>Popular Uses</h3>
-                    <ul>
-                        <li>Nursery wall decor</li>
-                        <li>Baby shower centerpiece</li>
-                        <li>Hospital/NICU gift</li>
-                        <li>Gender reveal gift</li>
-                        <li>First birthday party decoration</li>
-                    </ul>
-                    <h3>Sizing</h3>
-                    <p>Small (name only): 8"x10" | Medium (with stats): 12"x18" | Large (decorative): 18"x24"</p>
+                    
+                    <div class="product-options">
+                        <label>Choose Design</label>
+                        <select>
+                            <option>Name Only</option>
+                            <option>Name + Birth Date</option>
+                            <option>Name + Birth Stats (Full)</option>
+                            <option>"Welcome Little One"</option>
+                            <option>Custom Design</option>
+                        </select>
+                        
+                        <label>Enter Baby Name</label>
+                        <input type="text" placeholder="Enter baby's name" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin-bottom: 15px;">
+                        
+                        <label>Choose Material</label>
+                        <select>
+                            <option>Premium Acrylic</option>
+                            <option>Wood Sign</option>
+                            <option>Mirror Acrylic</option>
+                        </select>
+                        
+                        <label>Choose Color</label>
+                        <select>
+                            <option>Gold</option>
+                            <option>Rose Gold</option>
+                            <option>Silver</option>
+                            <option>Pink</option>
+                            <option>Blue</option>
+                            <option>Neutral</option>
+                            <option>Custom Color</option>
+                        </select>
+                        
+                        <label>Choose Size</label>
+                        <select>
+                            <option>Small (8" x 10")</option>
+                            <option>Medium (12" x 18")</option>
+                            <option>Large (18" x 24")</option>
+                        </select>
+                    </div>
+                    
+                    <div class="product-cta">
+                        <a href="../contact.html" class="btn-quote">Get Free Quote</a>
+                        <a href="../contact.html" class="btn-contact">Contact Us</a>
+                    </div>
                 </div>
             </div>
         </div>
-            </div>
-        </section>
-    </main>
+    </section>
 
-                    <!-- CTA Button -->
-                    <div style="margin-top: 40px; text-align: center;">
-                        <a href="../contact.html" class="btn" style="display: inline-block; padding: 18px 50px; background: #d4a574; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Get Your Custom Quote Today →</a>
-                    </div>
-    <footer><div class="container"><p>&copy; 2026 EventDecorSigns. All rights reserved.</p></div></footer>
+    <section class="product-details-section">
+        <h2>Product Details</h2>
+        
+        <h3>Materials</h3>
+        <ul>
+            <li>Premium acrylic (5mm) - modern & elegant</li>
+            <li>Wood sign - rustic & charming</li>
+            <li>Mirror acrylic - glamorous finish</li>
+            <li>High-quality UV printing</li>
+        </ul>
+        
+        <h3>Display Options</h3>
+        <ul>
+            <li>Hanging holes included</li>
+            <li>Self-standing design</li>
+            <li>Adhesive mounting</li>
+            <li>Tabletop display</li>
+        </ul>
+        
+        <h3>Popular Uses</h3>
+        <ul>
+            <li>Nursery wall decor</li>
+            <li>Baby shower centerpiece</li>
+            <li>Hospital/NICU gift</li>
+            <li>Gender reveal gift</li>
+            <li>First birthday party</li>
+        </ul>
+    </section>
+
+    <section class="buyers-guide">
+        <h2>📝 Buyer's Guide: Baby Name Signs</h2>
+        
+        <h3>Perfect Gifts for New Parents</h3>
+        <p>A personalized baby name sign is a cherished keepsake that parents will treasure for years. It's one of the most popular baby shower and hospital gifts!</p>
+        
+        <h3>Design Options</h3>
+        <ul>
+            <li><strong>Name Only:</strong> Simple, elegant display of the baby's name</li>
+            <li><strong>Name + Birth Date:</strong> Name with date of birth</li>
+            <li><strong>Full Stats:</strong> Name, date, weight, length, time</li>
+            <li><strong>Themed:</strong> Animals, floral,星座</li>
+        </ul>
+        
+        <h3>Size Guide</h3>
+        <ul>
+            <li><strong>Small (8" x 10")</strong> - Name only, small spaces</li>
+            <li><strong>Medium (12" x 18")</strong> - Standard nursery</li>
+            <li><strong>Large (18" x 24")</strong> - Large nursery, focal point</li>
+        </ul>
+        
+        <h3>Popular Gift Occasions</h3>
+        <ul>
+            <li>Baby shower</li>
+            <li>Hospital discharge</li>
+            <li>First birthday</li>
+            <li>Gender reveal party</li>
+            <li>Christmas/Birthday</li>
+        </ul>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">What information can I include?</div>
+                <div class="faq-answer">You can include baby's name, birth date, birth weight, length, time, and even a special quote. We'll create a custom design based on your preferences.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How long does production take?</div>
+                <div class="faq-answer">Production takes 3-5 business days after design approval. Rush orders available for an additional fee.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is it safe for nursery use?</div>
+                <div class="faq-answer">Yes! Our signs are made with non-toxic materials and have no sharp edges. They're completely safe for nursery environments.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I get a proof before ordering?</div>
+                <div class="faq-answer">Absolutely! We'll send a digital proof within 24-48 hours for your approval before we begin production.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ordered for my sister's baby - she absolutely loved it! The birth stats were a beautiful touch."</p>
+            <div class="author">- Lisa M., Florida</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Perfect hospital gift! The sign is gorgeous and looks beautiful in the nursery."</p>
+            <div class="author">- Amanda R., Texas</div>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Such a special keepsake! We included all the birth stats. It's now in our baby's room. Highly recommend!"</p>
+            <div class="author">- Jessica T., California</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchImage(element, imageSrc) {
+            document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active'));
+            element.classList.add('active');
+            var mainImage = document.getElementById('mainImage');
+            if (mainImage) {
+                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Baby Name Sign">';
+            }
+        }
+    </script>
+    <script src="../script.js"></script>
 </body>
 </html>
