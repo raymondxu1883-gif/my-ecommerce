@@ -120,9 +120,9 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     width: auto;
-    max-width: 200px;
+    max-width: 300px;
 }
 
 .nav-links {
@@ -1578,6 +1578,10 @@ footer {
     
     nav .logo {
         font-size: 18px;
+    }
+    
+    nav .logo img {
+        height: 50px;
     }
     
     /* Hero Section */
