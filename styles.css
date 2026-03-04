@@ -119,6 +119,12 @@ nav {
     color: var(--primary-color);
 }
 
+.logo img {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+}
+
 .nav-links {
     display: flex;
     gap: 25px;
