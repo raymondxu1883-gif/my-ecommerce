@@ -1,0 +1,11 @@
+# EventDecorSigns Robots.txt
+# Welcome all search engines and AI crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://eventdecorsigns.com/sitemap.xml
+
+# Common crawl delay for polite crawling (optional)
+Crawl-delay: 1
