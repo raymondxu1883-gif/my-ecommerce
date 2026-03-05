@@ -120,11 +120,11 @@
             <div class="product-grid-detail">
                 <div class="product-gallery">
                     <div class="main-image" id="mainImage">
-                        <img src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Acrylic Wedding Guest Book Sign">
+                        <img loading="lazy" src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Acrylic Wedding Guest Book Sign">
                     </div>
                     <div class="thumbnail-row">
                         <div class="thumbnail active" onclick="switchImage(this, '../images/products/guestbook/acrylic-guestbook-gold.png')">
-                            <img src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Guest Book Gold">
+                            <img loading="lazy" src="../images/products/guestbook/acrylic-guestbook-gold.png" alt="Guest Book Gold">
                         </div>
                         <div class="thumbnail" onclick="switchImage(this, '💌')">💌</div>
                         <div class="thumbnail" onclick="switchImage(this, '📖')">📖</div>
@@ -446,7 +446,7 @@
             var mainImage = document.getElementById('mainImage');
             if (mainImage) {
                 if (src.includes('.png')) {
-                    mainImage.innerHTML = '<img src="' + src + '" alt="Guest Book Sign">';
+                    mainImage.innerHTML = '<img loading="lazy" src="' + src + '" alt="Guest Book Sign">';
                 } else {
                     mainImage.innerHTML = src;
                 }

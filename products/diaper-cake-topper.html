@@ -66,7 +66,7 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo"><img src="../images/logo-icon.png" alt="EventDecorSigns" style="height:28px;vertical-align:middle;margin-right:8px;"> EventDecorSigns</a>
+            <a href="../index.html" class="logo"><img loading="lazy" src="../images/logo-icon.png" alt="EventDecorSigns" style="height:28px;vertical-align:middle;margin-right:8px;"> EventDecorSigns</a>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../products.html">Products</a></li>
@@ -89,11 +89,11 @@
             <div class="product-grid-detail">
                 <div class="product-gallery">
                     <div class="main-image" id="mainImage">
-                        <img src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper">
+                        <img loading="lazy" src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper">
                     </div>
                     <div class="thumbnail-row">
                         <div class="thumbnail active" onclick="switchImage(this, '../images/products/diaper-cake-topper.png')">
-                            <img src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper 1">
+                            <img loading="lazy" src="../images/products/diaper-cake-topper.png" alt="Diaper Cake Topper 1">
                         </div>
                     </div>
                 </div>
@@ -283,7 +283,7 @@
             element.classList.add('active');
             var mainImage = document.getElementById('mainImage');
             if (mainImage) {
-                mainImage.innerHTML = '<img src="' + imageSrc + '" alt="Diaper Cake Topper">';
+                mainImage.innerHTML = '<img loading="lazy" src="' + imageSrc + '" alt="Diaper Cake Topper">';
             }
         }
     </script>
