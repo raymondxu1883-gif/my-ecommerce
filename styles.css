@@ -1185,13 +1185,13 @@ footer {
 
 /* Blog Page Styles - Gallery Style */
 .blog-page {
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .blog-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -1213,7 +1213,7 @@ footer {
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
-    aspect-ratio: 4/5;
+    aspect-ratio: 16/10;
     background: #f5f5f5;
 }
 
