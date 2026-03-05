@@ -682,11 +682,15 @@ nav {
 .about-image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.about-image .placeholder {
+.about-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .about-text h2 {
