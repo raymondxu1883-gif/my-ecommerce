@@ -7,157 +7,53 @@
     <meta name="keywords" content="event decor, wedding decorations, party decorations, event styling, 2026 decor trends, celebration decor">
     <meta property="og:image" content="https://eventdecorsigns.com/images/products/event-decor-trends-2026.webp">
     <title>Event Decor Trends 2026: Transform Your Celebration into an Unforgettable Experience</title>
+    <link rel="stylesheet" href="../styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fafafa;
-        }
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        nav {
-            background: #2c3e50;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffd700;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem 20px;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        .hero-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-        h2 {
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            color: #34495e;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
-        }
-        h3 {
-            font-size: 1.4rem;
-            margin: 1.5rem 0 0.8rem;
-            color: #4a5568;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-        ul, ol {
-            margin: 1rem 0 1.5rem 2rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
-            border-left: 5px solid #667eea;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        .tip-box {
-            background: #e8f5e9;
-            border-left: 5px solid #4caf50;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-        }
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 3rem;
-            text-align: center;
-            margin: 3rem 0;
-            border-radius: 12px;
-        }
-        .cta-section h3 {
-            color: white;
-            margin-bottom: 1rem;
-        }
-        .cta-button {
-            display: inline-block;
-            background: #ffd700;
-            color: #2c3e50;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            margin-top: 1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        .word-count {
-            text-align: center;
-            color: #666;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-        }
+        .blog-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 20px 100px; text-align: center; position: relative; overflow: hidden; }
+        .blog-container { max-width: 800px; margin: -50px auto 0; padding: 0 20px 60px; position: relative; z-index: 10; }
+        .blog-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 30px rgba(0,0,0,0.08); padding: 50px 45px; }
+        .blog-content { font-size: 17px; line-height: 1.85; color: #444; }
+        .blog-content p { margin-bottom: 24px; }
+        .blog-content h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 28px; color: #1a1a2e; margin: 50px 0 20px; font-weight: 600; }
+        .blog-content h3 { font-size: 20px; color: #1a1a2e; margin: 35px 0 15px; font-weight: 600; }
+        .blog-content ul, .blog-content ol { margin: 0 0 24px 0; padding-left: 24px; }
+        .blog-content li { margin-bottom: 10px; }
+        .blog-content strong { color: #1a1a2e; font-weight: 600; }
+        .blog-image { margin: 35px 0; border-radius: 12px; overflow: hidden; width: 100%; }
+        .blog-image img { width: 100%; height: auto; display: block; }
+        .cta-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 40px 35px; border-radius: 12px; text-align: center; margin: 45px 0 30px; }
+        .cta-section h3 { color: #fff !important; }
+        .cta-section p { color: rgba(255,255,255,0.8) !important; }
+        .cta-button { display: inline-block; background: #d4a574; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>EventDecorSigns</h1>
-        <p>Premium Wedding & Party Decorations</p>
+        <nav>
+            <a href="../index.html" class="logo"><img loading="lazy" src="../images/logo-icon.png" alt="EventDecorSigns" style="height:28px;vertical-align:middle;margin-right:8px;"> EventDecorSigns</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html" class="cta-nav">Get Quote</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="https://eventdecorsigns.com">Home</a>
-        <a href="https://eventdecorsigns.com/shop">Shop</a>
-        <a href="https://eventdecorsigns.com/blog">Blog</a>
-        <a href="https://eventdecorsigns.com/contact">Contact</a>
-    </nav>
 
-    <div class="container">
-        <img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Elegant Event Decor" class="hero-image">
-        
-        <h1>Event Decor Trends 2026: Transform Your Celebration into an Unforgettable Experience</h1>
-        
-        <p>Welcome to 2026, where event decor has evolved into an art form that tells stories, evokes emotions, and creates lasting memories. Whether you're planning an intimate garden wedding, a grand ballroom reception, or a vibrant birthday celebration, the right decorative elements can transform any ordinary venue into an extraordinary wonderland. In this comprehensive guide, we'll explore the latest event decor trends, share expert tips, and inspire you to create a celebration that reflects your unique personality and style.</p>
+    <div class="blog-hero">
+        <div class="blog-hero-content">
+            <span class="category-tag">Event Trends</span>
+            <h1>Event Decor Trends 2026: Transform Your Celebration into an Unforgettable Experience</h1>
+            <p class="meta">Discover the latest trends in event decorations</p>
+        </div>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <div class="blog-content">
 
         <h2>The Evolution of Event Decor in 2026</h2>
         
@@ -259,17 +155,38 @@
         <div class="cta-section">
             <h3>Ready to Create Your Dream Event?</h3>
             <p>At EventDecorSigns, we specialize in custom event decorations that make your celebration truly unforgettable. From elegant acrylic signage to stunning centerpieces, we're here to bring your vision to life.</p>
-            <a href="https://eventdecorsigns.com/contact" class="cta-button">Get a Quote Today</a>
+            <a href="../contact.html" class="cta-button">Get a Free Quote</a>
+        </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
-        <p>Premium Wedding & Party Decorations | eventdecorsigns.com</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventDecorSigns</h4>
+                    <p>Custom event decorations and signs for weddings, birthdays, baby showers and all special celebrations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../products.html">Products</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 help@eventdecorsigns.com</p>
+                    <p>📱 +86 152 4184 6177 (WhatsApp)</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventDecorSigns. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
-    <div class="word-count">
-        Article Word Count: ~2,100 words
-    </div>
 </body>
 </html>
