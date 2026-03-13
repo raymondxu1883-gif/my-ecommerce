@@ -1675,11 +1675,11 @@ footer {
     }
     
     .gallery-item {
-        aspect-ratio: 1;
         width: 100%;
         margin-bottom: 40px;
         position: relative;
         z-index: 1;
+        overflow: hidden;
     }
     
     .gallery-image {
