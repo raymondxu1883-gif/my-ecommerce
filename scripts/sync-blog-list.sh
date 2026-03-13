@@ -1,5 +1,5 @@
 #!/bin/bash
-# 自动同步 blog/ 目录的文章到 blog.html
+# 自动同步 blog/ 目录的文章到 blog.html，并使用文章的 featured image
 
 BLOG_DIR="blog"
 BLOG_HTML="blog.html"
@@ -12,16 +12,13 @@ echo "blog/ 目录文章数: $BLOG_COUNT"
 echo "blog.html 链接数: $HTML_COUNT"
 
 if [ "$BLOG_COUNT" = "$HTML_COUNT" ]; then
-    echo "✅ 已同步，无需更新"
-    exit 0
+    echo "✅ 已同步"
 fi
 
-echo "⚠️ 发现差异，正在同步..."
-
-# 博客卡片模板
+# 博客卡片模板 - 使用文章的 featured image
 TEMPLATE='            <!-- Blog Post -->
             <a href="BLOG_URL" class="blog-card">
-                <div class="blog-image"><img loading="lazy" src="images/products/welcome-sign-ai-1.webp" alt="BLOG_TITLE" width="400" height="250" style="width:100%;height:100%;object-fit:cover;"></div>
+                <div class="blog-image"><img loading="lazy" src="BLOG_IMAGE" alt="BLOG_TITLE" width="400" height="250" style="width:100%;height:100%;object-fit:cover;"></div>
                 <div class="blog-overlay">
                     <span class="blog-category">CATEGORY</span>
                     <h3>TITLE</h3>
@@ -31,15 +28,26 @@ TEMPLATE='            <!-- Blog Post -->
 
 extract_meta() {
     local file=$1
+    
+    # 提取 featured image
+    local image=$(grep -E 'featured-image|class="hero-image"' -A1 "$file" 2>/dev/null | grep 'src=' | sed 's/.*src="\([^"]*\)".*/\1/' | head -1)
+    
+    # 提取标题
     local title=$(grep -oP '(?<=<title>)[^<]+' "$file" 2>/dev/null | head -1 | sed 's/ |.*//')
-    local date=$(grep -oP '(?<=<span class="blog-date">)[^<]+' "$file" 2>/dev/null | head -1)
-    local category=$(grep -oP '(?<=<span class="blog-category">)[^<]+' "$file" 2>/dev/null | head -1)
     
+    # 提取分类
+    local category=$(grep -oP '(?<=<span class="category-tag">)[^<]+' "$file" 2>/dev/null | head -1)
+    
+    # 提取日期
+    local date=$(grep -oP '(?<=<span>)[A-Za-z]+ \d+, \d{4}' "$file" 2>/dev/null | head -1)
+    
+    # 默认值
+    [ -z "$image" ] && image="https://eventdecorsigns.com/images/products/welcome-sign-ai-1.webp"
     [ -z "$title" ] && title=$(basename "$file" .html | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/')
-    [ -z "$date" ] && date=$(date +"%b %d, %Y")
     [ -z "$category" ] && category="Wedding Tips"
+    [ -z "$date" ] && date=$(date +"%b %d, %Y")
     
-    echo "$title|$category|$date"
+    echo "$image|$title|$category|$date"
 }
 
 # 找到博客区域
@@ -49,31 +57,27 @@ if [ -z "$START_LINE" ]; then
     exit 1
 fi
 
-# 找到 </div></section> 结束位置
 END_LINE=$(awk -v start="$START_LINE" 'NR>start && /<\/div>/ && /<\/section>/{print NR; exit}' "$BLOG_HTML")
-
-if [ -z "$END_LINE" ]; then
-    END_LINE=$((START_LINE + 20))
-fi
+[ -z "$END_LINE" ] && END_LINE=$((START_LINE + 20))
 
 echo "博客区域: 第 $START_LINE 到 $END_LINE 行"
 
 # 生成新卡片
 NEW_CARDS=""
-COUNT=0
 
 for file in $(ls -t $BLOG_DIR/*.html 2>/dev/null); do
-    COUNT=$((COUNT + 1))
     filename=$(basename "$file")
     url="blog/$filename"
     
     meta=$(extract_meta "$file")
-    title=$(echo "$meta" | cut -d'|' -f1)
-    category=$(echo "$meta" | cut -d'|' -f2)
-    date=$(echo "$meta" | cut -d'|' -f3)
+    image=$(echo "$meta" | cut -d'|' -f1)
+    title=$(echo "$meta" | cut -d'|' -f2)
+    category=$(echo "$meta" | cut -d'|' -f3)
+    date=$(echo "$meta" | cut -d'|' -f4)
     
     card="$TEMPLATE"
     card="${card//BLOG_URL/$url}"
+    card="${card//BLOG_IMAGE/$image}"
     card="${card//BLOG_TITLE/$title}"
     card="${card//CATEGORY/$category}"
     card="${card//TITLE/$title}"
@@ -82,8 +86,6 @@ for file in $(ls -t $BLOG_DIR/*.html 2>/dev/null); do
     NEW_CARDS="$NEW_CARDS$card
 "
 done
-
-echo "生成了 $COUNT 篇文章"
 
 # 重写文件
 head -n $((START_LINE - 1)) "$BLOG_HTML" > "${BLOG_HTML}.new"
