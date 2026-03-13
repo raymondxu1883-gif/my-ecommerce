@@ -1677,6 +1677,7 @@ footer {
     .gallery-item {
         aspect-ratio: 1;
         width: 100%;
+        margin-bottom: 20px;
     }
     
     .gallery-image {
