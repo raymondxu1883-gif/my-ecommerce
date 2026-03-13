@@ -1676,6 +1676,11 @@ footer {
     
     .gallery-item {
         aspect-ratio: 1;
+        width: 100%;
+    }
+    
+    .gallery-image {
+        height: 200px !important;
     }
     
     /* Blog */
