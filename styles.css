@@ -1668,6 +1668,19 @@ footer {
         padding: 40px 0;
     }
     
+    .gallery-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
     .gallery-grid {
         display: block;
         padding: 0 15px;
